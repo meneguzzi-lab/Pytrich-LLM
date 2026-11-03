@@ -1,5 +1,7 @@
 # <img src="Icon/pytrich-icon.png" alt="Pytrich" width="36" style="border-radius: 50%;"/> Pytrich-LLM: HTN Planning with LLM-Generated Heuristics
 
+[![DOI](https://zenodo.org/badge/1444167963.svg)](https://doi.org/10.5281/zenodo.23931424)
+
 Code, generated heuristics, benchmarks and results for the paper
 
 > **Hierarchical Task Network Planning with LLM-Generated Heuristics**
@@ -230,6 +232,18 @@ Note that `gemini-2.0-flash` and `gemini-3-pro-preview` have since been retired 
   author    = {Meneguzzi, Felipe and Buchweitz, Alexandre and Corr{\^e}a, Augusto B. and Putrich, Victor Scherer and Pereira, Andr{\'e} Grahl},
   booktitle = {Advances in Neural Information Processing Systems 39 (NeurIPS 2026)},
   year      = {2026}
+}
+```
+
+The repository itself is archived on Zenodo under the concept DOI [10.5281/zenodo.23931424](https://doi.org/10.5281/zenodo.23931424), which always resolves to the latest release:
+
+```bibtex
+@misc{MeneguzziBuchweitzCorreaEtAl2026Software,
+  title     = {{Pytrich-LLM}: Code, Generated Heuristics, Benchmarks and Results of ``Hierarchical Task Network Planning with {LLM}-Generated Heuristics''},
+  author    = {Meneguzzi, Felipe and Buchweitz, Alexandre and Corr{\^e}a, Augusto B. and Putrich, Victor Scherer and Pereira, Andr{\'e} Grahl},
+  publisher = {Zenodo},
+  year      = {2026},
+  doi       = {10.5281/zenodo.23931424}
 }
 ```
 

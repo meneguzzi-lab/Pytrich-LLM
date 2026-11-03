@@ -40,6 +40,11 @@ keywords:
   - LLM-generated heuristics
   - automated planning
 repository-code: "https://github.com/meneguzzi-lab/Pytrich-LLM"
+doi: 10.5281/zenodo.23931424
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23931424
+    description: "Concept DOI, resolves to the latest release"
 license: MIT
 preferred-citation:
   type: conference-paper
