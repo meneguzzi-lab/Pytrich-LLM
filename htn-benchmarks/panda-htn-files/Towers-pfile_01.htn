@@ -1,0 +1,564 @@
+#number_constants_number_sorts
+4 6
+#constants
+r1
+t1
+t2
+t3
+#end_constants
+#sorts_each_with_number_of_members_and_members
+OBJ 4 0 1 2 3
+RING 1 0
+TOWER 3 1 2 3
+sort_for_t1 1 1
+sort_for_t2 1 2
+sort_for_t3 1 3
+#end_sorts
+#number_of_predicates
+3
+#predicates_each_with_number_of_arguments_and_argument_sorts
++on 2 1 0
++towerTop 2 0 2
++smallerThan 2 1 0
+#end_predicates
+#begin_predicate_mutexes
+0
+#end_predicate_mutexes
+#number_of_functions
+0
+#function_declarations_with_number_of_arguments_and_argument_sorts
+#number_primitive_tasks_and_number_abstract_tasks
+11 8
+#begin_task_name_number_of_original_variables_and_number_of_variables
+move 5 5
+#sorts_of_variables
+1 0 2 0 2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+1 0 2
+1 3 4
+0 0 1
+2 0 3
+#add_each_predicate_and_argument_variables
+3
+0 0 3
+1 1 2
+1 0 4
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+3
+0 0 1
+1 0 2
+1 3 4
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_exchangeClear 2 2
+#sorts_of_variables
+2 2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+1 0 0
+1 1 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_exchangeLR 4 4
+#sorts_of_variables
+1 0 2 2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+1 0 2
+1 1 3
+2 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_exchangeRL 4 4
+#sorts_of_variables
+0 1 2 2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+1 0 2
+1 1 3
+2 1 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_selectedDirection 2 2
+#sorts_of_variables
+1 2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+0 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m-selectDirection 2 2
+#sorts_of_variables
+1 1 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+0 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m-shiftTower 2 2
+#sorts_of_variables
+1 2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_exchangeLR_base 2 2
+#sorts_of_variables
+1 2 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_exchangeLR_split 3 3
+#sorts_of_variables
+1 0 2 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+1 1 2
+2 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_exchangeRL_base 2 2
+#sorts_of_variables
+1 2 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_exchangeRL_split 3 3
+#sorts_of_variables
+0 1 2 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+1 0 2
+2 1 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+shiftTower 3 3
+#sorts_of_variables
+2 2 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+selectDirection 4 4
+#sorts_of_variables
+1 2 2 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+rotateTower 3 3
+#sorts_of_variables
+2 2 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+exchange 3 3
+#sorts_of_variables
+2 2 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+move_abstract 2 2
+#sorts_of_variables
+2 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__top 0 0
+#sorts_of_variables
+
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+exchangeLR_splitted_1 2 2
+#sorts_of_variables
+1 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+exchangeRL_splitted_2 2 2
+#sorts_of_variables
+1 2 
+#end_variables
+#end_of_task
+#number_of_methods
+11
+#begin_method_name_abstract_task_number_of_variables
+__top_method 16 3
+#variable_sorts
+3 4 5 
+#parameter_of_abstract_task
+
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+11 0 1 2
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+exchangeClear 14 3
+#variable_sorts
+2 2 2 
+#parameter_of_abstract_task
+0 1 2 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+1 0 2
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_exchangeLR_splitted_1 17 3
+#variable_sorts
+1 0 2 
+#parameter_of_abstract_task
+0 2 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+8 0 1 2
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+exchangeLR 14 4
+#variable_sorts
+1 2 2 2 
+#parameter_of_abstract_task
+1 2 3 
+#number_of_subtasks
+4
+#subtasks_each_with_task_id_and_parameter_variables
+15 1 3
+13 2 3 1
+7 0 1
+17 0 3
+#number_of_ordering_constraints_and_ordering
+6
+2 0
+2 1
+0 1
+2 3
+3 0
+3 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_exchangeRL_splitted_2 18 3
+#variable_sorts
+0 1 2 
+#parameter_of_abstract_task
+1 2 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+10 0 1 2
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+exchangeRL 14 4
+#variable_sorts
+1 2 2 2 
+#parameter_of_abstract_task
+1 2 3 
+#number_of_subtasks
+4
+#subtasks_each_with_task_id_and_parameter_variables
+15 3 1
+13 2 3 1
+9 0 3
+18 0 1
+#number_of_ordering_constraints_and_ordering
+6
+2 0
+2 1
+0 1
+2 3
+3 0
+3 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+newMethod21 15 5
+#variable_sorts
+1 0 2 0 2 
+#parameter_of_abstract_task
+2 4 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+0 0 1 2 3 4
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m-rotateTower 13 3
+#variable_sorts
+2 2 2 
+#parameter_of_abstract_task
+0 1 2 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+15 0 1
+14 0 1 2
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+selectedDirection 12 4
+#variable_sorts
+1 2 2 2 
+#parameter_of_abstract_task
+0 1 2 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+13 1 3 2
+4 0 1
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m-selectDirection 12 5
+#variable_sorts
+1 1 2 2 2 
+#parameter_of_abstract_task
+0 2 3 4 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+12 1 2 4 3
+5 0 1
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m-shiftTower 11 4
+#variable_sorts
+1 2 2 2 
+#parameter_of_abstract_task
+1 2 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+12 0 1 2 3
+6 0 1
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#init_and_goal_facts
+7 1
+2 0 1
+2 0 2
+2 0 3
+0 0 1
+1 0 1
+1 2 2
+1 3 3
+#end_init
+0 0 3
+#end_goal
+#init_function_facts
+0
+#initial_task
+16

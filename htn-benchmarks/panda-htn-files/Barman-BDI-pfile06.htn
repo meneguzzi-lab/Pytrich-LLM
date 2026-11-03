@@ -1,0 +1,2550 @@
+#number_constants_number_sorts
+25 17
+#constants
+cocktail1
+cocktail2
+cocktail3
+cocktail4
+ingredient1
+ingredient2
+ingredient3
+ingredient4
+ingredient5
+shaker1
+shot1
+shot2
+shot3
+shot4
+shot5
+dispenser1
+dispenser2
+dispenser3
+dispenser4
+dispenser5
+left
+right
+level1
+level2
+level3
+#end_constants
+#sorts_each_with_number_of_members_and_members
+beverage 9 0 1 2 3 4 5 6 7 8
+cocktail 4 0 1 2 3
+container 6 9 10 11 12 13 14
+dispenser 5 15 16 17 18 19
+hand 2 20 21
+ingredient 5 4 5 6 7 8
+level 3 22 23 24
+shaker 1 9
+shot 5 10 11 12 13 14
+sort_for_cocktail1 1 0
+sort_for_cocktail2 1 1
+sort_for_cocktail3 1 2
+sort_for_cocktail4 1 3
+sort_for_shot1 1 10
+sort_for_shot2 1 11
+sort_for_shot3 1 12
+sort_for_shot4 1 13
+#end_sorts
+#number_of_predicates
+19
+#predicates_each_with_number_of_arguments_and_argument_sorts
++clean 1 2
+-clean 1 2
++cocktailPart1 2 1 5
++cocktailPart2 2 1 5
++contains 2 2 0
+-contains 2 2 0
++dispenses 2 3 5
++empty 1 2
+-empty 1 2
++handEmpty 1 4
++holding 2 4 2
+-holding 2 4 2
++next 2 6 6
++ontable 1 2
++shaked 1 7
++shakerEmptyLevel 2 7 6
++shakerLevel 2 7 6
++unshaked 1 7
++used 2 2 0
+#end_predicates
+#begin_predicate_mutexes
+4
+0 1
+4 5
+7 8
+10 11
+#end_predicate_mutexes
+#number_of_functions
+0
+#function_declarations_with_number_of_arguments_and_argument_sorts
+#number_primitive_tasks_and_number_abstract_tasks
+53 32
+#begin_task_name_number_of_original_variables_and_number_of_variables
+clean-shaker 3 3
+#sorts_of_variables
+7 4 4 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+10 1 0
+7 0
+9 2
+#add_each_predicate_and_argument_variables
+1
+0 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+1
+1 0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+clean-shot 4 4
+#sorts_of_variables
+8 0 4 4 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+10 2 0
+9 3
+7 0
+18 0 1
+#add_each_predicate_and_argument_variables
+1
+0 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+2
+1 0
+18 0 1
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+drop 2 2
+#sorts_of_variables
+4 2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+10 0 1
+#add_each_predicate_and_argument_variables
+3
+13 1
+9 0
+11 0 1
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+1
+10 0 1
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+empty-shaker 5 5
+#sorts_of_variables
+4 7 1 6 6 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+5
+10 0 1
+4 1 2
+14 1
+15 1 4
+16 1 3
+#add_each_predicate_and_argument_variables
+4
+7 1
+17 1
+16 1 4
+5 1 2
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+4
+8 1
+4 1 2
+16 1 3
+14 1
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+empty-shot 3 3
+#sorts_of_variables
+4 8 0 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+10 0 1
+4 1 2
+#add_each_predicate_and_argument_variables
+2
+7 1
+5 1 2
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+2
+8 1
+4 1 2
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+fill-shot 5 5
+#sorts_of_variables
+8 5 4 4 3 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+5
+10 2 0
+9 3
+7 0
+0 0
+6 4 1
+#add_each_predicate_and_argument_variables
+4
+4 0 1
+18 0 1
+1 0
+8 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+3
+5 0 1
+0 0
+7 0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+grasp 2 2
+#sorts_of_variables
+4 2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+13 1
+9 0
+#add_each_predicate_and_argument_variables
+1
+10 0 1
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+3
+11 0 1
+9 0
+13 1
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+pour-shaker-to-shot 6 6
+#sorts_of_variables
+1 8 4 7 6 6 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+7
+10 2 3
+4 3 0
+14 3
+0 1
+7 1
+16 3 4
+12 5 4
+#add_each_predicate_and_argument_variables
+5
+4 1 0
+18 1 0
+16 3 5
+1 1
+8 1
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+4
+5 1 0
+0 1
+7 1
+16 3 4
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+pour-shot-to-clean-shaker 6 6
+#sorts_of_variables
+8 5 7 4 6 6 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+6
+4 0 1
+7 2
+0 2
+10 3 0
+16 2 4
+12 4 5
+#add_each_predicate_and_argument_variables
+7
+4 2 1
+16 2 5
+17 2
+7 0
+1 2
+8 2
+5 0 1
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+6
+5 2 1
+8 0
+0 2
+7 2
+4 0 1
+16 2 4
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+pour-shot-to-used-shaker 6 6
+#sorts_of_variables
+8 5 7 4 6 6 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+5
+4 0 1
+17 2
+10 3 0
+16 2 4
+12 4 5
+#add_each_predicate_and_argument_variables
+4
+4 2 1
+16 2 5
+7 0
+5 0 1
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+4
+5 2 1
+8 0
+4 0 1
+16 2 4
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+shake 6 6
+#sorts_of_variables
+1 5 5 7 4 4 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+7
+9 5
+10 4 3
+4 3 1
+4 3 2
+17 3
+2 0 1
+3 0 2
+#add_each_predicate_and_argument_variables
+4
+14 3
+4 3 0
+5 3 1
+5 3 2
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+4
+5 3 0
+17 3
+4 3 1
+4 3 2
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanEmptyShaker 3 3
+#sorts_of_variables
+7 4 4 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+1 0
+7 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 2 1
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanFullShaker 6 6
+#sorts_of_variables
+7 6 1 4 4 6 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+4 0 2
+14 0
+15 0 1
+16 0 5
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 4 3
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanShakerNull 1 1
+#sorts_of_variables
+7 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+0 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanFullShot 4 4
+#sorts_of_variables
+8 4 0 4 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+4 0 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 3 1
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanEmptyShot 4 4
+#sorts_of_variables
+8 4 0 4 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+7 0
+18 0 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 3 1
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanShotNull 1 1
+#sorts_of_variables
+8 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+0 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_MakeCocktail 5 5
+#sorts_of_variables
+1 5 4 4 5 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+2 0 4
+3 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 3 2
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_MakeCocktailNull 2 2
+#sorts_of_variables
+7 1 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+4 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_AddIngredientToEmptyShaker 3 3
+#sorts_of_variables
+7 6 6 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+7 0
+0 0
+16 0 1
+12 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_AddIngredientToUsedShaker 3 3
+#sorts_of_variables
+7 6 6 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+8 0
+16 0 1
+12 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_AddIngredientToShakerNull 2 2
+#sorts_of_variables
+7 5 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+4 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_MakeAndPourCocktail 2 2
+#sorts_of_variables
+8 1 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+5 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_MakeAndPourCocktailNull 2 2
+#sorts_of_variables
+8 1 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+4 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_AddIngredientToShot 5 5
+#sorts_of_variables
+8 5 3 4 4 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+5 0 1
+6 2 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 4 3
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_AddIngredientToShotNull 2 2
+#sorts_of_variables
+8 5 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+4 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_EmptyHand 2 2
+#sorts_of_variables
+4 2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+10 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_HandEmptyNull 1 1
+#sorts_of_variables
+4 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+9 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_PickUp 2 2
+#sorts_of_variables
+4 2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+11 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_HoldingNull 2 2
+#sorts_of_variables
+4 2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+10 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_PutDown 2 2
+#sorts_of_variables
+2 4 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+10 1 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_OnTableNull 1 1
+#sorts_of_variables
+2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+13 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_pour_shaker_to_shot_action 6 6
+#sorts_of_variables
+7 8 1 6 4 6 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+7
+10 4 0
+14 0
+7 1
+0 1
+4 0 2
+16 0 3
+12 5 3
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanEmptyShaker_base 1 1
+#sorts_of_variables
+7 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+1 0
+7 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanEmptyShaker_split 2 2
+#sorts_of_variables
+4 4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 1 0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanFullShaker_base 3 3
+#sorts_of_variables
+7 4 4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+14 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 2 1
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanFullShaker_split 4 4
+#sorts_of_variables
+7 6 1 6 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+4 0 2
+15 0 1
+16 0 3
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanFullShot_base 2 2
+#sorts_of_variables
+8 0 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+4 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanFullShot_split 2 2
+#sorts_of_variables
+4 4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 1 0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanEmptyShot_base 1 1
+#sorts_of_variables
+8 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+7 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanEmptyShot_split 4 4
+#sorts_of_variables
+8 4 0 4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+18 0 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 3 1
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_MakeCocktail_base 3 3
+#sorts_of_variables
+1 5 5 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+2 0 2
+3 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_MakeCocktail_split 2 2
+#sorts_of_variables
+4 4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 1 0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_AddIngredientToShot_base 4 4
+#sorts_of_variables
+8 5 4 4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+5 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 3 2
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_AddIngredientToShot_split 2 2
+#sorts_of_variables
+5 3 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+6 1 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanFullShaker_base_base 1 1
+#sorts_of_variables
+7 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+14 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_CleanFullShaker_base_split 2 2
+#sorts_of_variables
+4 4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 1 0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_AddIngredientToShot_base_base 2 2
+#sorts_of_variables
+8 5 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+5 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_AddIngredientToShot_base_split 2 2
+#sorts_of_variables
+4 4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+1
+!= 1 0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_MakeCocktail_base_base 2 2
+#sorts_of_variables
+1 5 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+2 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_MakeCocktail_base_split 2 2
+#sorts_of_variables
+1 5 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+3 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_MakeCocktail_base_base_base 0 0
+#sorts_of_variables
+
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_MakeCocktail_base_base_split 2 2
+#sorts_of_variables
+1 5 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+2 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AchieveContainsShakerIngredient 2 2
+#sorts_of_variables
+7 5 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AchieveCleanShaker 1 1
+#sorts_of_variables
+7 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AchieveHandEmpty 1 1
+#sorts_of_variables
+4 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AchieveContainsShotIngredient 2 2
+#sorts_of_variables
+8 5 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AchieveContainsShakerCocktail 2 2
+#sorts_of_variables
+7 1 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+DoPourShakerToShot 3 3
+#sorts_of_variables
+7 8 1 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AchieveOnTable 1 1
+#sorts_of_variables
+2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AchieveHolding 2 2
+#sorts_of_variables
+4 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AchieveCleanShot 1 1
+#sorts_of_variables
+8 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AchieveContainsShotCocktail 2 2
+#sorts_of_variables
+8 1 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__top 0 0
+#sorts_of_variables
+
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+CleanEmptyShaker_splitted_1 2 2
+#sorts_of_variables
+7 4 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+CleanFullShaker_splitted_2 2 2
+#sorts_of_variables
+4 7 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+CleanFullShot_splitted_3 3 3
+#sorts_of_variables
+8 0 4 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+CleanEmptyShot_splitted_4 2 2
+#sorts_of_variables
+8 4 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+MakeCocktail_splitted_5 5 5
+#sorts_of_variables
+1 5 5 7 4 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AddIngredientToEmptyShaker_splitted_6 4 4
+#sorts_of_variables
+5 7 6 6 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AddIngredientToUsedShaker_splitted_7 4 4
+#sorts_of_variables
+5 7 6 6 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+MakeAndPourCocktail_splitted_8 1 1
+#sorts_of_variables
+7 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AddIngredientToShot_splitted_9 4 4
+#sorts_of_variables
+8 5 4 4 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+CleanEmptyShaker_splitted_10 1 1
+#sorts_of_variables
+7 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+CleanFullShaker_splitted_11 2 2
+#sorts_of_variables
+7 4 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+CleanFullShot_splitted_12 2 2
+#sorts_of_variables
+8 0 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+CleanEmptyShot_splitted_13 1 1
+#sorts_of_variables
+8 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+MakeCocktail_splitted_14 4 4
+#sorts_of_variables
+7 1 5 5 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+_splitting_method_AddIngredientToEmptyShaker_splitted_6_splitted_15 5 5
+#sorts_of_variables
+8 5 7 6 6 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+_splitting_method_AddIngredientToUsedShaker_splitted_7_splitted_16 5 5
+#sorts_of_variables
+8 5 7 6 6 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AddIngredientToShot_splitted_17 3 3
+#sorts_of_variables
+4 8 5 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+CleanFullShaker_splitted_18 1 1
+#sorts_of_variables
+7 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+MakeCocktail_splitted_19 3 3
+#sorts_of_variables
+7 1 5 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+AddIngredientToShot_splitted_20 2 2
+#sorts_of_variables
+8 5 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+MakeCocktail_splitted_21 2 2
+#sorts_of_variables
+7 1 
+#end_variables
+#end_of_task
+#number_of_methods
+44
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_CleanEmptyShaker_splitted_1 64 3
+#variable_sorts
+4 7 4 
+#parameter_of_abstract_task
+1 2 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+55 0
+0 1 2 0
+34 0 2
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+2 0
+2 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_CleanEmptyShaker_splitted_10 73 2
+#variable_sorts
+4 7 
+#parameter_of_abstract_task
+1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+60 0 1
+64 1 0
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+CleanEmptyShaker 54 1
+#variable_sorts
+7 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+33 0
+73 0
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_CleanFullShaker_splitted_2 65 5
+#variable_sorts
+4 7 1 6 6 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+3 0 1 2 3 4
+36 1 4 2 3
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_CleanFullShaker_splitted_11 74 3
+#variable_sorts
+4 7 4 
+#parameter_of_abstract_task
+1 2 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+55 0
+0 1 2 0
+46 0 2
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+2 0
+2 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_CleanFullShaker_splitted_18 81 2
+#variable_sorts
+4 7 
+#parameter_of_abstract_task
+1 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+60 0 1
+65 0 1
+74 1 0
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+0 2
+1 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+CleanFullShaker 54 1
+#variable_sorts
+7 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+45 0
+81 0
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+CleanShakerNull 54 1
+#variable_sorts
+7 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+13 0
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_CleanFullShot_splitted_3 66 4
+#variable_sorts
+4 8 0 4 
+#parameter_of_abstract_task
+1 2 3 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+55 0
+1 1 2 3 0
+38 0 3
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+2 0
+2 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_CleanFullShot_splitted_12 75 3
+#variable_sorts
+4 8 0 
+#parameter_of_abstract_task
+1 2 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+60 0 1
+4 0 1 2
+66 1 2 0
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+0 2
+1 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+CleanFullShot 61 2
+#variable_sorts
+8 0 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+37 0 1
+75 0 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_CleanEmptyShot_splitted_4 67 4
+#variable_sorts
+4 8 0 4 
+#parameter_of_abstract_task
+1 3 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+55 0
+1 1 2 3 0
+40 1 0 2 3
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+2 0
+2 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_CleanEmptyShot_splitted_13 76 2
+#variable_sorts
+4 8 
+#parameter_of_abstract_task
+1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+60 0 1
+67 1 0
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+CleanEmptyShot 61 1
+#variable_sorts
+8 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+39 0
+76 0
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+CleanShotNull 61 1
+#variable_sorts
+8 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+16 0
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_MakeCocktail_splitted_5 68 6
+#variable_sorts
+4 1 5 5 7 4 
+#parameter_of_abstract_task
+1 2 3 4 5 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+55 0
+10 1 2 3 4 5 0
+42 0 5
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+2 0
+2 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_MakeCocktail_splitted_14 77 5
+#variable_sorts
+4 7 1 5 5 
+#parameter_of_abstract_task
+1 2 3 4 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+60 0 1
+68 2 3 4 1 0
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_MakeCocktail_splitted_19 82 4
+#variable_sorts
+7 5 1 5 
+#parameter_of_abstract_task
+0 2 3 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+53 0 1
+50 2 1
+77 0 2 3 1
+#number_of_ordering_constraints_and_ordering
+3
+0 2
+1 0
+1 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_MakeCocktail_splitted_21 84 3
+#variable_sorts
+7 5 1 
+#parameter_of_abstract_task
+0 2 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+53 0 1
+52 2 1
+82 0 2 1
+#number_of_ordering_constraints_and_ordering
+3
+0 2
+1 0
+1 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+MakeCocktail 57 2
+#variable_sorts
+7 1 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+54 0
+51
+84 0 1
+#number_of_ordering_constraints_and_ordering
+3
+1 0
+0 2
+1 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+MakeCocktailNull 57 2
+#variable_sorts
+7 1 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+18 0 1
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method__splitting_method_AddIngredientToEmptyShaker_splitted_6_splitted_15 78 6
+#variable_sorts
+4 8 5 7 6 6 
+#parameter_of_abstract_task
+1 2 3 4 5 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+60 0 1
+8 1 2 3 0 4 5
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_AddIngredientToEmptyShaker_splitted_6 69 5
+#variable_sorts
+8 5 7 6 6 
+#parameter_of_abstract_task
+1 2 3 4 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+56 0 1
+78 0 1 2 3 4
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+AddIngredientToEmptyShaker 53 4
+#variable_sorts
+7 5 6 6 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+19 0 2 3
+69 1 0 2 3
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method__splitting_method_AddIngredientToUsedShaker_splitted_7_splitted_16 79 6
+#variable_sorts
+4 8 5 7 6 6 
+#parameter_of_abstract_task
+1 2 3 4 5 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+60 0 1
+9 1 2 3 0 4 5
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_AddIngredientToUsedShaker_splitted_7 70 5
+#variable_sorts
+8 5 7 6 6 
+#parameter_of_abstract_task
+1 2 3 4 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+56 0 1
+79 0 1 2 3 4
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+AddIngredientToUsedShaker 53 4
+#variable_sorts
+7 5 6 6 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+20 0 2 3
+70 1 0 2 3
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+AddIngredientToShakerNull 53 2
+#variable_sorts
+7 5 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+21 0 1
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_MakeAndPourCocktail_splitted_8 71 2
+#variable_sorts
+4 7 
+#parameter_of_abstract_task
+1 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+60 0 1
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+MakeAndPourCocktail 62 3
+#variable_sorts
+8 1 7 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+5
+#subtasks_each_with_task_id_and_parameter_variables
+57 2 1
+61 0
+58 2 0 1
+22 0 1
+71 2
+#number_of_ordering_constraints_and_ordering
+7
+3 0
+3 1
+3 2
+0 1
+1 4
+3 4
+4 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+MakeAndPourCocktailNull 62 2
+#variable_sorts
+8 1 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+23 0 1
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_AddIngredientToShot_splitted_9 72 5
+#variable_sorts
+8 5 4 4 3 
+#parameter_of_abstract_task
+0 1 2 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+5 0 1 2 3 4
+44 1 4
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_AddIngredientToShot_splitted_17 80 4
+#variable_sorts
+4 4 8 5 
+#parameter_of_abstract_task
+1 2 3 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+55 0
+48 0 1
+72 2 3 1 0
+#number_of_ordering_constraints_and_ordering
+3
+0 2
+1 0
+1 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_AddIngredientToShot_splitted_20 83 3
+#variable_sorts
+4 8 5 
+#parameter_of_abstract_task
+1 2 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+60 0 1
+80 0 1 2
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+AddIngredientToShot 56 2
+#variable_sorts
+8 5 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+61 0
+47 0 1
+83 0 1
+#number_of_ordering_constraints_and_ordering
+3
+1 0
+0 2
+1 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+AddIngredientToShotNull 56 2
+#variable_sorts
+8 5 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+25 0 1
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+EmptyHand 55 2
+#variable_sorts
+4 2 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+2 0 1
+26 0 1
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+HandEmptyNull 55 2
+#variable_sorts
+4 4 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+27 1
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+PickUp 60 2
+#variable_sorts
+4 2 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+4
+#subtasks_each_with_task_id_and_parameter_variables
+55 0
+59 1
+6 0 1
+28 0 1
+#number_of_ordering_constraints_and_ordering
+5
+3 0
+3 1
+3 2
+0 1
+1 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+HoldingNull 60 2
+#variable_sorts
+4 2 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+29 0 1
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+PutDown 59 2
+#variable_sorts
+2 4 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+2 1 0
+30 0 1
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+OnTableNull 59 1
+#variable_sorts
+2 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+31 0
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+pour_shaker_to_shot_action 58 6
+#variable_sorts
+7 8 1 6 4 6 
+#parameter_of_abstract_task
+0 1 2 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+7 2 1 4 0 3 5
+32 0 1 2 3 4 5
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+__top_method 63 8
+#variable_sorts
+9 15 10 14 11 16 12 13 
+#parameter_of_abstract_task
+
+#number_of_subtasks
+4
+#subtasks_each_with_task_id_and_parameter_variables
+62 1 0
+62 3 2
+62 5 4
+62 7 6
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+1 2
+2 3
+#variable_constraints
+0
+#end_of_method
+#init_and_goal_facts
+94 0
+13 9
+13 10
+13 11
+13 12
+13 13
+13 14
+0 9
+0 10
+0 11
+0 12
+0 13
+0 14
+7 9
+7 10
+7 11
+7 12
+7 13
+7 14
+6 15 4
+6 16 5
+6 17 6
+6 18 7
+6 19 8
+9 20
+9 21
+15 9 22
+16 9 22
+12 22 22
+12 23 23
+2 0 8
+3 0 4
+2 1 8
+3 1 6
+2 2 7
+3 2 8
+2 3 5
+3 3 7
+5 10 0
+5 10 1
+5 10 2
+5 10 3
+5 11 0
+5 11 1
+5 11 2
+5 11 3
+5 12 0
+5 12 1
+5 12 2
+5 12 3
+5 13 0
+5 13 1
+5 13 2
+5 13 3
+5 14 0
+5 14 1
+5 14 2
+5 14 3
+5 10 4
+5 10 5
+5 10 6
+5 10 7
+5 10 8
+5 11 4
+5 11 5
+5 11 6
+5 11 7
+5 11 8
+5 12 4
+5 12 5
+5 12 6
+5 12 7
+5 12 8
+5 13 4
+5 13 5
+5 13 6
+5 13 7
+5 13 8
+5 14 4
+5 14 5
+5 14 6
+5 14 7
+5 14 8
+11 20 9
+11 20 10
+11 20 11
+11 20 12
+11 20 13
+11 20 14
+11 21 9
+11 21 10
+11 21 11
+11 21 12
+11 21 13
+11 21 14
+#end_init
+#end_goal
+#init_function_facts
+0
+#initial_task
+63

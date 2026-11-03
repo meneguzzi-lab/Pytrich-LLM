@@ -1,0 +1,116 @@
+# LLM model configurations for the generic heuristic generator
+# Each model specifies its API URL and naming convention
+
+models:
+  gemini25pro:
+    name: "Gemini25Pro"
+    api_base: "https://generativelanguage.googleapis.com/v1beta/models"
+    model_id: "gemini-2.5-pro"
+    provider: "google"
+    input_cost_per_mtok: 1.25
+    output_cost_per_mtok: 10.00
+
+  gemini20flash:
+    name: "Gemini20Flash"
+    api_base: "https://generativelanguage.googleapis.com/v1beta/models"
+    model_id: "gemini-2.0-flash"
+    provider: "google"
+    input_cost_per_mtok: 0.10
+    output_cost_per_mtok: 0.40
+
+  gemini3flash:
+    name: "Gemini3Flash"
+    api_base: "https://generativelanguage.googleapis.com/v1beta/models"
+    model_id: "gemini-3-flash-preview"
+    provider: "google"
+    input_cost_per_mtok: 0.50
+    output_cost_per_mtok: 3.00
+
+  gemini3pro:
+    name: "Gemini3Pro"
+    api_base: "https://generativelanguage.googleapis.com/v1beta/models"
+    model_id: "gemini-3-pro-preview"
+    provider: "google"
+    # Retired from the Gemini API after the paper's heuristics were generated;
+    # the API now returns HTTP 404 for it.
+    input_cost_per_mtok: 1.25
+    output_cost_per_mtok: 10.00
+
+  chatgpt4o:
+    name: "ChatGPT4o"
+    api_base: "https://api.openai.com/v1/chat/completions"
+    model_id: "gpt-4o"
+    provider: "openai"
+    input_cost_per_mtok: 2.50
+    output_cost_per_mtok: 10.00
+
+  gpt5:
+    name: "GPT5"
+    api_base: "https://api.openai.com/v1/chat/completions"
+    model_id: "gpt-5"
+    provider: "openai"
+    input_cost_per_mtok: 2.00
+    output_cost_per_mtok: 8.00
+
+  gpt52:
+    name: "GPT52"
+    api_base: "https://api.openai.com/v1/chat/completions"
+    model_id: "gpt-5.2"
+    provider: "openai"
+    input_cost_per_mtok: 2.00
+    output_cost_per_mtok: 8.00
+
+  claude:
+    name: "ClaudeSonnet45"
+    api_base: "https://api.anthropic.com/v1/messages"
+    model_id: "claude-sonnet-4-5-20250929"
+    provider: "anthropic"
+    input_cost_per_mtok: 3.00
+    output_cost_per_mtok: 15.00
+
+  claudeopus46:
+    name: "ClaudeOpus46"
+    api_base: "https://api.anthropic.com/v1/messages"
+    model_id: "claude-opus-4-6"
+    provider: "anthropic"
+    input_cost_per_mtok: 5.00
+    output_cost_per_mtok: 25.00
+
+# Which reasoning/thinking API each model exposes. These are NOT interchangeable:
+# sending the wrong one is a 400, so --thinking resolves through this table.
+#
+#   effort            adaptive thinking + output_config.effort (Opus 4.6).
+#   budget            thinking.enabled + budget_tokens (Opus 4, Sonnet 4.5).
+#                     budget_tokens must be < max_tokens and >= 1024.
+#   reasoning_effort  OpenAI reasoning_effort (gpt-5 and later).
+#   gemini_budget     generationConfig.thinkingConfig.thinkingBudget.
+#   none              no thinking control; --thinking is ignored (recorded as such).
+thinking_styles:
+  claudeopus46: effort
+  claude: budget
+  gpt5: reasoning_effort
+  gpt52: reasoning_effort
+  chatgpt4o: none
+  gemini3pro: gemini_budget
+  gemini3flash: gemini_budget
+  gemini25pro: gemini_budget
+  gemini20flash: none
+
+# Token budgets for the styles that take a number rather than a level name.
+# 'budget' values must stay under generation.max_tokens (see generate_heuristic.py,
+# which raises max_tokens by the budget so the code output still has room).
+thinking_budgets:
+  budget:
+    low: 2048
+    medium: 4096
+    high: 8192
+  gemini_budget:
+    low: 2048
+    medium: 8192
+    high: 16384
+
+# API key environment variable names
+env_vars:
+  google: "GEMINI_API_KEY"
+  openai: "OPENAI_API_KEY"
+  anthropic: "ANTHROPIC_API_KEY"

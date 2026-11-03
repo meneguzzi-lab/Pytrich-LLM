@@ -1,0 +1,38 @@
+# Systems evaluated in the paper.
+#
+# Each LLM planner is a folder Pytrich/Heuristics/GeneratedHeuristics/<Domain>/<Planner>/
+# holding that model's candidate heuristics for the domain. Candidates are run by registry
+# key (Pytrich/constants.py), except for the planners listed under file_mode_planners and
+# the prompt-ablation arms (<Model>-<arm> folders), which are loaded by file path.
+
+llm_planners:
+  - Gemini20Flash
+  - Gemini25Pro
+  - Gemini3Flash
+  - Gemini3Pro
+  - ClaudeOpus46
+  - ClaudeSonnet45
+  - ChatGPT4o
+  - GPT5
+  - GPT52
+
+file_mode_planners:
+  - ClaudeOpus46
+
+builtin_planners:
+  - Pytrich    # TDG, LMCOUNT(use_bid=True) and NOVELTY
+  - Panda      # rc2(ff), rc2(lmc), rc2(add) and lmcount(lmtype=bid)
+
+domains:
+  - Barman-BDI
+  - Blocksworld-GTOHP
+  - Depots
+  - Robot
+  - Rover-GTOHP
+  - Towers
+  - Lamps        # IPC 2023; problem files are .pddl
+
+algorithms:
+  - StandardA   # A*, AstarNode(G=1,H=1)
+  - GBFS        # greedy best-first search, AstarNode(G=0,H=1)
+  - WA          # weighted A*, AstarNode(G=1,H=5)

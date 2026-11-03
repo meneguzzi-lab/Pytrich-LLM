@@ -1,0 +1,12 @@
+# Planner and job scripts
+pyyaml
+psutil
+# Heuristic generation (API calls)
+requests
+python-dotenv
+# Analysis: tables and figures
+pandas
+numpy
+matplotlib
+seaborn
+tabulate

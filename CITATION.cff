@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the paper below."
+title: "Pytrich-LLM: Hierarchical Task Network Planning with LLM-Generated Heuristics"
+authors:
+  - family-names: Meneguzzi
+    given-names: Felipe
+  - family-names: Buchweitz
+    given-names: Alexandre
+  - family-names: Corrêa
+    given-names: Augusto B.
+  - family-names: Putrich
+    given-names: Victor Scherer
+  - family-names: Pereira
+    given-names: André Grahl
+repository-code: "https://github.com/meneguzzi-lab/Pytrich-LLM"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Hierarchical Task Network Planning with LLM-Generated Heuristics"
+  authors:
+    - family-names: Meneguzzi
+      given-names: Felipe
+    - family-names: Buchweitz
+      given-names: Alexandre
+    - family-names: Corrêa
+      given-names: Augusto B.
+    - family-names: Putrich
+      given-names: Victor Scherer
+    - family-names: Pereira
+      given-names: André Grahl
+  collection-title: "Advances in Neural Information Processing Systems 39 (NeurIPS 2026)"
+  year: 2026

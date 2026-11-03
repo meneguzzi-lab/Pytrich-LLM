@@ -1,0 +1,2533 @@
+#number_constants_number_sorts
+31 16
+#constants
+camera0
+camera1
+camera2
+camera3
+camera4
+general
+colour
+high_res
+low_res
+objective0
+objective1
+objective2
+objective3
+rover0
+rover1
+rover2
+rover3
+waypoint3
+waypoint4
+waypoint5
+waypoint6
+waypoint8
+rover0store
+rover1store
+rover2store
+rover3store
+waypoint0
+waypoint1
+waypoint2
+waypoint7
+waypoint9
+#end_constants
+#sorts_each_with_number_of_members_and_members
+camera 5 0 1 2 3 4
+lander 1 5
+mode 3 6 7 8
+objective 4 9 10 11 12
+rover 4 13 14 15 16
+sort_for_colour 1 6
+sort_for_low_res 1 8
+sort_for_objective0 1 9
+sort_for_objective2 1 11
+sort_for_waypoint3 1 17
+sort_for_waypoint4 1 18
+sort_for_waypoint5 1 19
+sort_for_waypoint6 1 20
+sort_for_waypoint8 1 21
+store 4 22 23 24 25
+waypoint 10 26 27 28 17 18 19 20 29 21 30
+#end_sorts
+#number_of_predicates
+29
+#predicates_each_with_number_of_arguments_and_argument_sorts
++available 1 4
++at 2 4 15
++visible 2 15 15
++can_traverse 3 4 15 15
+-can_traverse 3 4 15 15
++store_of 2 14 4
++empty 1 14
+-empty 1 14
++full 1 14
++equipped_for_soil_analysis 1 4
++at_soil_sample 1 15
++have_soil_analysis 2 4 15
++equipped_for_rock_analysis 1 4
++at_rock_sample 1 15
++have_rock_analysis 2 4 15
++equipped_for_imaging 1 4
++calibration_target 2 0 3
++visible_from 2 3 15
++on_board 2 0 4
++calibrated 2 0 4
++supports 2 0 2
++have_image 3 4 3 2
++at_lander 2 1 15
++channel_free 1 1
++communicated_soil_data 1 15
++communicated_rock_data 1 15
++communicated_image_data 2 3 2
++visited 1 15
+-visited 1 15
+#end_predicates
+#begin_predicate_mutexes
+3
+3 4
+6 7
+27 28
+#end_predicate_mutexes
+#number_of_functions
+0
+#function_declarations_with_number_of_arguments_and_argument_sorts
+#number_primitive_tasks_and_number_abstract_tasks
+46 23
+#begin_task_name_number_of_original_variables_and_number_of_variables
+navigate 3 3
+#sorts_of_variables
+4 15 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+0 0
+1 0 1
+3 0 1 2
+2 1 2
+#add_each_predicate_and_argument_variables
+1
+1 0 2
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+1
+1 0 1
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+sample_soil 3 3
+#sorts_of_variables
+4 14 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+5
+1 0 2
+10 2
+9 0
+5 1 0
+6 1
+#add_each_predicate_and_argument_variables
+3
+7 1
+8 1
+11 0 2
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+2
+6 1
+10 2
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+sample_rock 3 3
+#sorts_of_variables
+4 14 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+5
+1 0 2
+13 2
+12 0
+5 1 0
+6 1
+#add_each_predicate_and_argument_variables
+3
+7 1
+8 1
+14 0 2
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+2
+6 1
+13 2
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+drop 2 2
+#sorts_of_variables
+4 14 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+5 1 0
+8 1
+#add_each_predicate_and_argument_variables
+1
+6 1
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+2
+8 1
+7 1
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+calibrate 4 4
+#sorts_of_variables
+4 0 3 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+5
+15 0
+16 1 2
+1 0 3
+17 2 3
+18 1 0
+#add_each_predicate_and_argument_variables
+1
+19 1 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+take_image 5 5
+#sorts_of_variables
+4 15 3 0 2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+6
+19 3 0
+18 3 0
+15 0
+20 3 4
+1 0 1
+17 2 1
+#add_each_predicate_and_argument_variables
+1
+21 0 2 4
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+1
+19 3 0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+communicate_soil_data1 5 5
+#sorts_of_variables
+4 1 15 15 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+6
+1 0 3
+22 1 4
+11 0 2
+2 3 4
+0 0
+23 1
+#add_each_predicate_and_argument_variables
+2
+24 2
+0 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+communicate_soil_data2 4 4
+#sorts_of_variables
+4 1 15 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+6
+1 0 2
+22 1 3
+11 0 2
+2 2 3
+0 0
+23 1
+#add_each_predicate_and_argument_variables
+2
+24 2
+0 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+communicate_rock_data1 5 5
+#sorts_of_variables
+4 1 15 15 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+6
+1 0 3
+22 1 4
+14 0 2
+2 3 4
+0 0
+23 1
+#add_each_predicate_and_argument_variables
+2
+25 2
+0 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+communicate_rock_data2 4 4
+#sorts_of_variables
+4 1 15 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+6
+1 0 2
+22 1 3
+14 0 2
+2 2 3
+0 0
+23 1
+#add_each_predicate_and_argument_variables
+2
+25 2
+0 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+communicate_image_data 6 6
+#sorts_of_variables
+4 1 3 2 15 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+6
+1 0 4
+22 1 5
+21 0 2 3
+2 4 5
+0 0
+23 1
+#add_each_predicate_and_argument_variables
+3
+26 2 3
+0 0
+23 1
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+visit 1 1
+#sorts_of_variables
+15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+1
+27 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+1
+28 0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+unvisit 1 1
+#sorts_of_variables
+15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+27 0
+#add_each_predicate_and_argument_variables
+1
+28 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+1
+27 0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+nop 0 0
+#sorts_of_variables
+
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m15_do_calibrate 3 3
+#sorts_of_variables
+0 3 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+16 0 1
+17 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m0_do_navigate1 2 2
+#sorts_of_variables
+4 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m1_do_navigate1 2 2
+#sorts_of_variables
+4 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m2_do_navigate2 2 2
+#sorts_of_variables
+4 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m3_do_navigate2 3 3
+#sorts_of_variables
+4 15 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+3 0 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m4_do_navigate2 4 4
+#sorts_of_variables
+4 15 15 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+4 0 1 2
+28 3
+3 0 1 3
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m5_empty_store 1 1
+#sorts_of_variables
+14 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+6 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m6_empty_store 1 1
+#sorts_of_variables
+14 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+7 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m13_get_image_data 5 5
+#sorts_of_variables
+3 2 4 0 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+15 2
+18 3 2
+20 3 1
+17 0 4
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m10_get_rock_data 2 2
+#sorts_of_variables
+4 14 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+5 1 0
+12 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m7_get_soil_data 2 2
+#sorts_of_variables
+4 14 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+5 1 0
+9 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m14_send_image_data 3 3
+#sorts_of_variables
+1 15 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+22 0 2
+2 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m11_send_rock_data 3 3
+#sorts_of_variables
+1 15 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+22 0 2
+2 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m12_send_rock_data 4 4
+#sorts_of_variables
+4 15 1 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+22 2 3
+2 1 3
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m8_send_soil_data 3 3
+#sorts_of_variables
+1 15 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+22 0 2
+2 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m9_send_soil_data 4 4
+#sorts_of_variables
+4 15 1 15 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+22 2 3
+2 1 3
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m15_do_calibrate_base 0 0
+#sorts_of_variables
+
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m15_do_calibrate_split 3 3
+#sorts_of_variables
+0 3 15 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+16 0 1
+17 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m13_get_image_data_base 3 3
+#sorts_of_variables
+2 4 0 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+15 1
+18 2 1
+20 2 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m13_get_image_data_split 2 2
+#sorts_of_variables
+3 15 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+17 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m10_get_rock_data_base 1 1
+#sorts_of_variables
+4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+12 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m10_get_rock_data_split 2 2
+#sorts_of_variables
+4 14 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+5 1 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m7_get_soil_data_base 1 1
+#sorts_of_variables
+4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+9 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m7_get_soil_data_split 2 2
+#sorts_of_variables
+4 14 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+5 1 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m14_send_image_data_base 0 0
+#sorts_of_variables
+
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m14_send_image_data_split 3 3
+#sorts_of_variables
+1 15 15 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+22 0 2
+2 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m11_send_rock_data_base 0 0
+#sorts_of_variables
+
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m11_send_rock_data_split 3 3
+#sorts_of_variables
+1 15 15 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+22 0 2
+2 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m8_send_soil_data_base 0 0
+#sorts_of_variables
+
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m8_send_soil_data_split 3 3
+#sorts_of_variables
+1 15 15 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+22 0 2
+2 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m13_get_image_data_base_base 1 1
+#sorts_of_variables
+4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+15 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m13_get_image_data_base_split 3 3
+#sorts_of_variables
+2 4 0 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+18 2 1
+20 2 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+do_navigate1 2 2
+#sorts_of_variables
+4 15 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+do_navigate2 3 3
+#sorts_of_variables
+4 15 15 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+empty_store 2 2
+#sorts_of_variables
+14 4 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+get_soil_data 1 1
+#sorts_of_variables
+15 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+send_soil_data 2 2
+#sorts_of_variables
+4 15 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+get_rock_data 1 1
+#sorts_of_variables
+15 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+send_rock_data 2 2
+#sorts_of_variables
+4 15 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+get_image_data 2 2
+#sorts_of_variables
+3 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+send_image_data 3 3
+#sorts_of_variables
+4 3 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+do_calibrate 2 2
+#sorts_of_variables
+4 0 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__top 0 0
+#sorts_of_variables
+
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m15_do_calibrate_splitted_1 3 3
+#sorts_of_variables
+4 0 15 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m13_get_image_data_splitted_2 4 4
+#sorts_of_variables
+4 3 0 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m10_get_rock_data_splitted_3 2 2
+#sorts_of_variables
+4 15 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m7_get_soil_data_splitted_4 2 2
+#sorts_of_variables
+4 15 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m14_send_image_data_splitted_5 5 5
+#sorts_of_variables
+4 1 3 2 15 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m11_send_rock_data_splitted_6 4 4
+#sorts_of_variables
+4 1 15 15 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m8_send_soil_data_splitted_7 4 4
+#sorts_of_variables
+4 1 15 15 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m15_do_calibrate_splitted_8 2 2
+#sorts_of_variables
+4 0 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m13_get_image_data_splitted_9 3 3
+#sorts_of_variables
+4 2 3 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m14_send_image_data_splitted_10 4 4
+#sorts_of_variables
+4 1 3 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m11_send_rock_data_splitted_11 3 3
+#sorts_of_variables
+4 1 15 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m8_send_soil_data_splitted_12 3 3
+#sorts_of_variables
+4 1 15 
+#end_variables
+#end_of_task
+#number_of_methods
+29
+#begin_method_name_abstract_task_number_of_variables
+__top_method 56 11
+#variable_sorts
+9 12 11 10 13 5 7 6 8 6 7 
+#parameter_of_abstract_task
+
+#number_of_subtasks
+8
+#subtasks_each_with_task_id_and_parameter_variables
+49 0
+49 1
+51 2
+51 3
+51 4
+53 6 5
+53 8 7
+53 10 9
+#number_of_ordering_constraints_and_ordering
+7
+0 1
+1 2
+2 3
+3 4
+4 5
+5 6
+6 7
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m15_do_calibrate_splitted_1 57 4
+#variable_sorts
+4 0 3 15 
+#parameter_of_abstract_task
+0 1 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+4 0 1 2 3
+31 1 2 3
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m15_do_calibrate_splitted_8 64 3
+#variable_sorts
+4 15 0 
+#parameter_of_abstract_task
+0 2 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+46 0 1
+57 0 2 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m15_do_calibrate 55 2
+#variable_sorts
+4 0 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+30
+64 0 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m0_do_navigate1 46 2
+#variable_sorts
+4 15 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+13
+15 0 1
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m1_do_navigate1 46 3
+#variable_sorts
+4 15 15 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+4
+#subtasks_each_with_task_id_and_parameter_variables
+11 2
+47 0 2 1
+12 2
+16 0 2
+#number_of_ordering_constraints_and_ordering
+5
+3 0
+3 1
+3 2
+0 1
+1 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m2_do_navigate2 47 3
+#variable_sorts
+4 15 15 
+#parameter_of_abstract_task
+0 1 2 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+13
+17 0 2
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m3_do_navigate2 47 3
+#variable_sorts
+4 15 15 
+#parameter_of_abstract_task
+0 1 2 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+0 0 1 2
+18 0 1 2
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m4_do_navigate2 47 4
+#variable_sorts
+4 15 15 15 
+#parameter_of_abstract_task
+0 1 2 
+#number_of_subtasks
+5
+#subtasks_each_with_task_id_and_parameter_variables
+0 0 1 3
+11 3
+47 0 3 2
+12 3
+19 0 1 2 3
+#number_of_ordering_constraints_and_ordering
+7
+4 0
+4 1
+4 2
+4 3
+0 1
+1 2
+2 3
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m5_empty_store 48 2
+#variable_sorts
+14 4 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+13
+20 0
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m6_empty_store 48 2
+#variable_sorts
+14 4 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+3 1 0
+21 0
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m13_get_image_data_splitted_2 58 5
+#variable_sorts
+4 15 3 0 2 
+#parameter_of_abstract_task
+0 2 3 4 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+46 0 1
+5 0 1 2 3 4
+33 2 1
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+2 0
+2 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m13_get_image_data_splitted_9 65 4
+#variable_sorts
+4 0 2 3 
+#parameter_of_abstract_task
+0 2 3 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+55 0 1
+45 2 0 1
+58 0 3 1 2
+#number_of_ordering_constraints_and_ordering
+3
+0 2
+1 0
+1 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m13_get_image_data 53 3
+#variable_sorts
+3 2 4 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+54 2 0 1
+44 2
+65 2 1 0
+#number_of_ordering_constraints_and_ordering
+3
+1 0
+1 2
+2 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m10_get_rock_data_splitted_3 59 3
+#variable_sorts
+14 4 15 
+#parameter_of_abstract_task
+1 2 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+48 0 1
+2 1 0 2
+35 1 0
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+2 0
+2 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m10_get_rock_data 51 2
+#variable_sorts
+15 4 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+4
+#subtasks_each_with_task_id_and_parameter_variables
+46 1 0
+52 1 0
+34 1
+59 1 0
+#number_of_ordering_constraints_and_ordering
+5
+2 0
+2 1
+2 3
+0 3
+3 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m7_get_soil_data_splitted_4 60 3
+#variable_sorts
+14 4 15 
+#parameter_of_abstract_task
+1 2 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+48 0 1
+1 1 0 2
+37 1 0
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+2 0
+2 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m7_get_soil_data 49 2
+#variable_sorts
+15 4 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+4
+#subtasks_each_with_task_id_and_parameter_variables
+46 1 0
+50 1 0
+36 1
+60 1 0
+#number_of_ordering_constraints_and_ordering
+5
+2 0
+2 1
+2 3
+0 3
+3 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m14_send_image_data_splitted_5 61 6
+#variable_sorts
+4 1 3 2 15 15 
+#parameter_of_abstract_task
+0 1 2 3 4 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+10 0 1 2 3 4 5
+39 1 4 5
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m14_send_image_data_splitted_10 66 5
+#variable_sorts
+4 15 1 3 2 
+#parameter_of_abstract_task
+0 2 3 4 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+46 0 1
+61 0 2 3 4 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m14_send_image_data 54 4
+#variable_sorts
+4 3 2 1 
+#parameter_of_abstract_task
+0 1 2 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+38
+66 0 3 1 2
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m11_send_rock_data_splitted_6 62 5
+#variable_sorts
+4 1 15 15 15 
+#parameter_of_abstract_task
+0 1 2 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+8 0 1 2 3 4
+41 1 3 4
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m11_send_rock_data_splitted_11 67 4
+#variable_sorts
+4 15 1 15 
+#parameter_of_abstract_task
+0 2 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+46 0 1
+62 0 2 3 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m11_send_rock_data 52 3
+#variable_sorts
+4 15 1 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+40
+67 0 2 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m12_send_rock_data 52 4
+#variable_sorts
+4 15 1 15 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+9 0 2 1 3
+27 0 1 2 3
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m8_send_soil_data_splitted_7 63 5
+#variable_sorts
+4 1 15 15 15 
+#parameter_of_abstract_task
+0 1 2 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+6 0 1 2 3 4
+43 1 3 4
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m8_send_soil_data_splitted_12 68 4
+#variable_sorts
+4 15 1 15 
+#parameter_of_abstract_task
+0 2 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+46 0 1
+63 0 2 3 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m8_send_soil_data 50 3
+#variable_sorts
+4 15 1 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+42
+68 0 2 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m9_send_soil_data 50 4
+#variable_sorts
+4 15 1 15 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+7 0 2 1 3
+29 0 1 2 3
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#init_and_goal_facts
+550 8
+2 26 17
+2 17 26
+2 26 30
+2 30 26
+2 27 21
+2 21 27
+2 28 27
+2 27 28
+2 28 17
+2 17 28
+2 28 20
+2 20 28
+2 28 30
+2 30 28
+2 17 19
+2 19 17
+2 17 20
+2 20 17
+2 17 29
+2 29 17
+2 18 26
+2 26 18
+2 18 27
+2 27 18
+2 18 28
+2 28 18
+2 18 21
+2 21 18
+2 18 30
+2 30 18
+2 19 27
+2 27 19
+2 19 28
+2 28 19
+2 19 18
+2 18 19
+2 19 20
+2 20 19
+2 20 26
+2 26 20
+2 20 27
+2 27 20
+2 20 18
+2 18 20
+2 29 27
+2 27 29
+2 29 19
+2 19 29
+2 29 21
+2 21 29
+2 21 20
+2 20 21
+2 21 30
+2 30 21
+2 30 17
+2 17 30
+2 30 20
+2 20 30
+13 27
+10 17
+13 17
+10 18
+13 18
+13 19
+10 20
+13 21
+10 30
+22 5 29
+23 5
+1 13 27
+0 13
+5 22 13
+6 22
+9 13
+15 13
+3 13 27 28
+3 13 28 27
+3 13 27 18
+3 13 18 27
+3 13 27 20
+3 13 20 27
+3 13 27 21
+3 13 21 27
+3 13 28 17
+3 13 17 28
+3 13 18 26
+3 13 26 18
+3 13 18 19
+3 13 19 18
+3 13 18 30
+3 13 30 18
+3 13 21 29
+3 13 29 21
+1 14 18
+0 14
+5 23 14
+6 23
+9 14
+12 14
+15 14
+3 14 18 26
+3 14 26 18
+3 14 18 28
+3 14 28 18
+3 14 18 19
+3 14 19 18
+3 14 18 20
+3 14 20 18
+3 14 18 30
+3 14 30 18
+3 14 26 17
+3 14 17 26
+3 14 28 27
+3 14 27 28
+3 14 19 29
+3 14 29 19
+3 14 20 21
+3 14 21 20
+1 15 26
+0 15
+5 24 15
+6 24
+15 15
+3 15 26 17
+3 15 17 26
+3 15 26 18
+3 15 18 26
+3 15 26 20
+3 15 20 26
+3 15 26 30
+3 15 30 26
+3 15 17 28
+3 15 28 17
+3 15 18 27
+3 15 27 18
+3 15 18 19
+3 15 19 18
+3 15 18 21
+3 15 21 18
+1 16 28
+0 16
+5 25 16
+6 25
+15 16
+3 16 28 27
+3 16 27 28
+3 16 28 20
+3 16 20 28
+3 16 28 30
+3 16 30 28
+3 16 27 18
+3 16 18 27
+3 16 27 19
+3 16 19 27
+3 16 27 29
+3 16 29 27
+3 16 20 26
+3 16 26 20
+3 16 20 17
+3 16 17 20
+3 16 20 21
+3 16 21 20
+18 0 16
+16 0 11
+20 0 6
+20 0 8
+18 1 15
+16 1 12
+20 1 6
+18 2 14
+16 2 12
+20 2 8
+18 3 14
+16 3 9
+20 3 6
+20 3 8
+18 4 13
+16 4 12
+20 4 6
+20 4 8
+17 9 26
+17 9 27
+17 9 28
+17 9 17
+17 9 18
+17 9 19
+17 9 20
+17 10 26
+17 10 27
+17 10 28
+17 10 17
+17 10 18
+17 10 19
+17 10 20
+17 11 26
+17 11 27
+17 11 28
+17 11 17
+17 11 18
+17 11 19
+17 11 20
+17 11 29
+17 11 21
+17 12 26
+17 12 27
+17 12 28
+17 12 17
+17 12 18
+17 12 19
+17 12 20
+4 13 26 26
+4 13 26 27
+4 13 26 28
+4 13 26 17
+4 13 26 19
+4 13 26 20
+4 13 26 29
+4 13 26 21
+4 13 26 30
+4 13 27 26
+4 13 27 27
+4 13 27 17
+4 13 27 19
+4 13 27 29
+4 13 27 30
+4 13 28 26
+4 13 28 28
+4 13 28 18
+4 13 28 19
+4 13 28 20
+4 13 28 29
+4 13 28 21
+4 13 28 30
+4 13 17 26
+4 13 17 27
+4 13 17 17
+4 13 17 18
+4 13 17 19
+4 13 17 20
+4 13 17 29
+4 13 17 21
+4 13 17 30
+4 13 18 28
+4 13 18 17
+4 13 18 18
+4 13 18 20
+4 13 18 29
+4 13 18 21
+4 13 19 26
+4 13 19 27
+4 13 19 28
+4 13 19 17
+4 13 19 19
+4 13 19 20
+4 13 19 29
+4 13 19 21
+4 13 19 30
+4 13 20 26
+4 13 20 28
+4 13 20 17
+4 13 20 18
+4 13 20 19
+4 13 20 20
+4 13 20 29
+4 13 20 21
+4 13 20 30
+4 13 29 26
+4 13 29 27
+4 13 29 28
+4 13 29 17
+4 13 29 18
+4 13 29 19
+4 13 29 20
+4 13 29 29
+4 13 29 30
+4 13 21 26
+4 13 21 28
+4 13 21 17
+4 13 21 18
+4 13 21 19
+4 13 21 20
+4 13 21 21
+4 13 21 30
+4 13 30 26
+4 13 30 27
+4 13 30 28
+4 13 30 17
+4 13 30 19
+4 13 30 20
+4 13 30 29
+4 13 30 21
+4 13 30 30
+4 14 26 26
+4 14 26 27
+4 14 26 28
+4 14 26 19
+4 14 26 20
+4 14 26 29
+4 14 26 21
+4 14 26 30
+4 14 27 26
+4 14 27 27
+4 14 27 17
+4 14 27 18
+4 14 27 19
+4 14 27 20
+4 14 27 29
+4 14 27 21
+4 14 27 30
+4 14 28 26
+4 14 28 28
+4 14 28 17
+4 14 28 19
+4 14 28 20
+4 14 28 29
+4 14 28 21
+4 14 28 30
+4 14 17 27
+4 14 17 28
+4 14 17 17
+4 14 17 18
+4 14 17 19
+4 14 17 20
+4 14 17 29
+4 14 17 21
+4 14 17 30
+4 14 18 27
+4 14 18 17
+4 14 18 18
+4 14 18 29
+4 14 18 21
+4 14 19 26
+4 14 19 27
+4 14 19 28
+4 14 19 17
+4 14 19 19
+4 14 19 20
+4 14 19 21
+4 14 19 30
+4 14 20 26
+4 14 20 27
+4 14 20 28
+4 14 20 17
+4 14 20 19
+4 14 20 20
+4 14 20 29
+4 14 20 30
+4 14 29 26
+4 14 29 27
+4 14 29 28
+4 14 29 17
+4 14 29 18
+4 14 29 20
+4 14 29 29
+4 14 29 21
+4 14 29 30
+4 14 21 26
+4 14 21 27
+4 14 21 28
+4 14 21 17
+4 14 21 18
+4 14 21 19
+4 14 21 29
+4 14 21 21
+4 14 21 30
+4 14 30 26
+4 14 30 27
+4 14 30 28
+4 14 30 17
+4 14 30 19
+4 14 30 20
+4 14 30 29
+4 14 30 21
+4 14 30 30
+4 15 26 26
+4 15 26 27
+4 15 26 28
+4 15 26 19
+4 15 26 29
+4 15 26 21
+4 15 27 26
+4 15 27 27
+4 15 27 28
+4 15 27 17
+4 15 27 19
+4 15 27 20
+4 15 27 29
+4 15 27 21
+4 15 27 30
+4 15 28 26
+4 15 28 27
+4 15 28 28
+4 15 28 18
+4 15 28 19
+4 15 28 20
+4 15 28 29
+4 15 28 21
+4 15 28 30
+4 15 17 27
+4 15 17 17
+4 15 17 18
+4 15 17 19
+4 15 17 20
+4 15 17 29
+4 15 17 21
+4 15 17 30
+4 15 18 28
+4 15 18 17
+4 15 18 18
+4 15 18 20
+4 15 18 29
+4 15 18 30
+4 15 19 26
+4 15 19 27
+4 15 19 28
+4 15 19 17
+4 15 19 19
+4 15 19 20
+4 15 19 29
+4 15 19 21
+4 15 19 30
+4 15 20 27
+4 15 20 28
+4 15 20 17
+4 15 20 18
+4 15 20 19
+4 15 20 20
+4 15 20 29
+4 15 20 21
+4 15 20 30
+4 15 29 26
+4 15 29 27
+4 15 29 28
+4 15 29 17
+4 15 29 18
+4 15 29 19
+4 15 29 20
+4 15 29 29
+4 15 29 21
+4 15 29 30
+4 15 21 26
+4 15 21 27
+4 15 21 28
+4 15 21 17
+4 15 21 19
+4 15 21 20
+4 15 21 29
+4 15 21 21
+4 15 21 30
+4 15 30 27
+4 15 30 28
+4 15 30 17
+4 15 30 18
+4 15 30 19
+4 15 30 20
+4 15 30 29
+4 15 30 21
+4 15 30 30
+4 16 26 26
+4 16 26 27
+4 16 26 28
+4 16 26 17
+4 16 26 18
+4 16 26 19
+4 16 26 29
+4 16 26 21
+4 16 26 30
+4 16 27 26
+4 16 27 27
+4 16 27 17
+4 16 27 20
+4 16 27 21
+4 16 27 30
+4 16 28 26
+4 16 28 28
+4 16 28 17
+4 16 28 18
+4 16 28 19
+4 16 28 29
+4 16 28 21
+4 16 17 26
+4 16 17 27
+4 16 17 28
+4 16 17 17
+4 16 17 18
+4 16 17 19
+4 16 17 29
+4 16 17 21
+4 16 17 30
+4 16 18 26
+4 16 18 28
+4 16 18 17
+4 16 18 18
+4 16 18 19
+4 16 18 20
+4 16 18 29
+4 16 18 21
+4 16 18 30
+4 16 19 26
+4 16 19 28
+4 16 19 17
+4 16 19 18
+4 16 19 19
+4 16 19 20
+4 16 19 29
+4 16 19 21
+4 16 19 30
+4 16 20 27
+4 16 20 18
+4 16 20 19
+4 16 20 20
+4 16 20 29
+4 16 20 30
+4 16 29 26
+4 16 29 28
+4 16 29 17
+4 16 29 18
+4 16 29 19
+4 16 29 20
+4 16 29 29
+4 16 29 21
+4 16 29 30
+4 16 21 26
+4 16 21 27
+4 16 21 28
+4 16 21 17
+4 16 21 18
+4 16 21 19
+4 16 21 29
+4 16 21 21
+4 16 21 30
+4 16 30 26
+4 16 30 27
+4 16 30 17
+4 16 30 18
+4 16 30 19
+4 16 30 20
+4 16 30 29
+4 16 30 21
+4 16 30 30
+28 26
+28 27
+28 28
+28 17
+28 18
+28 19
+28 20
+28 29
+28 21
+28 30
+#end_init
+24 17
+24 20
+25 19
+25 18
+25 21
+26 9 6
+26 11 8
+26 9 8
+#end_goal
+#init_function_facts
+0
+#initial_task
+56

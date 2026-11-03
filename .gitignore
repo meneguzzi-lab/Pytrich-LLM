@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+
+# Grounded problems: regenerate with htn-benchmarks/ground_benchmarks.sh
+htn-benchmarks/sas-files/
+htn-benchmarks/panda-sas-files/
+
+# Experiment output
+JobArrays/TaskLists/
+JobArrays/outputs*/
+logs/
+Experiments/outputs/
+*.out
+*.err
+*.log
+*.plan
+
+# OS
+.DS_Store
+
+# Grounding output the planner writes next to the working directory
+*.psas
+*.sas
+
+# PANDA tools: built by PandaBuilds/build_panda.sh, never committed
+PandaBuilds/pandaPI*
+PandaBuilds/src/

@@ -1,0 +1,98 @@
+{
+    "domain_name": {
+        "description": "Domain"
+    },
+    "problem_name": {
+        "description": "Problem"
+    },
+    "experiment_name": {
+        "description": "Experiment Name"
+    },
+    "heuristic_name": {
+        "description": "Heuristic Name"
+    },
+    "heuristic_elapsed_time": {
+        "description": "Heuristic Elapsed Time"
+    },
+    "total_landmarks": {
+        "description": "Number of Total Landmarks"
+    },
+    "task_landmarks": {
+        "description": "Number of Task Landmarks"
+    },
+    "operator_landmarks": {
+        "description": "Number of Operator Landmarks"
+    },
+    "abtask_landmarks": {
+        "description": "Number of Abstract Task Landmarks"
+    },
+    "disj_landmarks": {
+        "description": "Number of Disjunctive Landmarks"
+    },
+    "fact_landmarks": {
+        "description": "Number of Fact Landmarks"
+    },
+    "method_landmarks": {
+        "description": "Number of Method Landmarks"
+    },
+    "fact_reactivations": {
+        "description": "Number of Fact Landmarks Reactivated"
+    },
+    "task_reactivations": {
+        "description": "Number of Task Landmarks Reactivated"
+    },
+    "nodes_expanded": {
+        "description": "Nodes Expanded"
+    },
+    "search_elapsed_time": {
+        "description": "Search Time (seconds)",
+        "type": "float",
+        "precision": 4
+    },
+    "final_fringe": {
+        "description": "Final Fringe Contains"
+    },
+    "tor_elapsed_time": {
+        "description": "Total-Order Reachability Elapsed Time (seconds)",
+        "type": "float",
+        "precision": 4
+    },
+    "mincov_disj_landmarks": {
+        "description": "Number of Min-Cov Disjunctions Landmarks"
+    },
+    "mincov_disj_elapsed_time": {
+        "description": "Elapsed Time for Disjunctions (seconds)"
+    },
+    "solution_size": {
+        "description": "Solution Size"
+    },
+    "fringe_size": {
+        "description": "Fringe size"
+    },
+    "nodes_per_second": {
+        "description": "Nodes per Second",
+        "type": "float",
+        "precision": 2
+    },
+    "search_status": {
+        "description": "Search Status"        
+    },
+    "fact_model": {
+        "description": "Number of Facts"
+    },
+    "abstract_task_model": {
+        "description": "Number of Abstract Tasks"
+    },
+    "operator_model": {
+        "description": "Number of Operators"
+    },
+    "decomposition_model": {
+        "description": "Number of Decompositions"
+    },
+    "novelty_type":{
+        "descripton": "Novelty Type"
+    },
+    "plan_file": {
+        "description": "Plan File"
+    }
+}

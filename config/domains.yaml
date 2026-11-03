@@ -1,0 +1,109 @@
+# Domain configurations for the generic heuristic generator
+# Each domain specifies its folder name, instance file patterns, and optional example heuristic
+
+domains:
+  towers:
+    name: "Towers"
+    file_prefix: "towers"
+    folder: "Towers"
+    domain_file: "domain.hddl"
+    smallest_instance: "pfile_01.hddl"
+    largest_instance: "pfile_20.hddl"
+    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/towers_heuristic_example.py"
+    hints: |
+      - Exact optimal cost for 3-peg Hanoi from any state is computable: 2^k - 1 for largest displaced ring k
+      - Process rings largest-to-smallest to avoid O(n^2) tower-tracing; build a peg-assignment array in O(n) during initialize()
+      - Memoize by state (bitwise int) — many decomposition paths reach the same state
+      - The heuristic example provided for this domain already demonstrates the optimal approach
+
+  barman:
+    name: "Barman_BDI"
+    file_prefix: "barman"
+    folder: "Barman-BDI"
+    domain_file: "domain.hddl"
+    smallest_instance: "pfile01.hddl"
+    largest_instance: "pfile20.hddl"
+    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/barman_heuristic_example.py"
+    hints: |
+      - BOTTLENECK: Parameter-binding symmetry. AchieveContainsShakerIngredient chooses which shot to use — all N shots are interchangeable, creating N-way branching per ingredient transfer (~N^(2K) for K cocktails)
+      - GROUNDING WARNING: In grounded operator names, the SHOT argument is at args[0], NOT args[1] as HDDL parameter order suggests. Always verify by examining grounded fact/operator names
+      - Goal-shot penalty: Penalize using goal shots (shots that appear in goal facts) as intermediaries. Penalty must be VERY large (~500/task) — small penalties (15-30) have zero effect because they are washed out by total h
+      - Working-shot ordering: Assign increasing penalties (0, 100, 200...) to break symmetry among identical working shots. STEP=100 >> STEP=50
+      - Hand preference: Penalize non-preferred hand (50/task) to halve branching
+      - Combined symmetry-breaking reduced pfile10 from 2.3M nodes (timeout) to 25K nodes (0.2s)
+
+  blocksworld:
+    name: "Blocksworld_GTOHP"
+    file_prefix: "blocksworld"
+    folder: "Blocksworld-GTOHP"
+    domain_file: "domain.hddl"
+    smallest_instance: "p01.hddl"
+    largest_instance: "p30.hddl"
+    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/blocksworld_heuristic_example.py"
+    hints: |
+      - BOTTLENECK: Stack clearing — to move a buried block, all blocks above must be unstacked first
+      - Key cost formulas: do_put_on(x,y) non-trivial = clear_cost(x) + clear_cost(y) + 3; clear_cost with stack height h = 1 + 2*h
+      - CRITICAL: Goal-stability / false-trivial detection. on(x,y) currently true but y is "unstable" (will be moved for another goal) means this goal is NOT free — it costs 5+. This single insight reduced p10 from 2.37M nodes to 5,813
+      - Nop actions and real (primitive) actions are completely disjoint in this domain, so you can SAFELY SUM admissible bounds on nop count and real action count (they never overlap)
+      - Multi-component max of 3 terms (nop+displacement, per-task recursive cost using stack heights, first-task exact cost) works best
+
+  depots:
+    name: "Depots"
+    file_prefix: "depot"
+    folder: "Depots"
+    domain_file: "domain.hddl"
+    smallest_instance: "p01.hddl"
+    largest_instance: "p30.hddl"
+    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/depots_heuristic_example.py"
+    hints: |
+      - GROUNDING WARNING: PANDA's grounder strips static facts like (place pallet0 depot0). To recover location info, parse grounded operator names: Drop[hoist0,crate1,pallet0,depot0] reveals pallet0 is at depot0
+      - GROUNDING WARNING: Method preconditions are compiled into __method_precondition_* operators, NOT stored in decomposition.pos_precons. Check for operators whose name starts with "__method_precondition" when analyzing decompositions
+      - Nop detection is non-trivial: "effectively nop" decompositions (all operators are effect-free) != single nop operator. Must check for effect-free operator chains
+      - Balanced additive combination max(goal_h, tn_h) + min(goal_h, tn_h)//2 works but can lose coverage on large instances; max() alone is safer
+      - Nop bonus: when a task's nop preconditions are NOT met (meaning the expensive path is required), add +2 to its cost
+
+  robot:
+    name: "Robot"
+    file_prefix: "robot"
+    folder: "Robot"
+    domain_file: "domain.hddl"
+    smallest_instance: "pfile_01_001.hddl"
+    largest_instance: "pfile_50_100.hddl"
+    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/robot_heuristic_example.py"
+    hints: |
+      - BOTTLENECK: Single-carry constraint — robot holds exactly one package at a time. Each delivery is a round-trip (go to package, pickup, go to goal, putdown)
+      - Inter-delivery travel bound: with P undelivered packages, the robot must make at least P pickup+putdown pairs (2P actions) PLUS navigate between them. Sum of min outgoing edges in the delivery graph minus max edge gives a Hamiltonian path lower bound
+      - Doors are one-way-open (once opened, stays open forever). Pre-compute all-pairs shortest paths ignoring door state, then add +1 per closed door on the direct connection as a correction
+      - Star topology: room "c" (corridor) connects to many rooms — pre-compute BFS distances from corridor hub
+      - For large instances (50+ packages), keep __call__ to O(P) not O(P^2) — Python overhead matters at 40K+ nodes/second
+
+  rover:
+    name: "Rover_GTOHP"
+    file_prefix: "rover"
+    folder: "Rover-GTOHP"
+    domain_file: "domain.hddl"
+    smallest_instance: "p01.hddl"
+    largest_instance: "p30.hddl"
+    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/rover_heuristic_example.py"
+    hints: |
+      - GROUNDING WARNING: PANDA's grounder STRIPS static facts (can_traverse, visible, at_lander, store_of, equipped_for_*). You CANNOT read rover capabilities from the state. Instead, extract static info from grounded operator names: navigate[rover0,wp1,wp2] tells you rover0 can traverse wp1→wp2
+      - TDG's weakness: it assumes minimum decomposition cost (rover already at target = nop). Your heuristic should compute ACTUAL navigation distance when rover is NOT at target: cost = 3*d + 1 per hop (visit + navigate + unvisit + action)
+      - For 2+ packages: use Hamiltonian path lower bound on inter-delivery travel (sum of min outgoing edges - max edge)
+      - Pre-compute rover navigation graph and all-pairs distances in initialize(). Do NOT pre-select "best" waypoints — that depends on runtime rover position
+      - Keep __call__ to O(goals) not O(goals * rovers). O(1) single-rover check per goal beats O(goals*rovers) iteration (14-24x slower, causes timeout)
+
+  # Lamps (IPC 2023) has no hint block, and its worked example is the Towers one.
+  # Its problem files are .pddl.
+  lamps:
+    name: "Lamps"
+    file_prefix: "lamps"
+    folder: "Lamps"
+    domain_file: "domain.hddl"
+    smallest_instance: "pfile01.pddl"
+    largest_instance: "pfile30.pddl"
+    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/towers_heuristic_example.py"
+
+defaults:
+  benchmark_base: "htn-benchmarks/total-order"
+  output_base: "Pytrich/Heuristics/GeneratedHeuristics"
+  fallback_example: "Pytrich/Heuristics/GeneratedExamples/towers_heuristic_example.py"

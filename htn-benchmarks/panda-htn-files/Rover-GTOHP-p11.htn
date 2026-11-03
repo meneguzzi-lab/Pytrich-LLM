@@ -1,0 +1,9986 @@
+#number_constants_number_sorts
+68 23
+#constants
+camera0
+camera1
+camera2
+camera3
+camera4
+camera5
+camera6
+camera7
+camera8
+general
+colour
+high_res
+low_res
+objective0
+objective1
+objective2
+objective3
+objective4
+objective5
+objective6
+objective7
+rover0
+rover1
+rover2
+rover3
+rover4
+rover5
+waypoint0
+waypoint12
+waypoint14
+waypoint16
+waypoint18
+waypoint23
+waypoint24
+waypoint33
+waypoint34
+waypoint6
+waypoint9
+rover0store
+rover1store
+rover2store
+rover3store
+rover4store
+rover5store
+waypoint1
+waypoint10
+waypoint11
+waypoint13
+waypoint15
+waypoint17
+waypoint19
+waypoint2
+waypoint20
+waypoint21
+waypoint22
+waypoint25
+waypoint26
+waypoint27
+waypoint28
+waypoint29
+waypoint3
+waypoint30
+waypoint31
+waypoint32
+waypoint4
+waypoint5
+waypoint7
+waypoint8
+#end_constants
+#sorts_each_with_number_of_members_and_members
+camera 9 0 1 2 3 4 5 6 7 8
+lander 1 9
+mode 3 10 11 12
+objective 8 13 14 15 16 17 18 19 20
+rover 6 21 22 23 24 25 26
+sort_for_colour 1 10
+sort_for_high_res 1 11
+sort_for_objective3 1 16
+sort_for_objective4 1 17
+sort_for_objective7 1 20
+sort_for_waypoint0 1 27
+sort_for_waypoint12 1 28
+sort_for_waypoint14 1 29
+sort_for_waypoint16 1 30
+sort_for_waypoint18 1 31
+sort_for_waypoint23 1 32
+sort_for_waypoint24 1 33
+sort_for_waypoint33 1 34
+sort_for_waypoint34 1 35
+sort_for_waypoint6 1 36
+sort_for_waypoint9 1 37
+store 6 38 39 40 41 42 43
+waypoint 35 27 44 45 46 28 47 29 48 30 49 31 50 51 52 53 54 32 33 55 56 57 58 59 60 61 62 63 34 35 64 65 36 66 67 37
+#end_sorts
+#number_of_predicates
+29
+#predicates_each_with_number_of_arguments_and_argument_sorts
++available 1 4
++at 2 4 22
++visible 2 22 22
++can_traverse 3 4 22 22
+-can_traverse 3 4 22 22
++store_of 2 21 4
++empty 1 21
+-empty 1 21
++full 1 21
++equipped_for_soil_analysis 1 4
++at_soil_sample 1 22
++have_soil_analysis 2 4 22
++equipped_for_rock_analysis 1 4
++at_rock_sample 1 22
++have_rock_analysis 2 4 22
++equipped_for_imaging 1 4
++calibration_target 2 0 3
++visible_from 2 3 22
++on_board 2 0 4
++calibrated 2 0 4
++supports 2 0 2
++have_image 3 4 3 2
++at_lander 2 1 22
++channel_free 1 1
++communicated_soil_data 1 22
++communicated_rock_data 1 22
++communicated_image_data 2 3 2
++visited 1 22
+-visited 1 22
+#end_predicates
+#begin_predicate_mutexes
+3
+3 4
+6 7
+27 28
+#end_predicate_mutexes
+#number_of_functions
+0
+#function_declarations_with_number_of_arguments_and_argument_sorts
+#number_primitive_tasks_and_number_abstract_tasks
+46 23
+#begin_task_name_number_of_original_variables_and_number_of_variables
+navigate 3 3
+#sorts_of_variables
+4 22 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+0 0
+1 0 1
+3 0 1 2
+2 1 2
+#add_each_predicate_and_argument_variables
+1
+1 0 2
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+1
+1 0 1
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+sample_soil 3 3
+#sorts_of_variables
+4 21 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+5
+1 0 2
+10 2
+9 0
+5 1 0
+6 1
+#add_each_predicate_and_argument_variables
+3
+7 1
+8 1
+11 0 2
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+2
+6 1
+10 2
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+sample_rock 3 3
+#sorts_of_variables
+4 21 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+5
+1 0 2
+13 2
+12 0
+5 1 0
+6 1
+#add_each_predicate_and_argument_variables
+3
+7 1
+8 1
+14 0 2
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+2
+6 1
+13 2
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+drop 2 2
+#sorts_of_variables
+4 21 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+5 1 0
+8 1
+#add_each_predicate_and_argument_variables
+1
+6 1
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+2
+8 1
+7 1
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+calibrate 4 4
+#sorts_of_variables
+4 0 3 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+5
+15 0
+16 1 2
+1 0 3
+17 2 3
+18 1 0
+#add_each_predicate_and_argument_variables
+1
+19 1 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+take_image 5 5
+#sorts_of_variables
+4 22 3 0 2 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+6
+19 3 0
+18 3 0
+15 0
+20 3 4
+1 0 1
+17 2 1
+#add_each_predicate_and_argument_variables
+1
+21 0 2 4
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+1
+19 3 0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+communicate_soil_data1 5 5
+#sorts_of_variables
+4 1 22 22 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+6
+1 0 3
+22 1 4
+11 0 2
+2 3 4
+0 0
+23 1
+#add_each_predicate_and_argument_variables
+2
+24 2
+0 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+communicate_soil_data2 4 4
+#sorts_of_variables
+4 1 22 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+6
+1 0 2
+22 1 3
+11 0 2
+2 2 3
+0 0
+23 1
+#add_each_predicate_and_argument_variables
+2
+24 2
+0 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+communicate_rock_data1 5 5
+#sorts_of_variables
+4 1 22 22 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+6
+1 0 3
+22 1 4
+14 0 2
+2 3 4
+0 0
+23 1
+#add_each_predicate_and_argument_variables
+2
+25 2
+0 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+communicate_rock_data2 4 4
+#sorts_of_variables
+4 1 22 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+6
+1 0 2
+22 1 3
+14 0 2
+2 2 3
+0 0
+23 1
+#add_each_predicate_and_argument_variables
+2
+25 2
+0 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+communicate_image_data 6 6
+#sorts_of_variables
+4 1 3 2 22 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+6
+1 0 4
+22 1 5
+21 0 2 3
+2 4 5
+0 0
+23 1
+#add_each_predicate_and_argument_variables
+3
+26 2 3
+0 0
+23 1
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+visit 1 1
+#sorts_of_variables
+22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+1
+27 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+1
+28 0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+unvisit 1 1
+#sorts_of_variables
+22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+27 0
+#add_each_predicate_and_argument_variables
+1
+28 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+1
+27 0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+nop 0 0
+#sorts_of_variables
+
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m15_do_calibrate 3 3
+#sorts_of_variables
+0 3 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+16 0 1
+17 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m0_do_navigate1 2 2
+#sorts_of_variables
+4 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m1_do_navigate1 2 2
+#sorts_of_variables
+4 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m2_do_navigate2 2 2
+#sorts_of_variables
+4 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m3_do_navigate2 3 3
+#sorts_of_variables
+4 22 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+3 0 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m4_do_navigate2 4 4
+#sorts_of_variables
+4 22 22 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+4 0 1 2
+28 3
+3 0 1 3
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m5_empty_store 1 1
+#sorts_of_variables
+21 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+6 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m6_empty_store 1 1
+#sorts_of_variables
+21 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+7 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m13_get_image_data 5 5
+#sorts_of_variables
+3 2 4 0 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+15 2
+18 3 2
+20 3 1
+17 0 4
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m10_get_rock_data 2 2
+#sorts_of_variables
+4 21 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+5 1 0
+12 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m7_get_soil_data 2 2
+#sorts_of_variables
+4 21 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+5 1 0
+9 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m14_send_image_data 3 3
+#sorts_of_variables
+1 22 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+22 0 2
+2 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m11_send_rock_data 3 3
+#sorts_of_variables
+1 22 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+22 0 2
+2 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m12_send_rock_data 4 4
+#sorts_of_variables
+4 22 1 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+22 2 3
+2 1 3
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m8_send_soil_data 3 3
+#sorts_of_variables
+1 22 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+22 0 2
+2 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m9_send_soil_data 4 4
+#sorts_of_variables
+4 22 1 22 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+22 2 3
+2 1 3
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m15_do_calibrate_base 0 0
+#sorts_of_variables
+
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m15_do_calibrate_split 3 3
+#sorts_of_variables
+0 3 22 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+16 0 1
+17 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m13_get_image_data_base 3 3
+#sorts_of_variables
+2 4 0 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+15 1
+18 2 1
+20 2 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m13_get_image_data_split 2 2
+#sorts_of_variables
+3 22 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+17 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m10_get_rock_data_base 1 1
+#sorts_of_variables
+4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+12 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m10_get_rock_data_split 2 2
+#sorts_of_variables
+4 21 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+5 1 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m7_get_soil_data_base 1 1
+#sorts_of_variables
+4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+9 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m7_get_soil_data_split 2 2
+#sorts_of_variables
+4 21 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+5 1 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m14_send_image_data_base 0 0
+#sorts_of_variables
+
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m14_send_image_data_split 3 3
+#sorts_of_variables
+1 22 22 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+22 0 2
+2 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m11_send_rock_data_base 0 0
+#sorts_of_variables
+
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m11_send_rock_data_split 3 3
+#sorts_of_variables
+1 22 22 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+22 0 2
+2 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m8_send_soil_data_base 0 0
+#sorts_of_variables
+
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m8_send_soil_data_split 3 3
+#sorts_of_variables
+1 22 22 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+22 0 2
+2 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m13_get_image_data_base_base 1 1
+#sorts_of_variables
+4 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+15 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m13_get_image_data_base_split 3 3
+#sorts_of_variables
+2 4 0 
+#end_variables
+#number_of_cost_statements
+0
+#begin_cost_statements
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+18 2 1
+20 2 0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+do_navigate1 2 2
+#sorts_of_variables
+4 22 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+do_navigate2 3 3
+#sorts_of_variables
+4 22 22 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+empty_store 2 2
+#sorts_of_variables
+21 4 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+get_soil_data 1 1
+#sorts_of_variables
+22 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+send_soil_data 2 2
+#sorts_of_variables
+4 22 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+get_rock_data 1 1
+#sorts_of_variables
+22 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+send_rock_data 2 2
+#sorts_of_variables
+4 22 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+get_image_data 2 2
+#sorts_of_variables
+3 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+send_image_data 3 3
+#sorts_of_variables
+4 3 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+do_calibrate 2 2
+#sorts_of_variables
+4 0 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__top 0 0
+#sorts_of_variables
+
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m15_do_calibrate_splitted_1 3 3
+#sorts_of_variables
+4 0 22 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m13_get_image_data_splitted_2 4 4
+#sorts_of_variables
+4 3 0 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m10_get_rock_data_splitted_3 2 2
+#sorts_of_variables
+4 22 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m7_get_soil_data_splitted_4 2 2
+#sorts_of_variables
+4 22 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m14_send_image_data_splitted_5 5 5
+#sorts_of_variables
+4 1 3 2 22 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m11_send_rock_data_splitted_6 4 4
+#sorts_of_variables
+4 1 22 22 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m8_send_soil_data_splitted_7 4 4
+#sorts_of_variables
+4 1 22 22 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m15_do_calibrate_splitted_8 2 2
+#sorts_of_variables
+4 0 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m13_get_image_data_splitted_9 3 3
+#sorts_of_variables
+4 2 3 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m14_send_image_data_splitted_10 4 4
+#sorts_of_variables
+4 1 3 2 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m11_send_rock_data_splitted_11 3 3
+#sorts_of_variables
+4 1 22 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m8_send_soil_data_splitted_12 3 3
+#sorts_of_variables
+4 1 22 
+#end_variables
+#end_of_task
+#number_of_methods
+29
+#begin_method_name_abstract_task_number_of_variables
+__top_method 56 17
+#variable_sorts
+15 10 12 18 14 13 11 19 16 17 20 6 8 6 7 5 9 
+#parameter_of_abstract_task
+
+#number_of_subtasks
+14
+#subtasks_each_with_task_id_and_parameter_variables
+49 0
+49 1
+49 2
+49 3
+49 4
+49 5
+49 6
+49 7
+51 8
+51 9
+51 10
+53 12 11
+53 14 13
+53 16 15
+#number_of_ordering_constraints_and_ordering
+13
+0 1
+1 2
+2 3
+3 4
+4 5
+5 6
+6 7
+7 8
+8 9
+9 10
+10 11
+11 12
+12 13
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m15_do_calibrate_splitted_1 57 4
+#variable_sorts
+4 0 3 22 
+#parameter_of_abstract_task
+0 1 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+4 0 1 2 3
+31 1 2 3
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m15_do_calibrate_splitted_8 64 3
+#variable_sorts
+4 22 0 
+#parameter_of_abstract_task
+0 2 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+46 0 1
+57 0 2 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m15_do_calibrate 55 2
+#variable_sorts
+4 0 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+30
+64 0 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m0_do_navigate1 46 2
+#variable_sorts
+4 22 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+13
+15 0 1
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m1_do_navigate1 46 3
+#variable_sorts
+4 22 22 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+4
+#subtasks_each_with_task_id_and_parameter_variables
+11 2
+47 0 2 1
+12 2
+16 0 2
+#number_of_ordering_constraints_and_ordering
+5
+3 0
+3 1
+3 2
+0 1
+1 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m2_do_navigate2 47 3
+#variable_sorts
+4 22 22 
+#parameter_of_abstract_task
+0 1 2 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+13
+17 0 2
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m3_do_navigate2 47 3
+#variable_sorts
+4 22 22 
+#parameter_of_abstract_task
+0 1 2 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+0 0 1 2
+18 0 1 2
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m4_do_navigate2 47 4
+#variable_sorts
+4 22 22 22 
+#parameter_of_abstract_task
+0 1 2 
+#number_of_subtasks
+5
+#subtasks_each_with_task_id_and_parameter_variables
+0 0 1 3
+11 3
+47 0 3 2
+12 3
+19 0 1 2 3
+#number_of_ordering_constraints_and_ordering
+7
+4 0
+4 1
+4 2
+4 3
+0 1
+1 2
+2 3
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m5_empty_store 48 2
+#variable_sorts
+21 4 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+13
+20 0
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m6_empty_store 48 2
+#variable_sorts
+21 4 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+3 1 0
+21 0
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m13_get_image_data_splitted_2 58 5
+#variable_sorts
+4 22 3 0 2 
+#parameter_of_abstract_task
+0 2 3 4 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+46 0 1
+5 0 1 2 3 4
+33 2 1
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+2 0
+2 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m13_get_image_data_splitted_9 65 4
+#variable_sorts
+4 0 2 3 
+#parameter_of_abstract_task
+0 2 3 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+55 0 1
+45 2 0 1
+58 0 3 1 2
+#number_of_ordering_constraints_and_ordering
+3
+0 2
+1 0
+1 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m13_get_image_data 53 3
+#variable_sorts
+3 2 4 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+54 2 0 1
+44 2
+65 2 1 0
+#number_of_ordering_constraints_and_ordering
+3
+1 0
+1 2
+2 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m10_get_rock_data_splitted_3 59 3
+#variable_sorts
+21 4 22 
+#parameter_of_abstract_task
+1 2 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+48 0 1
+2 1 0 2
+35 1 0
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+2 0
+2 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m10_get_rock_data 51 2
+#variable_sorts
+22 4 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+4
+#subtasks_each_with_task_id_and_parameter_variables
+46 1 0
+52 1 0
+34 1
+59 1 0
+#number_of_ordering_constraints_and_ordering
+5
+2 0
+2 1
+2 3
+0 3
+3 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m7_get_soil_data_splitted_4 60 3
+#variable_sorts
+21 4 22 
+#parameter_of_abstract_task
+1 2 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+48 0 1
+1 1 0 2
+37 1 0
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+2 0
+2 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m7_get_soil_data 49 2
+#variable_sorts
+22 4 
+#parameter_of_abstract_task
+0 
+#number_of_subtasks
+4
+#subtasks_each_with_task_id_and_parameter_variables
+46 1 0
+50 1 0
+36 1
+60 1 0
+#number_of_ordering_constraints_and_ordering
+5
+2 0
+2 1
+2 3
+0 3
+3 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m14_send_image_data_splitted_5 61 6
+#variable_sorts
+4 1 3 2 22 22 
+#parameter_of_abstract_task
+0 1 2 3 4 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+10 0 1 2 3 4 5
+39 1 4 5
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m14_send_image_data_splitted_10 66 5
+#variable_sorts
+4 22 1 3 2 
+#parameter_of_abstract_task
+0 2 3 4 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+46 0 1
+61 0 2 3 4 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m14_send_image_data 54 4
+#variable_sorts
+4 3 2 1 
+#parameter_of_abstract_task
+0 1 2 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+38
+66 0 3 1 2
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m11_send_rock_data_splitted_6 62 5
+#variable_sorts
+4 1 22 22 22 
+#parameter_of_abstract_task
+0 1 2 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+8 0 1 2 3 4
+41 1 3 4
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m11_send_rock_data_splitted_11 67 4
+#variable_sorts
+4 22 1 22 
+#parameter_of_abstract_task
+0 2 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+46 0 1
+62 0 2 3 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m11_send_rock_data 52 3
+#variable_sorts
+4 22 1 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+40
+67 0 2 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m12_send_rock_data 52 4
+#variable_sorts
+4 22 1 22 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+9 0 2 1 3
+27 0 1 2 3
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m8_send_soil_data_splitted_7 63 5
+#variable_sorts
+4 1 22 22 22 
+#parameter_of_abstract_task
+0 1 2 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+6 0 1 2 3 4
+43 1 3 4
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m8_send_soil_data_splitted_12 68 4
+#variable_sorts
+4 22 1 22 
+#parameter_of_abstract_task
+0 2 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+46 0 1
+63 0 2 3 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m8_send_soil_data 50 3
+#variable_sorts
+4 22 1 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+42
+68 0 2 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m9_send_soil_data 50 4
+#variable_sorts
+4 22 1 22 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+7 0 2 1 3
+29 0 1 2 3
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#init_and_goal_facts
+7941 14
+2 27 44
+2 44 27
+2 27 36
+2 36 27
+2 27 45
+2 45 27
+2 27 32
+2 32 27
+2 27 59
+2 59 27
+2 27 62
+2 62 27
+2 44 36
+2 36 44
+2 44 66
+2 66 44
+2 44 49
+2 49 44
+2 44 54
+2 54 44
+2 51 27
+2 27 51
+2 51 49
+2 49 51
+2 51 50
+2 50 51
+2 51 59
+2 59 51
+2 51 61
+2 61 51
+2 60 37
+2 37 60
+2 60 32
+2 32 60
+2 60 57
+2 57 60
+2 64 65
+2 65 64
+2 64 47
+2 47 64
+2 64 57
+2 57 64
+2 64 61
+2 61 64
+2 65 45
+2 45 65
+2 65 33
+2 33 65
+2 65 62
+2 62 65
+2 65 63
+2 63 65
+2 36 65
+2 65 36
+2 36 66
+2 66 36
+2 36 67
+2 67 36
+2 36 49
+2 49 36
+2 36 54
+2 54 36
+2 36 55
+2 55 36
+2 36 57
+2 57 36
+2 66 65
+2 65 66
+2 66 47
+2 47 66
+2 66 30
+2 30 66
+2 66 31
+2 31 66
+2 66 33
+2 33 66
+2 66 55
+2 55 66
+2 67 66
+2 66 67
+2 67 57
+2 57 67
+2 67 61
+2 61 67
+2 67 62
+2 62 67
+2 37 46
+2 46 37
+2 37 28
+2 28 37
+2 37 62
+2 62 37
+2 45 67
+2 67 45
+2 45 55
+2 55 45
+2 45 35
+2 35 45
+2 46 47
+2 47 46
+2 46 49
+2 49 46
+2 46 58
+2 58 46
+2 46 34
+2 34 46
+2 28 65
+2 65 28
+2 28 67
+2 67 28
+2 28 45
+2 45 28
+2 28 30
+2 30 28
+2 28 53
+2 53 28
+2 28 34
+2 34 28
+2 47 51
+2 51 47
+2 47 48
+2 48 47
+2 47 30
+2 30 47
+2 47 49
+2 49 47
+2 47 32
+2 32 47
+2 29 64
+2 64 29
+2 29 55
+2 55 29
+2 29 63
+2 63 29
+2 48 64
+2 64 48
+2 48 36
+2 36 48
+2 48 45
+2 45 48
+2 48 53
+2 53 48
+2 48 61
+2 61 48
+2 48 63
+2 63 48
+2 30 27
+2 27 30
+2 30 32
+2 32 30
+2 30 34
+2 34 30
+2 49 60
+2 60 49
+2 49 65
+2 65 49
+2 49 37
+2 37 49
+2 49 53
+2 53 49
+2 31 56
+2 56 31
+2 31 61
+2 61 31
+2 31 34
+2 34 31
+2 50 44
+2 44 50
+2 50 45
+2 45 50
+2 50 48
+2 48 50
+2 50 58
+2 58 50
+2 50 34
+2 34 50
+2 52 44
+2 44 52
+2 52 45
+2 45 52
+2 52 28
+2 28 52
+2 52 31
+2 31 52
+2 52 56
+2 56 52
+2 52 62
+2 62 52
+2 53 64
+2 64 53
+2 53 52
+2 52 53
+2 53 58
+2 58 53
+2 54 60
+2 60 54
+2 54 55
+2 55 54
+2 54 34
+2 34 54
+2 32 51
+2 51 32
+2 32 66
+2 66 32
+2 32 45
+2 45 32
+2 32 29
+2 29 32
+2 32 61
+2 61 32
+2 32 63
+2 63 32
+2 33 60
+2 60 33
+2 33 31
+2 31 33
+2 33 54
+2 54 33
+2 55 27
+2 27 55
+2 55 60
+2 60 55
+2 55 37
+2 37 55
+2 55 46
+2 46 55
+2 55 30
+2 30 55
+2 55 33
+2 33 55
+2 55 34
+2 34 55
+2 56 44
+2 44 56
+2 56 54
+2 54 56
+2 56 35
+2 35 56
+2 57 46
+2 46 57
+2 57 29
+2 29 57
+2 57 52
+2 52 57
+2 57 53
+2 53 57
+2 58 44
+2 44 58
+2 58 29
+2 29 58
+2 59 33
+2 33 59
+2 59 58
+2 58 59
+2 61 60
+2 60 61
+2 61 49
+2 49 61
+2 61 53
+2 53 61
+2 61 33
+2 33 61
+2 61 57
+2 57 61
+2 62 51
+2 51 62
+2 62 47
+2 47 62
+2 62 29
+2 29 62
+2 62 57
+2 57 62
+2 63 60
+2 60 63
+2 63 64
+2 64 63
+2 63 67
+2 67 63
+2 63 45
+2 45 63
+2 63 46
+2 46 63
+2 63 47
+2 47 63
+2 63 53
+2 53 63
+2 63 55
+2 55 63
+2 63 35
+2 35 63
+2 34 35
+2 35 34
+2 35 47
+2 47 35
+2 35 50
+2 50 35
+2 35 55
+2 55 35
+2 35 61
+2 61 35
+10 27
+13 27
+10 65
+10 36
+13 36
+10 66
+13 66
+10 67
+13 67
+13 37
+10 45
+13 46
+10 28
+13 47
+10 29
+10 48
+13 48
+10 30
+13 30
+10 31
+10 50
+13 52
+10 54
+10 32
+13 33
+10 55
+10 56
+10 57
+13 57
+13 58
+10 59
+13 61
+13 34
+10 35
+13 35
+22 9 62
+23 9
+1 21 37
+0 21
+5 38 21
+6 38
+9 21
+15 21
+3 21 37 60
+3 21 60 37
+3 21 37 46
+3 21 46 37
+3 21 37 55
+3 21 55 37
+3 21 60 49
+3 21 49 60
+3 21 60 57
+3 21 57 60
+3 21 60 61
+3 21 61 60
+3 21 60 63
+3 21 63 60
+3 21 46 47
+3 21 47 46
+3 21 46 34
+3 21 34 46
+3 21 55 27
+3 21 27 55
+3 21 55 36
+3 21 36 55
+3 21 55 45
+3 21 45 55
+3 21 55 29
+3 21 29 55
+3 21 55 30
+3 21 30 55
+3 21 55 33
+3 21 33 55
+3 21 49 44
+3 21 44 49
+3 21 49 65
+3 21 65 49
+3 21 49 53
+3 21 53 49
+3 21 57 64
+3 21 64 57
+3 21 57 52
+3 21 52 57
+3 21 57 62
+3 21 62 57
+3 21 61 51
+3 21 51 61
+3 21 61 67
+3 21 67 61
+3 21 61 48
+3 21 48 61
+3 21 61 31
+3 21 31 61
+3 21 61 32
+3 21 32 61
+3 21 61 35
+3 21 35 61
+3 21 47 66
+3 21 66 47
+3 21 34 28
+3 21 28 34
+3 21 34 50
+3 21 50 34
+3 21 34 54
+3 21 54 34
+3 21 27 59
+3 21 59 27
+3 21 29 58
+3 21 58 29
+3 21 44 56
+3 21 56 44
+1 22 52
+0 22
+5 39 22
+6 39
+9 22
+15 22
+3 22 52 44
+3 22 44 52
+3 22 52 45
+3 22 45 52
+3 22 52 28
+3 22 28 52
+3 22 52 31
+3 22 31 52
+3 22 52 56
+3 22 56 52
+3 22 52 57
+3 22 57 52
+3 22 52 62
+3 22 62 52
+3 22 44 27
+3 22 27 44
+3 22 44 54
+3 22 54 44
+3 22 44 58
+3 22 58 44
+3 22 45 65
+3 22 65 45
+3 22 45 67
+3 22 67 45
+3 22 45 48
+3 22 48 45
+3 22 45 50
+3 22 50 45
+3 22 45 55
+3 22 55 45
+3 22 45 63
+3 22 63 45
+3 22 28 37
+3 22 37 28
+3 22 28 30
+3 22 30 28
+3 22 28 53
+3 22 53 28
+3 22 28 34
+3 22 34 28
+3 22 31 66
+3 22 66 31
+3 22 31 61
+3 22 61 31
+3 22 56 35
+3 22 35 56
+3 22 57 60
+3 22 60 57
+3 22 57 64
+3 22 64 57
+3 22 57 46
+3 22 46 57
+3 22 57 29
+3 22 29 57
+3 22 62 51
+3 22 51 62
+3 22 62 47
+3 22 47 62
+3 22 27 36
+3 22 36 27
+3 22 27 32
+3 22 32 27
+3 22 27 59
+3 22 59 27
+3 22 54 33
+3 22 33 54
+3 22 65 49
+3 22 49 65
+1 23 62
+0 23
+5 40 23
+6 40
+9 23
+12 23
+15 23
+3 23 62 27
+3 23 27 62
+3 23 62 65
+3 23 65 62
+3 23 62 67
+3 23 67 62
+3 23 62 37
+3 23 37 62
+3 23 62 29
+3 23 29 62
+3 23 62 52
+3 23 52 62
+3 23 62 57
+3 23 57 62
+3 23 27 44
+3 23 44 27
+3 23 27 51
+3 23 51 27
+3 23 27 36
+3 23 36 27
+3 23 27 45
+3 23 45 27
+3 23 27 30
+3 23 30 27
+3 23 27 55
+3 23 55 27
+3 23 27 59
+3 23 59 27
+3 23 65 64
+3 23 64 65
+3 23 65 66
+3 23 66 65
+3 23 65 28
+3 23 28 65
+3 23 65 63
+3 23 63 65
+3 23 67 61
+3 23 61 67
+3 23 29 32
+3 23 32 29
+3 23 52 31
+3 23 31 52
+3 23 52 53
+3 23 53 52
+3 23 52 56
+3 23 56 52
+3 23 57 60
+3 23 60 57
+3 23 57 46
+3 23 46 57
+3 23 44 49
+3 23 49 44
+3 23 44 50
+3 23 50 44
+3 23 44 54
+3 23 54 44
+3 23 44 58
+3 23 58 44
+3 23 51 47
+3 23 47 51
+3 23 45 35
+3 23 35 45
+3 23 30 34
+3 23 34 30
+3 23 55 33
+3 23 33 55
+3 23 64 48
+3 23 48 64
+1 24 55
+0 24
+5 41 24
+6 41
+9 24
+12 24
+15 24
+3 24 55 27
+3 24 27 55
+3 24 55 60
+3 24 60 55
+3 24 55 66
+3 24 66 55
+3 24 55 45
+3 24 45 55
+3 24 55 46
+3 24 46 55
+3 24 55 30
+3 24 30 55
+3 24 55 33
+3 24 33 55
+3 24 27 44
+3 24 44 27
+3 24 27 51
+3 24 51 27
+3 24 27 36
+3 24 36 27
+3 24 27 32
+3 24 32 27
+3 24 27 59
+3 24 59 27
+3 24 60 37
+3 24 37 60
+3 24 60 49
+3 24 49 60
+3 24 60 57
+3 24 57 60
+3 24 60 61
+3 24 61 60
+3 24 66 47
+3 24 47 66
+3 24 66 31
+3 24 31 66
+3 24 45 65
+3 24 65 45
+3 24 45 67
+3 24 67 45
+3 24 45 28
+3 24 28 45
+3 24 45 48
+3 24 48 45
+3 24 45 52
+3 24 52 45
+3 24 45 35
+3 24 35 45
+3 24 46 34
+3 24 34 46
+3 24 33 54
+3 24 54 33
+3 24 44 56
+3 24 56 44
+3 24 44 58
+3 24 58 44
+3 24 51 50
+3 24 50 51
+3 24 32 63
+3 24 63 32
+1 25 67
+0 25
+5 42 25
+6 42
+12 25
+15 25
+3 25 67 36
+3 25 36 67
+3 25 67 66
+3 25 66 67
+3 25 67 45
+3 25 45 67
+3 25 67 28
+3 25 28 67
+3 25 67 61
+3 25 61 67
+3 25 67 62
+3 25 62 67
+3 25 67 63
+3 25 63 67
+3 25 36 44
+3 25 44 36
+3 25 36 65
+3 25 65 36
+3 25 36 48
+3 25 48 36
+3 25 36 49
+3 25 49 36
+3 25 36 55
+3 25 55 36
+3 25 36 57
+3 25 57 36
+3 25 66 30
+3 25 30 66
+3 25 66 33
+3 25 33 66
+3 25 45 27
+3 25 27 45
+3 25 45 52
+3 25 52 45
+3 25 45 32
+3 25 32 45
+3 25 45 35
+3 25 35 45
+3 25 28 53
+3 25 53 28
+3 25 28 34
+3 25 34 28
+3 25 61 51
+3 25 51 61
+3 25 61 64
+3 25 64 61
+3 25 62 37
+3 25 37 62
+3 25 62 47
+3 25 47 62
+3 25 63 29
+3 25 29 63
+3 25 44 50
+3 25 50 44
+3 25 44 54
+3 25 54 44
+3 25 44 56
+3 25 56 44
+3 25 44 58
+3 25 58 44
+3 25 49 46
+3 25 46 49
+3 25 55 60
+3 25 60 55
+3 25 33 31
+3 25 31 33
+3 25 33 59
+3 25 59 33
+1 26 45
+0 26
+5 43 26
+6 43
+9 26
+12 26
+15 26
+3 26 45 27
+3 26 27 45
+3 26 45 65
+3 26 65 45
+3 26 45 67
+3 26 67 45
+3 26 45 28
+3 26 28 45
+3 26 45 48
+3 26 48 45
+3 26 45 52
+3 26 52 45
+3 26 45 32
+3 26 32 45
+3 26 45 55
+3 26 55 45
+3 26 45 63
+3 26 63 45
+3 26 45 35
+3 26 35 45
+3 26 27 44
+3 26 44 27
+3 26 27 51
+3 26 51 27
+3 26 27 30
+3 26 30 27
+3 26 27 59
+3 26 59 27
+3 26 65 64
+3 26 64 65
+3 26 65 66
+3 26 66 65
+3 26 65 49
+3 26 49 65
+3 26 65 33
+3 26 33 65
+3 26 67 57
+3 26 57 67
+3 26 67 61
+3 26 61 67
+3 26 67 62
+3 26 62 67
+3 26 28 37
+3 26 37 28
+3 26 28 53
+3 26 53 28
+3 26 48 36
+3 26 36 48
+3 26 48 47
+3 26 47 48
+3 26 48 50
+3 26 50 48
+3 26 52 31
+3 26 31 52
+3 26 52 56
+3 26 56 52
+3 26 32 29
+3 26 29 32
+3 26 55 54
+3 26 54 55
+3 26 55 34
+3 26 34 55
+3 26 63 60
+3 26 60 63
+3 26 44 58
+3 26 58 44
+3 26 49 46
+3 26 46 49
+18 0 23
+16 0 19
+20 0 10
+20 0 11
+20 0 12
+18 1 25
+16 1 14
+20 1 10
+20 1 11
+20 1 12
+18 2 24
+16 2 19
+20 2 11
+20 2 12
+18 3 21
+16 3 20
+20 3 10
+20 3 11
+20 3 12
+18 4 26
+16 4 17
+20 4 10
+20 4 11
+18 5 25
+16 5 18
+20 5 10
+20 5 11
+18 6 23
+16 6 16
+20 6 11
+20 6 12
+18 7 23
+16 7 19
+20 7 11
+20 7 12
+18 8 22
+16 8 20
+20 8 11
+17 13 27
+17 13 44
+17 13 51
+17 13 60
+17 13 64
+17 14 27
+17 14 44
+17 14 51
+17 14 60
+17 14 64
+17 15 27
+17 15 44
+17 15 51
+17 15 60
+17 15 64
+17 15 65
+17 15 36
+17 15 66
+17 15 67
+17 15 37
+17 15 45
+17 15 46
+17 15 28
+17 15 47
+17 15 29
+17 15 48
+17 15 30
+17 15 49
+17 16 27
+17 16 44
+17 16 51
+17 16 60
+17 16 64
+17 16 65
+17 16 36
+17 16 66
+17 16 67
+17 16 37
+17 16 45
+17 16 46
+17 16 28
+17 16 47
+17 16 29
+17 16 48
+17 16 30
+17 16 49
+17 16 31
+17 16 50
+17 16 52
+17 16 53
+17 16 54
+17 16 32
+17 16 33
+17 16 55
+17 16 56
+17 16 57
+17 16 58
+17 16 59
+17 16 61
+17 16 62
+17 16 63
+17 16 34
+17 17 27
+17 17 44
+17 17 51
+17 17 60
+17 17 64
+17 17 65
+17 17 36
+17 17 66
+17 17 67
+17 17 37
+17 17 45
+17 17 46
+17 17 28
+17 17 47
+17 17 29
+17 17 48
+17 17 30
+17 17 49
+17 17 31
+17 17 50
+17 17 52
+17 17 53
+17 17 54
+17 17 32
+17 17 33
+17 17 55
+17 17 56
+17 17 57
+17 17 58
+17 17 59
+17 17 61
+17 18 27
+17 19 27
+17 19 44
+17 19 51
+17 19 60
+17 19 64
+17 19 65
+17 19 36
+17 19 66
+17 19 67
+17 19 37
+17 19 45
+17 19 46
+17 19 28
+17 19 47
+17 20 27
+17 20 44
+17 20 51
+17 20 60
+17 20 64
+17 20 65
+17 20 36
+17 20 66
+17 20 67
+17 20 37
+17 20 45
+17 20 46
+17 20 28
+17 20 47
+17 20 29
+17 20 48
+17 20 30
+17 20 49
+17 20 31
+17 20 50
+17 20 52
+17 20 53
+17 20 54
+17 20 32
+17 20 33
+17 20 55
+17 20 56
+17 20 57
+17 20 58
+17 20 59
+17 20 61
+17 20 62
+17 20 63
+17 20 34
+4 21 27 27
+4 21 27 44
+4 21 27 45
+4 21 27 46
+4 21 27 28
+4 21 27 47
+4 21 27 29
+4 21 27 48
+4 21 27 30
+4 21 27 49
+4 21 27 31
+4 21 27 50
+4 21 27 51
+4 21 27 52
+4 21 27 53
+4 21 27 54
+4 21 27 32
+4 21 27 33
+4 21 27 56
+4 21 27 57
+4 21 27 58
+4 21 27 60
+4 21 27 61
+4 21 27 62
+4 21 27 63
+4 21 27 34
+4 21 27 35
+4 21 27 64
+4 21 27 65
+4 21 27 36
+4 21 27 66
+4 21 27 67
+4 21 27 37
+4 21 44 27
+4 21 44 44
+4 21 44 45
+4 21 44 46
+4 21 44 28
+4 21 44 47
+4 21 44 29
+4 21 44 48
+4 21 44 30
+4 21 44 31
+4 21 44 50
+4 21 44 51
+4 21 44 52
+4 21 44 53
+4 21 44 54
+4 21 44 32
+4 21 44 33
+4 21 44 55
+4 21 44 57
+4 21 44 58
+4 21 44 59
+4 21 44 60
+4 21 44 61
+4 21 44 62
+4 21 44 63
+4 21 44 34
+4 21 44 35
+4 21 44 64
+4 21 44 65
+4 21 44 36
+4 21 44 66
+4 21 44 67
+4 21 44 37
+4 21 45 27
+4 21 45 44
+4 21 45 45
+4 21 45 46
+4 21 45 28
+4 21 45 47
+4 21 45 29
+4 21 45 48
+4 21 45 30
+4 21 45 49
+4 21 45 31
+4 21 45 50
+4 21 45 51
+4 21 45 52
+4 21 45 53
+4 21 45 54
+4 21 45 32
+4 21 45 33
+4 21 45 56
+4 21 45 57
+4 21 45 58
+4 21 45 59
+4 21 45 60
+4 21 45 61
+4 21 45 62
+4 21 45 63
+4 21 45 34
+4 21 45 35
+4 21 45 64
+4 21 45 65
+4 21 45 36
+4 21 45 66
+4 21 45 67
+4 21 45 37
+4 21 46 27
+4 21 46 44
+4 21 46 45
+4 21 46 46
+4 21 46 28
+4 21 46 29
+4 21 46 48
+4 21 46 30
+4 21 46 49
+4 21 46 31
+4 21 46 50
+4 21 46 51
+4 21 46 52
+4 21 46 53
+4 21 46 54
+4 21 46 32
+4 21 46 33
+4 21 46 55
+4 21 46 56
+4 21 46 57
+4 21 46 58
+4 21 46 59
+4 21 46 60
+4 21 46 61
+4 21 46 62
+4 21 46 63
+4 21 46 35
+4 21 46 64
+4 21 46 65
+4 21 46 36
+4 21 46 66
+4 21 46 67
+4 21 28 27
+4 21 28 44
+4 21 28 45
+4 21 28 46
+4 21 28 28
+4 21 28 47
+4 21 28 29
+4 21 28 48
+4 21 28 30
+4 21 28 49
+4 21 28 31
+4 21 28 50
+4 21 28 51
+4 21 28 52
+4 21 28 53
+4 21 28 54
+4 21 28 32
+4 21 28 33
+4 21 28 55
+4 21 28 56
+4 21 28 57
+4 21 28 58
+4 21 28 59
+4 21 28 60
+4 21 28 61
+4 21 28 62
+4 21 28 63
+4 21 28 35
+4 21 28 64
+4 21 28 65
+4 21 28 36
+4 21 28 66
+4 21 28 67
+4 21 28 37
+4 21 47 27
+4 21 47 44
+4 21 47 45
+4 21 47 28
+4 21 47 47
+4 21 47 29
+4 21 47 48
+4 21 47 30
+4 21 47 49
+4 21 47 31
+4 21 47 50
+4 21 47 51
+4 21 47 52
+4 21 47 53
+4 21 47 54
+4 21 47 32
+4 21 47 33
+4 21 47 55
+4 21 47 56
+4 21 47 57
+4 21 47 58
+4 21 47 59
+4 21 47 60
+4 21 47 61
+4 21 47 62
+4 21 47 63
+4 21 47 34
+4 21 47 35
+4 21 47 64
+4 21 47 65
+4 21 47 36
+4 21 47 67
+4 21 47 37
+4 21 29 27
+4 21 29 44
+4 21 29 45
+4 21 29 46
+4 21 29 28
+4 21 29 47
+4 21 29 29
+4 21 29 48
+4 21 29 30
+4 21 29 49
+4 21 29 31
+4 21 29 50
+4 21 29 51
+4 21 29 52
+4 21 29 53
+4 21 29 54
+4 21 29 32
+4 21 29 33
+4 21 29 56
+4 21 29 57
+4 21 29 59
+4 21 29 60
+4 21 29 61
+4 21 29 62
+4 21 29 63
+4 21 29 34
+4 21 29 35
+4 21 29 64
+4 21 29 65
+4 21 29 36
+4 21 29 66
+4 21 29 67
+4 21 29 37
+4 21 48 27
+4 21 48 44
+4 21 48 45
+4 21 48 46
+4 21 48 28
+4 21 48 47
+4 21 48 29
+4 21 48 48
+4 21 48 30
+4 21 48 49
+4 21 48 31
+4 21 48 50
+4 21 48 51
+4 21 48 52
+4 21 48 53
+4 21 48 54
+4 21 48 32
+4 21 48 33
+4 21 48 55
+4 21 48 56
+4 21 48 57
+4 21 48 58
+4 21 48 59
+4 21 48 60
+4 21 48 62
+4 21 48 63
+4 21 48 34
+4 21 48 35
+4 21 48 64
+4 21 48 65
+4 21 48 36
+4 21 48 66
+4 21 48 67
+4 21 48 37
+4 21 30 27
+4 21 30 44
+4 21 30 45
+4 21 30 46
+4 21 30 28
+4 21 30 47
+4 21 30 29
+4 21 30 48
+4 21 30 30
+4 21 30 49
+4 21 30 31
+4 21 30 50
+4 21 30 51
+4 21 30 52
+4 21 30 53
+4 21 30 54
+4 21 30 32
+4 21 30 33
+4 21 30 56
+4 21 30 57
+4 21 30 58
+4 21 30 59
+4 21 30 60
+4 21 30 61
+4 21 30 62
+4 21 30 63
+4 21 30 34
+4 21 30 35
+4 21 30 64
+4 21 30 65
+4 21 30 36
+4 21 30 66
+4 21 30 67
+4 21 30 37
+4 21 49 27
+4 21 49 45
+4 21 49 46
+4 21 49 28
+4 21 49 47
+4 21 49 29
+4 21 49 48
+4 21 49 30
+4 21 49 49
+4 21 49 31
+4 21 49 50
+4 21 49 51
+4 21 49 52
+4 21 49 54
+4 21 49 32
+4 21 49 33
+4 21 49 55
+4 21 49 56
+4 21 49 57
+4 21 49 58
+4 21 49 59
+4 21 49 61
+4 21 49 62
+4 21 49 63
+4 21 49 34
+4 21 49 35
+4 21 49 64
+4 21 49 36
+4 21 49 66
+4 21 49 67
+4 21 49 37
+4 21 31 27
+4 21 31 44
+4 21 31 45
+4 21 31 46
+4 21 31 28
+4 21 31 47
+4 21 31 29
+4 21 31 48
+4 21 31 30
+4 21 31 49
+4 21 31 31
+4 21 31 50
+4 21 31 51
+4 21 31 52
+4 21 31 53
+4 21 31 54
+4 21 31 32
+4 21 31 33
+4 21 31 55
+4 21 31 56
+4 21 31 57
+4 21 31 58
+4 21 31 59
+4 21 31 60
+4 21 31 62
+4 21 31 63
+4 21 31 34
+4 21 31 35
+4 21 31 64
+4 21 31 65
+4 21 31 36
+4 21 31 66
+4 21 31 67
+4 21 31 37
+4 21 50 27
+4 21 50 44
+4 21 50 45
+4 21 50 46
+4 21 50 28
+4 21 50 47
+4 21 50 29
+4 21 50 48
+4 21 50 30
+4 21 50 49
+4 21 50 31
+4 21 50 50
+4 21 50 51
+4 21 50 52
+4 21 50 53
+4 21 50 54
+4 21 50 32
+4 21 50 33
+4 21 50 55
+4 21 50 56
+4 21 50 57
+4 21 50 58
+4 21 50 59
+4 21 50 60
+4 21 50 61
+4 21 50 62
+4 21 50 63
+4 21 50 35
+4 21 50 64
+4 21 50 65
+4 21 50 36
+4 21 50 66
+4 21 50 67
+4 21 50 37
+4 21 51 27
+4 21 51 44
+4 21 51 45
+4 21 51 46
+4 21 51 28
+4 21 51 47
+4 21 51 29
+4 21 51 48
+4 21 51 30
+4 21 51 49
+4 21 51 31
+4 21 51 50
+4 21 51 51
+4 21 51 52
+4 21 51 53
+4 21 51 54
+4 21 51 32
+4 21 51 33
+4 21 51 55
+4 21 51 56
+4 21 51 57
+4 21 51 58
+4 21 51 59
+4 21 51 60
+4 21 51 62
+4 21 51 63
+4 21 51 34
+4 21 51 35
+4 21 51 64
+4 21 51 65
+4 21 51 36
+4 21 51 66
+4 21 51 67
+4 21 51 37
+4 21 52 27
+4 21 52 44
+4 21 52 45
+4 21 52 46
+4 21 52 28
+4 21 52 47
+4 21 52 29
+4 21 52 48
+4 21 52 30
+4 21 52 49
+4 21 52 31
+4 21 52 50
+4 21 52 51
+4 21 52 52
+4 21 52 53
+4 21 52 54
+4 21 52 32
+4 21 52 33
+4 21 52 55
+4 21 52 56
+4 21 52 58
+4 21 52 59
+4 21 52 60
+4 21 52 61
+4 21 52 62
+4 21 52 63
+4 21 52 34
+4 21 52 35
+4 21 52 64
+4 21 52 65
+4 21 52 36
+4 21 52 66
+4 21 52 67
+4 21 52 37
+4 21 53 27
+4 21 53 44
+4 21 53 45
+4 21 53 46
+4 21 53 28
+4 21 53 47
+4 21 53 29
+4 21 53 48
+4 21 53 30
+4 21 53 31
+4 21 53 50
+4 21 53 51
+4 21 53 52
+4 21 53 53
+4 21 53 54
+4 21 53 32
+4 21 53 33
+4 21 53 55
+4 21 53 56
+4 21 53 57
+4 21 53 58
+4 21 53 59
+4 21 53 60
+4 21 53 61
+4 21 53 62
+4 21 53 63
+4 21 53 34
+4 21 53 35
+4 21 53 64
+4 21 53 65
+4 21 53 36
+4 21 53 66
+4 21 53 67
+4 21 53 37
+4 21 54 27
+4 21 54 44
+4 21 54 45
+4 21 54 46
+4 21 54 28
+4 21 54 47
+4 21 54 29
+4 21 54 48
+4 21 54 30
+4 21 54 49
+4 21 54 31
+4 21 54 50
+4 21 54 51
+4 21 54 52
+4 21 54 53
+4 21 54 54
+4 21 54 32
+4 21 54 33
+4 21 54 55
+4 21 54 56
+4 21 54 57
+4 21 54 58
+4 21 54 59
+4 21 54 60
+4 21 54 61
+4 21 54 62
+4 21 54 63
+4 21 54 35
+4 21 54 64
+4 21 54 65
+4 21 54 36
+4 21 54 66
+4 21 54 67
+4 21 54 37
+4 21 32 27
+4 21 32 44
+4 21 32 45
+4 21 32 46
+4 21 32 28
+4 21 32 47
+4 21 32 29
+4 21 32 48
+4 21 32 30
+4 21 32 49
+4 21 32 31
+4 21 32 50
+4 21 32 51
+4 21 32 52
+4 21 32 53
+4 21 32 54
+4 21 32 32
+4 21 32 33
+4 21 32 55
+4 21 32 56
+4 21 32 57
+4 21 32 58
+4 21 32 59
+4 21 32 60
+4 21 32 62
+4 21 32 63
+4 21 32 34
+4 21 32 35
+4 21 32 64
+4 21 32 65
+4 21 32 36
+4 21 32 66
+4 21 32 67
+4 21 32 37
+4 21 33 27
+4 21 33 44
+4 21 33 45
+4 21 33 46
+4 21 33 28
+4 21 33 47
+4 21 33 29
+4 21 33 48
+4 21 33 30
+4 21 33 49
+4 21 33 31
+4 21 33 50
+4 21 33 51
+4 21 33 52
+4 21 33 53
+4 21 33 54
+4 21 33 32
+4 21 33 33
+4 21 33 56
+4 21 33 57
+4 21 33 58
+4 21 33 59
+4 21 33 60
+4 21 33 61
+4 21 33 62
+4 21 33 63
+4 21 33 34
+4 21 33 35
+4 21 33 64
+4 21 33 65
+4 21 33 36
+4 21 33 66
+4 21 33 67
+4 21 33 37
+4 21 55 44
+4 21 55 46
+4 21 55 28
+4 21 55 47
+4 21 55 48
+4 21 55 49
+4 21 55 31
+4 21 55 50
+4 21 55 51
+4 21 55 52
+4 21 55 53
+4 21 55 54
+4 21 55 32
+4 21 55 55
+4 21 55 56
+4 21 55 57
+4 21 55 58
+4 21 55 59
+4 21 55 60
+4 21 55 61
+4 21 55 62
+4 21 55 63
+4 21 55 34
+4 21 55 35
+4 21 55 64
+4 21 55 65
+4 21 55 66
+4 21 55 67
+4 21 56 27
+4 21 56 45
+4 21 56 46
+4 21 56 28
+4 21 56 47
+4 21 56 29
+4 21 56 48
+4 21 56 30
+4 21 56 49
+4 21 56 31
+4 21 56 50
+4 21 56 51
+4 21 56 52
+4 21 56 53
+4 21 56 54
+4 21 56 32
+4 21 56 33
+4 21 56 55
+4 21 56 56
+4 21 56 57
+4 21 56 58
+4 21 56 59
+4 21 56 60
+4 21 56 61
+4 21 56 62
+4 21 56 63
+4 21 56 34
+4 21 56 35
+4 21 56 64
+4 21 56 65
+4 21 56 36
+4 21 56 66
+4 21 56 67
+4 21 56 37
+4 21 57 27
+4 21 57 44
+4 21 57 45
+4 21 57 46
+4 21 57 28
+4 21 57 47
+4 21 57 29
+4 21 57 48
+4 21 57 30
+4 21 57 49
+4 21 57 31
+4 21 57 50
+4 21 57 51
+4 21 57 53
+4 21 57 54
+4 21 57 32
+4 21 57 33
+4 21 57 55
+4 21 57 56
+4 21 57 57
+4 21 57 58
+4 21 57 59
+4 21 57 61
+4 21 57 63
+4 21 57 34
+4 21 57 35
+4 21 57 65
+4 21 57 36
+4 21 57 66
+4 21 57 67
+4 21 57 37
+4 21 58 27
+4 21 58 44
+4 21 58 45
+4 21 58 46
+4 21 58 28
+4 21 58 47
+4 21 58 48
+4 21 58 30
+4 21 58 49
+4 21 58 31
+4 21 58 50
+4 21 58 51
+4 21 58 52
+4 21 58 53
+4 21 58 54
+4 21 58 32
+4 21 58 33
+4 21 58 55
+4 21 58 56
+4 21 58 57
+4 21 58 58
+4 21 58 59
+4 21 58 60
+4 21 58 61
+4 21 58 62
+4 21 58 63
+4 21 58 34
+4 21 58 35
+4 21 58 64
+4 21 58 65
+4 21 58 36
+4 21 58 66
+4 21 58 67
+4 21 58 37
+4 21 59 44
+4 21 59 45
+4 21 59 46
+4 21 59 28
+4 21 59 47
+4 21 59 29
+4 21 59 48
+4 21 59 30
+4 21 59 49
+4 21 59 31
+4 21 59 50
+4 21 59 51
+4 21 59 52
+4 21 59 53
+4 21 59 54
+4 21 59 32
+4 21 59 33
+4 21 59 55
+4 21 59 56
+4 21 59 57
+4 21 59 58
+4 21 59 59
+4 21 59 60
+4 21 59 61
+4 21 59 62
+4 21 59 63
+4 21 59 34
+4 21 59 35
+4 21 59 64
+4 21 59 65
+4 21 59 36
+4 21 59 66
+4 21 59 67
+4 21 59 37
+4 21 60 27
+4 21 60 44
+4 21 60 45
+4 21 60 46
+4 21 60 28
+4 21 60 47
+4 21 60 29
+4 21 60 48
+4 21 60 30
+4 21 60 31
+4 21 60 50
+4 21 60 51
+4 21 60 52
+4 21 60 53
+4 21 60 54
+4 21 60 32
+4 21 60 33
+4 21 60 55
+4 21 60 56
+4 21 60 58
+4 21 60 59
+4 21 60 60
+4 21 60 62
+4 21 60 34
+4 21 60 35
+4 21 60 64
+4 21 60 65
+4 21 60 36
+4 21 60 66
+4 21 60 67
+4 21 61 27
+4 21 61 44
+4 21 61 45
+4 21 61 46
+4 21 61 28
+4 21 61 47
+4 21 61 29
+4 21 61 30
+4 21 61 49
+4 21 61 50
+4 21 61 52
+4 21 61 53
+4 21 61 54
+4 21 61 33
+4 21 61 55
+4 21 61 56
+4 21 61 57
+4 21 61 58
+4 21 61 59
+4 21 61 61
+4 21 61 62
+4 21 61 63
+4 21 61 34
+4 21 61 64
+4 21 61 65
+4 21 61 36
+4 21 61 66
+4 21 61 37
+4 21 62 27
+4 21 62 44
+4 21 62 45
+4 21 62 46
+4 21 62 28
+4 21 62 47
+4 21 62 29
+4 21 62 48
+4 21 62 30
+4 21 62 49
+4 21 62 31
+4 21 62 50
+4 21 62 51
+4 21 62 52
+4 21 62 53
+4 21 62 54
+4 21 62 32
+4 21 62 33
+4 21 62 55
+4 21 62 56
+4 21 62 58
+4 21 62 59
+4 21 62 60
+4 21 62 61
+4 21 62 62
+4 21 62 63
+4 21 62 34
+4 21 62 35
+4 21 62 64
+4 21 62 65
+4 21 62 36
+4 21 62 66
+4 21 62 67
+4 21 62 37
+4 21 63 27
+4 21 63 44
+4 21 63 45
+4 21 63 46
+4 21 63 28
+4 21 63 47
+4 21 63 29
+4 21 63 48
+4 21 63 30
+4 21 63 49
+4 21 63 31
+4 21 63 50
+4 21 63 51
+4 21 63 52
+4 21 63 53
+4 21 63 54
+4 21 63 32
+4 21 63 33
+4 21 63 55
+4 21 63 56
+4 21 63 57
+4 21 63 58
+4 21 63 59
+4 21 63 61
+4 21 63 62
+4 21 63 63
+4 21 63 34
+4 21 63 35
+4 21 63 64
+4 21 63 65
+4 21 63 36
+4 21 63 66
+4 21 63 67
+4 21 63 37
+4 21 34 27
+4 21 34 44
+4 21 34 45
+4 21 34 47
+4 21 34 29
+4 21 34 48
+4 21 34 30
+4 21 34 49
+4 21 34 31
+4 21 34 51
+4 21 34 52
+4 21 34 53
+4 21 34 32
+4 21 34 33
+4 21 34 55
+4 21 34 56
+4 21 34 57
+4 21 34 58
+4 21 34 59
+4 21 34 60
+4 21 34 61
+4 21 34 62
+4 21 34 63
+4 21 34 34
+4 21 34 35
+4 21 34 64
+4 21 34 65
+4 21 34 36
+4 21 34 66
+4 21 34 67
+4 21 34 37
+4 21 35 27
+4 21 35 44
+4 21 35 45
+4 21 35 46
+4 21 35 28
+4 21 35 47
+4 21 35 29
+4 21 35 48
+4 21 35 30
+4 21 35 49
+4 21 35 31
+4 21 35 50
+4 21 35 51
+4 21 35 52
+4 21 35 53
+4 21 35 54
+4 21 35 32
+4 21 35 33
+4 21 35 55
+4 21 35 56
+4 21 35 57
+4 21 35 58
+4 21 35 59
+4 21 35 60
+4 21 35 62
+4 21 35 63
+4 21 35 34
+4 21 35 35
+4 21 35 64
+4 21 35 65
+4 21 35 36
+4 21 35 66
+4 21 35 67
+4 21 35 37
+4 21 64 27
+4 21 64 44
+4 21 64 45
+4 21 64 46
+4 21 64 28
+4 21 64 47
+4 21 64 29
+4 21 64 48
+4 21 64 30
+4 21 64 49
+4 21 64 31
+4 21 64 50
+4 21 64 51
+4 21 64 52
+4 21 64 53
+4 21 64 54
+4 21 64 32
+4 21 64 33
+4 21 64 55
+4 21 64 56
+4 21 64 58
+4 21 64 59
+4 21 64 60
+4 21 64 61
+4 21 64 62
+4 21 64 63
+4 21 64 34
+4 21 64 35
+4 21 64 64
+4 21 64 65
+4 21 64 36
+4 21 64 66
+4 21 64 67
+4 21 64 37
+4 21 65 27
+4 21 65 44
+4 21 65 45
+4 21 65 46
+4 21 65 28
+4 21 65 47
+4 21 65 29
+4 21 65 48
+4 21 65 30
+4 21 65 31
+4 21 65 50
+4 21 65 51
+4 21 65 52
+4 21 65 53
+4 21 65 54
+4 21 65 32
+4 21 65 33
+4 21 65 55
+4 21 65 56
+4 21 65 57
+4 21 65 58
+4 21 65 59
+4 21 65 60
+4 21 65 61
+4 21 65 62
+4 21 65 63
+4 21 65 34
+4 21 65 35
+4 21 65 64
+4 21 65 65
+4 21 65 36
+4 21 65 66
+4 21 65 67
+4 21 65 37
+4 21 36 27
+4 21 36 44
+4 21 36 45
+4 21 36 46
+4 21 36 28
+4 21 36 47
+4 21 36 29
+4 21 36 48
+4 21 36 30
+4 21 36 49
+4 21 36 31
+4 21 36 50
+4 21 36 51
+4 21 36 52
+4 21 36 53
+4 21 36 54
+4 21 36 32
+4 21 36 33
+4 21 36 56
+4 21 36 57
+4 21 36 58
+4 21 36 59
+4 21 36 60
+4 21 36 61
+4 21 36 62
+4 21 36 63
+4 21 36 34
+4 21 36 35
+4 21 36 64
+4 21 36 65
+4 21 36 36
+4 21 36 66
+4 21 36 67
+4 21 36 37
+4 21 66 27
+4 21 66 44
+4 21 66 45
+4 21 66 46
+4 21 66 28
+4 21 66 29
+4 21 66 48
+4 21 66 30
+4 21 66 49
+4 21 66 31
+4 21 66 50
+4 21 66 51
+4 21 66 52
+4 21 66 53
+4 21 66 54
+4 21 66 32
+4 21 66 33
+4 21 66 55
+4 21 66 56
+4 21 66 57
+4 21 66 58
+4 21 66 59
+4 21 66 60
+4 21 66 61
+4 21 66 62
+4 21 66 63
+4 21 66 34
+4 21 66 35
+4 21 66 64
+4 21 66 65
+4 21 66 36
+4 21 66 66
+4 21 66 67
+4 21 66 37
+4 21 67 27
+4 21 67 44
+4 21 67 45
+4 21 67 46
+4 21 67 28
+4 21 67 47
+4 21 67 29
+4 21 67 48
+4 21 67 30
+4 21 67 49
+4 21 67 31
+4 21 67 50
+4 21 67 51
+4 21 67 52
+4 21 67 53
+4 21 67 54
+4 21 67 32
+4 21 67 33
+4 21 67 55
+4 21 67 56
+4 21 67 57
+4 21 67 58
+4 21 67 59
+4 21 67 60
+4 21 67 62
+4 21 67 63
+4 21 67 34
+4 21 67 35
+4 21 67 64
+4 21 67 65
+4 21 67 36
+4 21 67 66
+4 21 67 67
+4 21 67 37
+4 21 37 27
+4 21 37 44
+4 21 37 45
+4 21 37 28
+4 21 37 47
+4 21 37 29
+4 21 37 48
+4 21 37 30
+4 21 37 49
+4 21 37 31
+4 21 37 50
+4 21 37 51
+4 21 37 52
+4 21 37 53
+4 21 37 54
+4 21 37 32
+4 21 37 33
+4 21 37 56
+4 21 37 57
+4 21 37 58
+4 21 37 59
+4 21 37 61
+4 21 37 62
+4 21 37 63
+4 21 37 34
+4 21 37 35
+4 21 37 64
+4 21 37 65
+4 21 37 36
+4 21 37 66
+4 21 37 67
+4 21 37 37
+4 22 27 27
+4 22 27 45
+4 22 27 46
+4 22 27 28
+4 22 27 47
+4 22 27 29
+4 22 27 48
+4 22 27 30
+4 22 27 49
+4 22 27 31
+4 22 27 50
+4 22 27 51
+4 22 27 52
+4 22 27 53
+4 22 27 54
+4 22 27 33
+4 22 27 55
+4 22 27 56
+4 22 27 57
+4 22 27 58
+4 22 27 60
+4 22 27 61
+4 22 27 62
+4 22 27 63
+4 22 27 34
+4 22 27 35
+4 22 27 64
+4 22 27 65
+4 22 27 66
+4 22 27 67
+4 22 27 37
+4 22 44 44
+4 22 44 45
+4 22 44 46
+4 22 44 28
+4 22 44 47
+4 22 44 29
+4 22 44 48
+4 22 44 30
+4 22 44 49
+4 22 44 31
+4 22 44 50
+4 22 44 51
+4 22 44 53
+4 22 44 32
+4 22 44 33
+4 22 44 55
+4 22 44 56
+4 22 44 57
+4 22 44 59
+4 22 44 60
+4 22 44 61
+4 22 44 62
+4 22 44 63
+4 22 44 34
+4 22 44 35
+4 22 44 64
+4 22 44 65
+4 22 44 36
+4 22 44 66
+4 22 44 67
+4 22 44 37
+4 22 45 27
+4 22 45 44
+4 22 45 45
+4 22 45 46
+4 22 45 28
+4 22 45 47
+4 22 45 29
+4 22 45 30
+4 22 45 49
+4 22 45 31
+4 22 45 51
+4 22 45 53
+4 22 45 54
+4 22 45 32
+4 22 45 33
+4 22 45 56
+4 22 45 57
+4 22 45 58
+4 22 45 59
+4 22 45 60
+4 22 45 61
+4 22 45 62
+4 22 45 34
+4 22 45 35
+4 22 45 64
+4 22 45 36
+4 22 45 66
+4 22 45 37
+4 22 46 27
+4 22 46 44
+4 22 46 45
+4 22 46 46
+4 22 46 28
+4 22 46 47
+4 22 46 29
+4 22 46 48
+4 22 46 30
+4 22 46 49
+4 22 46 31
+4 22 46 50
+4 22 46 51
+4 22 46 52
+4 22 46 53
+4 22 46 54
+4 22 46 32
+4 22 46 33
+4 22 46 55
+4 22 46 56
+4 22 46 58
+4 22 46 59
+4 22 46 60
+4 22 46 61
+4 22 46 62
+4 22 46 63
+4 22 46 34
+4 22 46 35
+4 22 46 64
+4 22 46 65
+4 22 46 36
+4 22 46 66
+4 22 46 67
+4 22 46 37
+4 22 28 27
+4 22 28 44
+4 22 28 45
+4 22 28 46
+4 22 28 28
+4 22 28 47
+4 22 28 29
+4 22 28 48
+4 22 28 49
+4 22 28 31
+4 22 28 50
+4 22 28 51
+4 22 28 54
+4 22 28 32
+4 22 28 33
+4 22 28 55
+4 22 28 56
+4 22 28 57
+4 22 28 58
+4 22 28 59
+4 22 28 60
+4 22 28 61
+4 22 28 62
+4 22 28 63
+4 22 28 35
+4 22 28 64
+4 22 28 65
+4 22 28 36
+4 22 28 66
+4 22 28 67
+4 22 47 27
+4 22 47 44
+4 22 47 45
+4 22 47 46
+4 22 47 28
+4 22 47 47
+4 22 47 29
+4 22 47 48
+4 22 47 30
+4 22 47 49
+4 22 47 31
+4 22 47 50
+4 22 47 51
+4 22 47 52
+4 22 47 53
+4 22 47 54
+4 22 47 32
+4 22 47 33
+4 22 47 55
+4 22 47 56
+4 22 47 57
+4 22 47 58
+4 22 47 59
+4 22 47 60
+4 22 47 61
+4 22 47 63
+4 22 47 34
+4 22 47 35
+4 22 47 64
+4 22 47 65
+4 22 47 36
+4 22 47 66
+4 22 47 67
+4 22 47 37
+4 22 29 27
+4 22 29 44
+4 22 29 45
+4 22 29 46
+4 22 29 28
+4 22 29 47
+4 22 29 29
+4 22 29 48
+4 22 29 30
+4 22 29 49
+4 22 29 31
+4 22 29 50
+4 22 29 51
+4 22 29 52
+4 22 29 53
+4 22 29 54
+4 22 29 32
+4 22 29 33
+4 22 29 55
+4 22 29 56
+4 22 29 58
+4 22 29 59
+4 22 29 60
+4 22 29 61
+4 22 29 62
+4 22 29 63
+4 22 29 34
+4 22 29 35
+4 22 29 64
+4 22 29 65
+4 22 29 36
+4 22 29 66
+4 22 29 67
+4 22 29 37
+4 22 48 27
+4 22 48 44
+4 22 48 46
+4 22 48 28
+4 22 48 47
+4 22 48 29
+4 22 48 48
+4 22 48 30
+4 22 48 49
+4 22 48 31
+4 22 48 50
+4 22 48 51
+4 22 48 52
+4 22 48 53
+4 22 48 54
+4 22 48 32
+4 22 48 33
+4 22 48 55
+4 22 48 56
+4 22 48 57
+4 22 48 58
+4 22 48 59
+4 22 48 60
+4 22 48 61
+4 22 48 62
+4 22 48 63
+4 22 48 34
+4 22 48 35
+4 22 48 64
+4 22 48 65
+4 22 48 36
+4 22 48 66
+4 22 48 67
+4 22 48 37
+4 22 30 27
+4 22 30 44
+4 22 30 45
+4 22 30 46
+4 22 30 47
+4 22 30 29
+4 22 30 48
+4 22 30 30
+4 22 30 49
+4 22 30 31
+4 22 30 50
+4 22 30 51
+4 22 30 52
+4 22 30 53
+4 22 30 54
+4 22 30 32
+4 22 30 33
+4 22 30 55
+4 22 30 56
+4 22 30 57
+4 22 30 58
+4 22 30 59
+4 22 30 60
+4 22 30 61
+4 22 30 62
+4 22 30 63
+4 22 30 34
+4 22 30 35
+4 22 30 64
+4 22 30 65
+4 22 30 36
+4 22 30 66
+4 22 30 67
+4 22 30 37
+4 22 49 27
+4 22 49 44
+4 22 49 45
+4 22 49 46
+4 22 49 28
+4 22 49 47
+4 22 49 29
+4 22 49 48
+4 22 49 30
+4 22 49 49
+4 22 49 31
+4 22 49 50
+4 22 49 51
+4 22 49 52
+4 22 49 53
+4 22 49 54
+4 22 49 32
+4 22 49 33
+4 22 49 55
+4 22 49 56
+4 22 49 57
+4 22 49 58
+4 22 49 59
+4 22 49 60
+4 22 49 61
+4 22 49 62
+4 22 49 63
+4 22 49 34
+4 22 49 35
+4 22 49 64
+4 22 49 36
+4 22 49 66
+4 22 49 67
+4 22 49 37
+4 22 31 27
+4 22 31 44
+4 22 31 45
+4 22 31 46
+4 22 31 28
+4 22 31 47
+4 22 31 29
+4 22 31 48
+4 22 31 30
+4 22 31 49
+4 22 31 31
+4 22 31 50
+4 22 31 51
+4 22 31 53
+4 22 31 54
+4 22 31 32
+4 22 31 33
+4 22 31 55
+4 22 31 56
+4 22 31 57
+4 22 31 58
+4 22 31 59
+4 22 31 60
+4 22 31 62
+4 22 31 63
+4 22 31 34
+4 22 31 35
+4 22 31 64
+4 22 31 65
+4 22 31 36
+4 22 31 67
+4 22 31 37
+4 22 50 27
+4 22 50 44
+4 22 50 46
+4 22 50 28
+4 22 50 47
+4 22 50 29
+4 22 50 48
+4 22 50 30
+4 22 50 49
+4 22 50 31
+4 22 50 50
+4 22 50 51
+4 22 50 52
+4 22 50 53
+4 22 50 54
+4 22 50 32
+4 22 50 33
+4 22 50 55
+4 22 50 56
+4 22 50 57
+4 22 50 58
+4 22 50 59
+4 22 50 60
+4 22 50 61
+4 22 50 62
+4 22 50 63
+4 22 50 34
+4 22 50 35
+4 22 50 64
+4 22 50 65
+4 22 50 36
+4 22 50 66
+4 22 50 67
+4 22 50 37
+4 22 51 27
+4 22 51 44
+4 22 51 45
+4 22 51 46
+4 22 51 28
+4 22 51 47
+4 22 51 29
+4 22 51 48
+4 22 51 30
+4 22 51 49
+4 22 51 31
+4 22 51 50
+4 22 51 51
+4 22 51 52
+4 22 51 53
+4 22 51 54
+4 22 51 32
+4 22 51 33
+4 22 51 55
+4 22 51 56
+4 22 51 57
+4 22 51 58
+4 22 51 59
+4 22 51 60
+4 22 51 61
+4 22 51 63
+4 22 51 34
+4 22 51 35
+4 22 51 64
+4 22 51 65
+4 22 51 36
+4 22 51 66
+4 22 51 67
+4 22 51 37
+4 22 52 27
+4 22 52 46
+4 22 52 47
+4 22 52 29
+4 22 52 48
+4 22 52 30
+4 22 52 49
+4 22 52 50
+4 22 52 51
+4 22 52 52
+4 22 52 53
+4 22 52 54
+4 22 52 32
+4 22 52 33
+4 22 52 55
+4 22 52 58
+4 22 52 59
+4 22 52 60
+4 22 52 61
+4 22 52 63
+4 22 52 34
+4 22 52 35
+4 22 52 64
+4 22 52 65
+4 22 52 36
+4 22 52 66
+4 22 52 67
+4 22 52 37
+4 22 53 27
+4 22 53 44
+4 22 53 45
+4 22 53 46
+4 22 53 47
+4 22 53 29
+4 22 53 48
+4 22 53 30
+4 22 53 49
+4 22 53 31
+4 22 53 50
+4 22 53 51
+4 22 53 52
+4 22 53 53
+4 22 53 54
+4 22 53 32
+4 22 53 33
+4 22 53 55
+4 22 53 56
+4 22 53 57
+4 22 53 58
+4 22 53 59
+4 22 53 60
+4 22 53 61
+4 22 53 62
+4 22 53 63
+4 22 53 34
+4 22 53 35
+4 22 53 64
+4 22 53 65
+4 22 53 36
+4 22 53 66
+4 22 53 67
+4 22 53 37
+4 22 54 27
+4 22 54 45
+4 22 54 46
+4 22 54 28
+4 22 54 47
+4 22 54 29
+4 22 54 48
+4 22 54 30
+4 22 54 49
+4 22 54 31
+4 22 54 50
+4 22 54 51
+4 22 54 52
+4 22 54 53
+4 22 54 54
+4 22 54 32
+4 22 54 55
+4 22 54 56
+4 22 54 57
+4 22 54 58
+4 22 54 59
+4 22 54 60
+4 22 54 61
+4 22 54 62
+4 22 54 63
+4 22 54 34
+4 22 54 35
+4 22 54 64
+4 22 54 65
+4 22 54 36
+4 22 54 66
+4 22 54 67
+4 22 54 37
+4 22 32 44
+4 22 32 45
+4 22 32 46
+4 22 32 28
+4 22 32 47
+4 22 32 29
+4 22 32 48
+4 22 32 30
+4 22 32 49
+4 22 32 31
+4 22 32 50
+4 22 32 51
+4 22 32 52
+4 22 32 53
+4 22 32 54
+4 22 32 32
+4 22 32 33
+4 22 32 55
+4 22 32 56
+4 22 32 57
+4 22 32 58
+4 22 32 59
+4 22 32 60
+4 22 32 61
+4 22 32 62
+4 22 32 63
+4 22 32 34
+4 22 32 35
+4 22 32 64
+4 22 32 65
+4 22 32 36
+4 22 32 66
+4 22 32 67
+4 22 32 37
+4 22 33 27
+4 22 33 44
+4 22 33 45
+4 22 33 46
+4 22 33 28
+4 22 33 47
+4 22 33 29
+4 22 33 48
+4 22 33 30
+4 22 33 49
+4 22 33 31
+4 22 33 50
+4 22 33 51
+4 22 33 52
+4 22 33 53
+4 22 33 32
+4 22 33 33
+4 22 33 55
+4 22 33 56
+4 22 33 57
+4 22 33 58
+4 22 33 59
+4 22 33 60
+4 22 33 61
+4 22 33 62
+4 22 33 63
+4 22 33 34
+4 22 33 35
+4 22 33 64
+4 22 33 65
+4 22 33 36
+4 22 33 66
+4 22 33 67
+4 22 33 37
+4 22 55 27
+4 22 55 44
+4 22 55 46
+4 22 55 28
+4 22 55 47
+4 22 55 29
+4 22 55 48
+4 22 55 30
+4 22 55 49
+4 22 55 31
+4 22 55 50
+4 22 55 51
+4 22 55 52
+4 22 55 53
+4 22 55 54
+4 22 55 32
+4 22 55 33
+4 22 55 55
+4 22 55 56
+4 22 55 57
+4 22 55 58
+4 22 55 59
+4 22 55 60
+4 22 55 61
+4 22 55 62
+4 22 55 63
+4 22 55 34
+4 22 55 35
+4 22 55 64
+4 22 55 65
+4 22 55 36
+4 22 55 66
+4 22 55 67
+4 22 55 37
+4 22 56 27
+4 22 56 44
+4 22 56 45
+4 22 56 46
+4 22 56 28
+4 22 56 47
+4 22 56 29
+4 22 56 48
+4 22 56 30
+4 22 56 49
+4 22 56 31
+4 22 56 50
+4 22 56 51
+4 22 56 53
+4 22 56 54
+4 22 56 32
+4 22 56 33
+4 22 56 55
+4 22 56 56
+4 22 56 57
+4 22 56 58
+4 22 56 59
+4 22 56 60
+4 22 56 61
+4 22 56 62
+4 22 56 63
+4 22 56 34
+4 22 56 64
+4 22 56 65
+4 22 56 36
+4 22 56 66
+4 22 56 67
+4 22 56 37
+4 22 57 27
+4 22 57 44
+4 22 57 45
+4 22 57 28
+4 22 57 47
+4 22 57 48
+4 22 57 30
+4 22 57 49
+4 22 57 31
+4 22 57 50
+4 22 57 51
+4 22 57 53
+4 22 57 54
+4 22 57 32
+4 22 57 33
+4 22 57 55
+4 22 57 56
+4 22 57 57
+4 22 57 58
+4 22 57 59
+4 22 57 61
+4 22 57 62
+4 22 57 63
+4 22 57 34
+4 22 57 35
+4 22 57 65
+4 22 57 36
+4 22 57 66
+4 22 57 67
+4 22 57 37
+4 22 58 27
+4 22 58 45
+4 22 58 46
+4 22 58 28
+4 22 58 47
+4 22 58 29
+4 22 58 48
+4 22 58 30
+4 22 58 49
+4 22 58 31
+4 22 58 50
+4 22 58 51
+4 22 58 52
+4 22 58 53
+4 22 58 54
+4 22 58 32
+4 22 58 33
+4 22 58 55
+4 22 58 56
+4 22 58 57
+4 22 58 58
+4 22 58 59
+4 22 58 60
+4 22 58 61
+4 22 58 62
+4 22 58 63
+4 22 58 34
+4 22 58 35
+4 22 58 64
+4 22 58 65
+4 22 58 36
+4 22 58 66
+4 22 58 67
+4 22 58 37
+4 22 59 44
+4 22 59 45
+4 22 59 46
+4 22 59 28
+4 22 59 47
+4 22 59 29
+4 22 59 48
+4 22 59 30
+4 22 59 49
+4 22 59 31
+4 22 59 50
+4 22 59 51
+4 22 59 52
+4 22 59 53
+4 22 59 54
+4 22 59 32
+4 22 59 33
+4 22 59 55
+4 22 59 56
+4 22 59 57
+4 22 59 58
+4 22 59 59
+4 22 59 60
+4 22 59 61
+4 22 59 62
+4 22 59 63
+4 22 59 34
+4 22 59 35
+4 22 59 64
+4 22 59 65
+4 22 59 36
+4 22 59 66
+4 22 59 67
+4 22 59 37
+4 22 60 27
+4 22 60 44
+4 22 60 45
+4 22 60 46
+4 22 60 28
+4 22 60 47
+4 22 60 29
+4 22 60 48
+4 22 60 30
+4 22 60 49
+4 22 60 31
+4 22 60 50
+4 22 60 51
+4 22 60 52
+4 22 60 53
+4 22 60 54
+4 22 60 32
+4 22 60 33
+4 22 60 55
+4 22 60 56
+4 22 60 58
+4 22 60 59
+4 22 60 60
+4 22 60 61
+4 22 60 62
+4 22 60 63
+4 22 60 34
+4 22 60 35
+4 22 60 64
+4 22 60 65
+4 22 60 36
+4 22 60 66
+4 22 60 67
+4 22 60 37
+4 22 61 27
+4 22 61 44
+4 22 61 45
+4 22 61 46
+4 22 61 28
+4 22 61 47
+4 22 61 29
+4 22 61 48
+4 22 61 30
+4 22 61 49
+4 22 61 50
+4 22 61 51
+4 22 61 52
+4 22 61 53
+4 22 61 54
+4 22 61 32
+4 22 61 33
+4 22 61 55
+4 22 61 56
+4 22 61 57
+4 22 61 58
+4 22 61 59
+4 22 61 60
+4 22 61 61
+4 22 61 62
+4 22 61 63
+4 22 61 34
+4 22 61 35
+4 22 61 64
+4 22 61 65
+4 22 61 36
+4 22 61 66
+4 22 61 67
+4 22 61 37
+4 22 62 27
+4 22 62 44
+4 22 62 45
+4 22 62 46
+4 22 62 28
+4 22 62 29
+4 22 62 48
+4 22 62 30
+4 22 62 49
+4 22 62 31
+4 22 62 50
+4 22 62 53
+4 22 62 54
+4 22 62 32
+4 22 62 33
+4 22 62 55
+4 22 62 56
+4 22 62 57
+4 22 62 58
+4 22 62 59
+4 22 62 60
+4 22 62 61
+4 22 62 62
+4 22 62 63
+4 22 62 34
+4 22 62 35
+4 22 62 64
+4 22 62 65
+4 22 62 36
+4 22 62 66
+4 22 62 67
+4 22 62 37
+4 22 63 27
+4 22 63 44
+4 22 63 46
+4 22 63 28
+4 22 63 47
+4 22 63 29
+4 22 63 48
+4 22 63 30
+4 22 63 49
+4 22 63 31
+4 22 63 50
+4 22 63 51
+4 22 63 52
+4 22 63 53
+4 22 63 54
+4 22 63 32
+4 22 63 33
+4 22 63 55
+4 22 63 56
+4 22 63 57
+4 22 63 58
+4 22 63 59
+4 22 63 60
+4 22 63 61
+4 22 63 62
+4 22 63 63
+4 22 63 34
+4 22 63 35
+4 22 63 64
+4 22 63 65
+4 22 63 36
+4 22 63 66
+4 22 63 67
+4 22 63 37
+4 22 34 27
+4 22 34 44
+4 22 34 45
+4 22 34 46
+4 22 34 47
+4 22 34 29
+4 22 34 48
+4 22 34 30
+4 22 34 49
+4 22 34 31
+4 22 34 50
+4 22 34 51
+4 22 34 52
+4 22 34 53
+4 22 34 54
+4 22 34 32
+4 22 34 33
+4 22 34 55
+4 22 34 56
+4 22 34 57
+4 22 34 58
+4 22 34 59
+4 22 34 60
+4 22 34 61
+4 22 34 62
+4 22 34 63
+4 22 34 34
+4 22 34 35
+4 22 34 64
+4 22 34 65
+4 22 34 36
+4 22 34 66
+4 22 34 67
+4 22 34 37
+4 22 35 27
+4 22 35 44
+4 22 35 45
+4 22 35 46
+4 22 35 28
+4 22 35 47
+4 22 35 29
+4 22 35 48
+4 22 35 30
+4 22 35 49
+4 22 35 31
+4 22 35 50
+4 22 35 51
+4 22 35 52
+4 22 35 53
+4 22 35 54
+4 22 35 32
+4 22 35 33
+4 22 35 55
+4 22 35 57
+4 22 35 58
+4 22 35 59
+4 22 35 60
+4 22 35 61
+4 22 35 62
+4 22 35 63
+4 22 35 34
+4 22 35 35
+4 22 35 64
+4 22 35 65
+4 22 35 36
+4 22 35 66
+4 22 35 67
+4 22 35 37
+4 22 64 27
+4 22 64 44
+4 22 64 45
+4 22 64 46
+4 22 64 28
+4 22 64 47
+4 22 64 29
+4 22 64 48
+4 22 64 30
+4 22 64 49
+4 22 64 31
+4 22 64 50
+4 22 64 51
+4 22 64 52
+4 22 64 53
+4 22 64 54
+4 22 64 32
+4 22 64 33
+4 22 64 55
+4 22 64 56
+4 22 64 58
+4 22 64 59
+4 22 64 60
+4 22 64 61
+4 22 64 62
+4 22 64 63
+4 22 64 34
+4 22 64 35
+4 22 64 64
+4 22 64 65
+4 22 64 36
+4 22 64 66
+4 22 64 67
+4 22 64 37
+4 22 65 27
+4 22 65 44
+4 22 65 46
+4 22 65 28
+4 22 65 47
+4 22 65 29
+4 22 65 48
+4 22 65 30
+4 22 65 31
+4 22 65 50
+4 22 65 51
+4 22 65 52
+4 22 65 53
+4 22 65 54
+4 22 65 32
+4 22 65 33
+4 22 65 55
+4 22 65 56
+4 22 65 57
+4 22 65 58
+4 22 65 59
+4 22 65 60
+4 22 65 61
+4 22 65 62
+4 22 65 63
+4 22 65 34
+4 22 65 35
+4 22 65 64
+4 22 65 65
+4 22 65 36
+4 22 65 66
+4 22 65 67
+4 22 65 37
+4 22 36 44
+4 22 36 45
+4 22 36 46
+4 22 36 28
+4 22 36 47
+4 22 36 29
+4 22 36 48
+4 22 36 30
+4 22 36 49
+4 22 36 31
+4 22 36 50
+4 22 36 51
+4 22 36 52
+4 22 36 53
+4 22 36 54
+4 22 36 32
+4 22 36 33
+4 22 36 55
+4 22 36 56
+4 22 36 57
+4 22 36 58
+4 22 36 59
+4 22 36 60
+4 22 36 61
+4 22 36 62
+4 22 36 63
+4 22 36 34
+4 22 36 35
+4 22 36 64
+4 22 36 65
+4 22 36 36
+4 22 36 66
+4 22 36 67
+4 22 36 37
+4 22 66 27
+4 22 66 44
+4 22 66 45
+4 22 66 46
+4 22 66 28
+4 22 66 47
+4 22 66 29
+4 22 66 48
+4 22 66 30
+4 22 66 49
+4 22 66 50
+4 22 66 51
+4 22 66 52
+4 22 66 53
+4 22 66 54
+4 22 66 32
+4 22 66 33
+4 22 66 55
+4 22 66 56
+4 22 66 57
+4 22 66 58
+4 22 66 59
+4 22 66 60
+4 22 66 61
+4 22 66 62
+4 22 66 63
+4 22 66 34
+4 22 66 35
+4 22 66 64
+4 22 66 65
+4 22 66 36
+4 22 66 66
+4 22 66 67
+4 22 66 37
+4 22 67 27
+4 22 67 44
+4 22 67 46
+4 22 67 28
+4 22 67 47
+4 22 67 29
+4 22 67 48
+4 22 67 30
+4 22 67 49
+4 22 67 31
+4 22 67 50
+4 22 67 51
+4 22 67 52
+4 22 67 53
+4 22 67 54
+4 22 67 32
+4 22 67 33
+4 22 67 55
+4 22 67 56
+4 22 67 57
+4 22 67 58
+4 22 67 59
+4 22 67 60
+4 22 67 61
+4 22 67 62
+4 22 67 63
+4 22 67 34
+4 22 67 35
+4 22 67 64
+4 22 67 65
+4 22 67 36
+4 22 67 66
+4 22 67 67
+4 22 67 37
+4 22 37 27
+4 22 37 44
+4 22 37 45
+4 22 37 46
+4 22 37 47
+4 22 37 29
+4 22 37 48
+4 22 37 30
+4 22 37 49
+4 22 37 31
+4 22 37 50
+4 22 37 51
+4 22 37 52
+4 22 37 53
+4 22 37 54
+4 22 37 32
+4 22 37 33
+4 22 37 55
+4 22 37 56
+4 22 37 57
+4 22 37 58
+4 22 37 59
+4 22 37 60
+4 22 37 61
+4 22 37 62
+4 22 37 63
+4 22 37 34
+4 22 37 35
+4 22 37 64
+4 22 37 65
+4 22 37 36
+4 22 37 66
+4 22 37 67
+4 22 37 37
+4 23 27 27
+4 23 27 46
+4 23 27 28
+4 23 27 47
+4 23 27 29
+4 23 27 48
+4 23 27 49
+4 23 27 31
+4 23 27 50
+4 23 27 52
+4 23 27 53
+4 23 27 54
+4 23 27 32
+4 23 27 33
+4 23 27 56
+4 23 27 57
+4 23 27 58
+4 23 27 60
+4 23 27 61
+4 23 27 63
+4 23 27 34
+4 23 27 35
+4 23 27 64
+4 23 27 65
+4 23 27 66
+4 23 27 67
+4 23 27 37
+4 23 44 44
+4 23 44 45
+4 23 44 46
+4 23 44 28
+4 23 44 47
+4 23 44 29
+4 23 44 48
+4 23 44 30
+4 23 44 31
+4 23 44 51
+4 23 44 52
+4 23 44 53
+4 23 44 32
+4 23 44 33
+4 23 44 55
+4 23 44 56
+4 23 44 57
+4 23 44 59
+4 23 44 60
+4 23 44 61
+4 23 44 62
+4 23 44 63
+4 23 44 34
+4 23 44 35
+4 23 44 64
+4 23 44 65
+4 23 44 36
+4 23 44 66
+4 23 44 67
+4 23 44 37
+4 23 45 44
+4 23 45 45
+4 23 45 46
+4 23 45 28
+4 23 45 47
+4 23 45 29
+4 23 45 48
+4 23 45 30
+4 23 45 49
+4 23 45 31
+4 23 45 50
+4 23 45 51
+4 23 45 52
+4 23 45 53
+4 23 45 54
+4 23 45 32
+4 23 45 33
+4 23 45 55
+4 23 45 56
+4 23 45 57
+4 23 45 58
+4 23 45 59
+4 23 45 60
+4 23 45 61
+4 23 45 62
+4 23 45 63
+4 23 45 34
+4 23 45 64
+4 23 45 65
+4 23 45 36
+4 23 45 66
+4 23 45 67
+4 23 45 37
+4 23 46 27
+4 23 46 44
+4 23 46 45
+4 23 46 46
+4 23 46 28
+4 23 46 47
+4 23 46 29
+4 23 46 48
+4 23 46 30
+4 23 46 49
+4 23 46 31
+4 23 46 50
+4 23 46 51
+4 23 46 52
+4 23 46 53
+4 23 46 54
+4 23 46 32
+4 23 46 33
+4 23 46 55
+4 23 46 56
+4 23 46 58
+4 23 46 59
+4 23 46 60
+4 23 46 61
+4 23 46 62
+4 23 46 63
+4 23 46 34
+4 23 46 35
+4 23 46 64
+4 23 46 65
+4 23 46 36
+4 23 46 66
+4 23 46 67
+4 23 46 37
+4 23 28 27
+4 23 28 44
+4 23 28 45
+4 23 28 46
+4 23 28 28
+4 23 28 47
+4 23 28 29
+4 23 28 48
+4 23 28 30
+4 23 28 49
+4 23 28 31
+4 23 28 50
+4 23 28 51
+4 23 28 52
+4 23 28 53
+4 23 28 54
+4 23 28 32
+4 23 28 33
+4 23 28 55
+4 23 28 56
+4 23 28 57
+4 23 28 58
+4 23 28 59
+4 23 28 60
+4 23 28 61
+4 23 28 62
+4 23 28 63
+4 23 28 34
+4 23 28 35
+4 23 28 64
+4 23 28 36
+4 23 28 66
+4 23 28 67
+4 23 28 37
+4 23 47 27
+4 23 47 44
+4 23 47 45
+4 23 47 46
+4 23 47 28
+4 23 47 47
+4 23 47 29
+4 23 47 48
+4 23 47 30
+4 23 47 49
+4 23 47 31
+4 23 47 50
+4 23 47 52
+4 23 47 53
+4 23 47 54
+4 23 47 32
+4 23 47 33
+4 23 47 55
+4 23 47 56
+4 23 47 57
+4 23 47 58
+4 23 47 59
+4 23 47 60
+4 23 47 61
+4 23 47 62
+4 23 47 63
+4 23 47 34
+4 23 47 35
+4 23 47 64
+4 23 47 65
+4 23 47 36
+4 23 47 66
+4 23 47 67
+4 23 47 37
+4 23 29 27
+4 23 29 44
+4 23 29 45
+4 23 29 46
+4 23 29 28
+4 23 29 47
+4 23 29 29
+4 23 29 48
+4 23 29 30
+4 23 29 49
+4 23 29 31
+4 23 29 50
+4 23 29 51
+4 23 29 52
+4 23 29 53
+4 23 29 54
+4 23 29 33
+4 23 29 55
+4 23 29 56
+4 23 29 57
+4 23 29 58
+4 23 29 59
+4 23 29 60
+4 23 29 61
+4 23 29 63
+4 23 29 34
+4 23 29 35
+4 23 29 64
+4 23 29 65
+4 23 29 36
+4 23 29 66
+4 23 29 67
+4 23 29 37
+4 23 48 27
+4 23 48 44
+4 23 48 45
+4 23 48 46
+4 23 48 28
+4 23 48 47
+4 23 48 29
+4 23 48 48
+4 23 48 30
+4 23 48 49
+4 23 48 31
+4 23 48 50
+4 23 48 51
+4 23 48 52
+4 23 48 53
+4 23 48 54
+4 23 48 32
+4 23 48 33
+4 23 48 55
+4 23 48 56
+4 23 48 57
+4 23 48 58
+4 23 48 59
+4 23 48 60
+4 23 48 61
+4 23 48 62
+4 23 48 63
+4 23 48 34
+4 23 48 35
+4 23 48 65
+4 23 48 36
+4 23 48 66
+4 23 48 67
+4 23 48 37
+4 23 30 44
+4 23 30 45
+4 23 30 46
+4 23 30 28
+4 23 30 47
+4 23 30 29
+4 23 30 48
+4 23 30 30
+4 23 30 49
+4 23 30 31
+4 23 30 50
+4 23 30 51
+4 23 30 52
+4 23 30 53
+4 23 30 54
+4 23 30 32
+4 23 30 33
+4 23 30 55
+4 23 30 56
+4 23 30 57
+4 23 30 58
+4 23 30 59
+4 23 30 60
+4 23 30 61
+4 23 30 62
+4 23 30 63
+4 23 30 35
+4 23 30 64
+4 23 30 65
+4 23 30 36
+4 23 30 66
+4 23 30 67
+4 23 30 37
+4 23 49 27
+4 23 49 45
+4 23 49 46
+4 23 49 28
+4 23 49 47
+4 23 49 29
+4 23 49 48
+4 23 49 30
+4 23 49 49
+4 23 49 31
+4 23 49 50
+4 23 49 51
+4 23 49 52
+4 23 49 53
+4 23 49 54
+4 23 49 32
+4 23 49 33
+4 23 49 55
+4 23 49 56
+4 23 49 57
+4 23 49 58
+4 23 49 59
+4 23 49 60
+4 23 49 61
+4 23 49 62
+4 23 49 63
+4 23 49 34
+4 23 49 35
+4 23 49 64
+4 23 49 65
+4 23 49 36
+4 23 49 66
+4 23 49 67
+4 23 49 37
+4 23 31 27
+4 23 31 44
+4 23 31 45
+4 23 31 46
+4 23 31 28
+4 23 31 47
+4 23 31 29
+4 23 31 48
+4 23 31 30
+4 23 31 49
+4 23 31 31
+4 23 31 50
+4 23 31 51
+4 23 31 53
+4 23 31 54
+4 23 31 32
+4 23 31 33
+4 23 31 55
+4 23 31 56
+4 23 31 57
+4 23 31 58
+4 23 31 59
+4 23 31 60
+4 23 31 61
+4 23 31 62
+4 23 31 63
+4 23 31 34
+4 23 31 35
+4 23 31 64
+4 23 31 65
+4 23 31 36
+4 23 31 66
+4 23 31 67
+4 23 31 37
+4 23 50 27
+4 23 50 45
+4 23 50 46
+4 23 50 28
+4 23 50 47
+4 23 50 29
+4 23 50 48
+4 23 50 30
+4 23 50 49
+4 23 50 31
+4 23 50 50
+4 23 50 51
+4 23 50 52
+4 23 50 53
+4 23 50 54
+4 23 50 32
+4 23 50 33
+4 23 50 55
+4 23 50 56
+4 23 50 57
+4 23 50 58
+4 23 50 59
+4 23 50 60
+4 23 50 61
+4 23 50 62
+4 23 50 63
+4 23 50 34
+4 23 50 35
+4 23 50 64
+4 23 50 65
+4 23 50 36
+4 23 50 66
+4 23 50 67
+4 23 50 37
+4 23 51 44
+4 23 51 45
+4 23 51 46
+4 23 51 28
+4 23 51 29
+4 23 51 48
+4 23 51 30
+4 23 51 49
+4 23 51 31
+4 23 51 50
+4 23 51 51
+4 23 51 52
+4 23 51 53
+4 23 51 54
+4 23 51 32
+4 23 51 33
+4 23 51 55
+4 23 51 56
+4 23 51 57
+4 23 51 58
+4 23 51 59
+4 23 51 60
+4 23 51 61
+4 23 51 62
+4 23 51 63
+4 23 51 34
+4 23 51 35
+4 23 51 64
+4 23 51 65
+4 23 51 36
+4 23 51 66
+4 23 51 67
+4 23 51 37
+4 23 52 27
+4 23 52 44
+4 23 52 45
+4 23 52 46
+4 23 52 28
+4 23 52 47
+4 23 52 29
+4 23 52 48
+4 23 52 30
+4 23 52 49
+4 23 52 50
+4 23 52 51
+4 23 52 52
+4 23 52 54
+4 23 52 32
+4 23 52 33
+4 23 52 55
+4 23 52 57
+4 23 52 58
+4 23 52 59
+4 23 52 60
+4 23 52 61
+4 23 52 63
+4 23 52 34
+4 23 52 35
+4 23 52 64
+4 23 52 65
+4 23 52 36
+4 23 52 66
+4 23 52 67
+4 23 52 37
+4 23 53 27
+4 23 53 44
+4 23 53 45
+4 23 53 46
+4 23 53 28
+4 23 53 47
+4 23 53 29
+4 23 53 48
+4 23 53 30
+4 23 53 49
+4 23 53 31
+4 23 53 50
+4 23 53 51
+4 23 53 53
+4 23 53 54
+4 23 53 32
+4 23 53 33
+4 23 53 55
+4 23 53 56
+4 23 53 57
+4 23 53 58
+4 23 53 59
+4 23 53 60
+4 23 53 61
+4 23 53 62
+4 23 53 63
+4 23 53 34
+4 23 53 35
+4 23 53 64
+4 23 53 65
+4 23 53 36
+4 23 53 66
+4 23 53 67
+4 23 53 37
+4 23 54 27
+4 23 54 45
+4 23 54 46
+4 23 54 28
+4 23 54 47
+4 23 54 29
+4 23 54 48
+4 23 54 30
+4 23 54 49
+4 23 54 31
+4 23 54 50
+4 23 54 51
+4 23 54 52
+4 23 54 53
+4 23 54 54
+4 23 54 32
+4 23 54 33
+4 23 54 55
+4 23 54 56
+4 23 54 57
+4 23 54 58
+4 23 54 59
+4 23 54 60
+4 23 54 61
+4 23 54 62
+4 23 54 63
+4 23 54 34
+4 23 54 35
+4 23 54 64
+4 23 54 65
+4 23 54 36
+4 23 54 66
+4 23 54 67
+4 23 54 37
+4 23 32 27
+4 23 32 44
+4 23 32 45
+4 23 32 46
+4 23 32 28
+4 23 32 47
+4 23 32 48
+4 23 32 30
+4 23 32 49
+4 23 32 31
+4 23 32 50
+4 23 32 51
+4 23 32 52
+4 23 32 53
+4 23 32 54
+4 23 32 32
+4 23 32 33
+4 23 32 55
+4 23 32 56
+4 23 32 57
+4 23 32 58
+4 23 32 59
+4 23 32 60
+4 23 32 61
+4 23 32 62
+4 23 32 63
+4 23 32 34
+4 23 32 35
+4 23 32 64
+4 23 32 65
+4 23 32 36
+4 23 32 66
+4 23 32 67
+4 23 32 37
+4 23 33 27
+4 23 33 44
+4 23 33 45
+4 23 33 46
+4 23 33 28
+4 23 33 47
+4 23 33 29
+4 23 33 48
+4 23 33 30
+4 23 33 49
+4 23 33 31
+4 23 33 50
+4 23 33 51
+4 23 33 52
+4 23 33 53
+4 23 33 54
+4 23 33 32
+4 23 33 33
+4 23 33 56
+4 23 33 57
+4 23 33 58
+4 23 33 59
+4 23 33 60
+4 23 33 61
+4 23 33 62
+4 23 33 63
+4 23 33 34
+4 23 33 35
+4 23 33 64
+4 23 33 65
+4 23 33 36
+4 23 33 66
+4 23 33 67
+4 23 33 37
+4 23 55 44
+4 23 55 45
+4 23 55 46
+4 23 55 28
+4 23 55 47
+4 23 55 29
+4 23 55 48
+4 23 55 30
+4 23 55 49
+4 23 55 31
+4 23 55 50
+4 23 55 51
+4 23 55 52
+4 23 55 53
+4 23 55 54
+4 23 55 32
+4 23 55 55
+4 23 55 56
+4 23 55 57
+4 23 55 58
+4 23 55 59
+4 23 55 60
+4 23 55 61
+4 23 55 62
+4 23 55 63
+4 23 55 34
+4 23 55 35
+4 23 55 64
+4 23 55 65
+4 23 55 36
+4 23 55 66
+4 23 55 67
+4 23 55 37
+4 23 56 27
+4 23 56 44
+4 23 56 45
+4 23 56 46
+4 23 56 28
+4 23 56 47
+4 23 56 29
+4 23 56 48
+4 23 56 30
+4 23 56 49
+4 23 56 31
+4 23 56 50
+4 23 56 51
+4 23 56 53
+4 23 56 54
+4 23 56 32
+4 23 56 33
+4 23 56 55
+4 23 56 56
+4 23 56 57
+4 23 56 58
+4 23 56 59
+4 23 56 60
+4 23 56 61
+4 23 56 62
+4 23 56 63
+4 23 56 34
+4 23 56 35
+4 23 56 64
+4 23 56 65
+4 23 56 36
+4 23 56 66
+4 23 56 67
+4 23 56 37
+4 23 57 27
+4 23 57 44
+4 23 57 45
+4 23 57 28
+4 23 57 47
+4 23 57 29
+4 23 57 48
+4 23 57 30
+4 23 57 49
+4 23 57 31
+4 23 57 50
+4 23 57 51
+4 23 57 52
+4 23 57 53
+4 23 57 54
+4 23 57 32
+4 23 57 33
+4 23 57 55
+4 23 57 56
+4 23 57 57
+4 23 57 58
+4 23 57 59
+4 23 57 61
+4 23 57 63
+4 23 57 34
+4 23 57 35
+4 23 57 64
+4 23 57 65
+4 23 57 36
+4 23 57 66
+4 23 57 67
+4 23 57 37
+4 23 58 27
+4 23 58 45
+4 23 58 46
+4 23 58 28
+4 23 58 47
+4 23 58 29
+4 23 58 48
+4 23 58 30
+4 23 58 49
+4 23 58 31
+4 23 58 50
+4 23 58 51
+4 23 58 52
+4 23 58 53
+4 23 58 54
+4 23 58 32
+4 23 58 33
+4 23 58 55
+4 23 58 56
+4 23 58 57
+4 23 58 58
+4 23 58 59
+4 23 58 60
+4 23 58 61
+4 23 58 62
+4 23 58 63
+4 23 58 34
+4 23 58 35
+4 23 58 64
+4 23 58 65
+4 23 58 36
+4 23 58 66
+4 23 58 67
+4 23 58 37
+4 23 59 44
+4 23 59 45
+4 23 59 46
+4 23 59 28
+4 23 59 47
+4 23 59 29
+4 23 59 48
+4 23 59 30
+4 23 59 49
+4 23 59 31
+4 23 59 50
+4 23 59 51
+4 23 59 52
+4 23 59 53
+4 23 59 54
+4 23 59 32
+4 23 59 33
+4 23 59 55
+4 23 59 56
+4 23 59 57
+4 23 59 58
+4 23 59 59
+4 23 59 60
+4 23 59 61
+4 23 59 62
+4 23 59 63
+4 23 59 34
+4 23 59 35
+4 23 59 64
+4 23 59 65
+4 23 59 36
+4 23 59 66
+4 23 59 67
+4 23 59 37
+4 23 60 27
+4 23 60 44
+4 23 60 45
+4 23 60 46
+4 23 60 28
+4 23 60 47
+4 23 60 29
+4 23 60 48
+4 23 60 30
+4 23 60 49
+4 23 60 31
+4 23 60 50
+4 23 60 51
+4 23 60 52
+4 23 60 53
+4 23 60 54
+4 23 60 32
+4 23 60 33
+4 23 60 55
+4 23 60 56
+4 23 60 58
+4 23 60 59
+4 23 60 60
+4 23 60 61
+4 23 60 62
+4 23 60 63
+4 23 60 34
+4 23 60 35
+4 23 60 64
+4 23 60 65
+4 23 60 36
+4 23 60 66
+4 23 60 67
+4 23 60 37
+4 23 61 27
+4 23 61 44
+4 23 61 45
+4 23 61 46
+4 23 61 28
+4 23 61 47
+4 23 61 29
+4 23 61 48
+4 23 61 30
+4 23 61 49
+4 23 61 31
+4 23 61 50
+4 23 61 51
+4 23 61 52
+4 23 61 53
+4 23 61 54
+4 23 61 32
+4 23 61 33
+4 23 61 55
+4 23 61 56
+4 23 61 57
+4 23 61 58
+4 23 61 59
+4 23 61 60
+4 23 61 61
+4 23 61 62
+4 23 61 63
+4 23 61 34
+4 23 61 35
+4 23 61 64
+4 23 61 65
+4 23 61 36
+4 23 61 66
+4 23 61 37
+4 23 62 44
+4 23 62 45
+4 23 62 46
+4 23 62 28
+4 23 62 47
+4 23 62 48
+4 23 62 30
+4 23 62 49
+4 23 62 31
+4 23 62 50
+4 23 62 51
+4 23 62 53
+4 23 62 54
+4 23 62 32
+4 23 62 33
+4 23 62 55
+4 23 62 56
+4 23 62 58
+4 23 62 59
+4 23 62 60
+4 23 62 61
+4 23 62 62
+4 23 62 63
+4 23 62 34
+4 23 62 35
+4 23 62 64
+4 23 62 36
+4 23 62 66
+4 23 63 27
+4 23 63 44
+4 23 63 45
+4 23 63 46
+4 23 63 28
+4 23 63 47
+4 23 63 29
+4 23 63 48
+4 23 63 30
+4 23 63 49
+4 23 63 31
+4 23 63 50
+4 23 63 51
+4 23 63 52
+4 23 63 53
+4 23 63 54
+4 23 63 32
+4 23 63 33
+4 23 63 55
+4 23 63 56
+4 23 63 57
+4 23 63 58
+4 23 63 59
+4 23 63 60
+4 23 63 61
+4 23 63 62
+4 23 63 63
+4 23 63 34
+4 23 63 35
+4 23 63 64
+4 23 63 36
+4 23 63 66
+4 23 63 67
+4 23 63 37
+4 23 34 27
+4 23 34 44
+4 23 34 45
+4 23 34 46
+4 23 34 28
+4 23 34 47
+4 23 34 29
+4 23 34 48
+4 23 34 49
+4 23 34 31
+4 23 34 50
+4 23 34 51
+4 23 34 52
+4 23 34 53
+4 23 34 54
+4 23 34 32
+4 23 34 33
+4 23 34 55
+4 23 34 56
+4 23 34 57
+4 23 34 58
+4 23 34 59
+4 23 34 60
+4 23 34 61
+4 23 34 62
+4 23 34 63
+4 23 34 34
+4 23 34 35
+4 23 34 64
+4 23 34 65
+4 23 34 36
+4 23 34 66
+4 23 34 67
+4 23 34 37
+4 23 35 27
+4 23 35 44
+4 23 35 46
+4 23 35 28
+4 23 35 47
+4 23 35 29
+4 23 35 48
+4 23 35 30
+4 23 35 49
+4 23 35 31
+4 23 35 50
+4 23 35 51
+4 23 35 52
+4 23 35 53
+4 23 35 54
+4 23 35 32
+4 23 35 33
+4 23 35 55
+4 23 35 56
+4 23 35 57
+4 23 35 58
+4 23 35 59
+4 23 35 60
+4 23 35 61
+4 23 35 62
+4 23 35 63
+4 23 35 34
+4 23 35 35
+4 23 35 64
+4 23 35 65
+4 23 35 36
+4 23 35 66
+4 23 35 67
+4 23 35 37
+4 23 64 27
+4 23 64 44
+4 23 64 45
+4 23 64 46
+4 23 64 28
+4 23 64 47
+4 23 64 29
+4 23 64 30
+4 23 64 49
+4 23 64 31
+4 23 64 50
+4 23 64 51
+4 23 64 52
+4 23 64 53
+4 23 64 54
+4 23 64 32
+4 23 64 33
+4 23 64 55
+4 23 64 56
+4 23 64 57
+4 23 64 58
+4 23 64 59
+4 23 64 60
+4 23 64 61
+4 23 64 62
+4 23 64 63
+4 23 64 34
+4 23 64 35
+4 23 64 64
+4 23 64 36
+4 23 64 66
+4 23 64 67
+4 23 64 37
+4 23 65 27
+4 23 65 44
+4 23 65 45
+4 23 65 46
+4 23 65 47
+4 23 65 29
+4 23 65 48
+4 23 65 30
+4 23 65 49
+4 23 65 31
+4 23 65 50
+4 23 65 51
+4 23 65 52
+4 23 65 53
+4 23 65 54
+4 23 65 32
+4 23 65 33
+4 23 65 55
+4 23 65 56
+4 23 65 57
+4 23 65 58
+4 23 65 59
+4 23 65 60
+4 23 65 61
+4 23 65 34
+4 23 65 35
+4 23 65 65
+4 23 65 36
+4 23 65 67
+4 23 65 37
+4 23 36 44
+4 23 36 45
+4 23 36 46
+4 23 36 28
+4 23 36 47
+4 23 36 29
+4 23 36 48
+4 23 36 30
+4 23 36 49
+4 23 36 31
+4 23 36 50
+4 23 36 51
+4 23 36 52
+4 23 36 53
+4 23 36 54
+4 23 36 32
+4 23 36 33
+4 23 36 55
+4 23 36 56
+4 23 36 57
+4 23 36 58
+4 23 36 59
+4 23 36 60
+4 23 36 61
+4 23 36 62
+4 23 36 63
+4 23 36 34
+4 23 36 35
+4 23 36 64
+4 23 36 65
+4 23 36 36
+4 23 36 66
+4 23 36 67
+4 23 36 37
+4 23 66 27
+4 23 66 44
+4 23 66 45
+4 23 66 46
+4 23 66 28
+4 23 66 47
+4 23 66 29
+4 23 66 48
+4 23 66 30
+4 23 66 49
+4 23 66 31
+4 23 66 50
+4 23 66 51
+4 23 66 52
+4 23 66 53
+4 23 66 54
+4 23 66 32
+4 23 66 33
+4 23 66 55
+4 23 66 56
+4 23 66 57
+4 23 66 58
+4 23 66 59
+4 23 66 60
+4 23 66 61
+4 23 66 62
+4 23 66 63
+4 23 66 34
+4 23 66 35
+4 23 66 64
+4 23 66 36
+4 23 66 66
+4 23 66 67
+4 23 66 37
+4 23 67 27
+4 23 67 44
+4 23 67 45
+4 23 67 46
+4 23 67 28
+4 23 67 47
+4 23 67 29
+4 23 67 48
+4 23 67 30
+4 23 67 49
+4 23 67 31
+4 23 67 50
+4 23 67 51
+4 23 67 52
+4 23 67 53
+4 23 67 54
+4 23 67 32
+4 23 67 33
+4 23 67 55
+4 23 67 56
+4 23 67 57
+4 23 67 58
+4 23 67 59
+4 23 67 60
+4 23 67 63
+4 23 67 34
+4 23 67 35
+4 23 67 64
+4 23 67 65
+4 23 67 36
+4 23 67 66
+4 23 67 67
+4 23 67 37
+4 23 37 27
+4 23 37 44
+4 23 37 45
+4 23 37 46
+4 23 37 28
+4 23 37 47
+4 23 37 29
+4 23 37 48
+4 23 37 30
+4 23 37 49
+4 23 37 31
+4 23 37 50
+4 23 37 51
+4 23 37 52
+4 23 37 53
+4 23 37 54
+4 23 37 32
+4 23 37 33
+4 23 37 55
+4 23 37 56
+4 23 37 57
+4 23 37 58
+4 23 37 59
+4 23 37 60
+4 23 37 61
+4 23 37 63
+4 23 37 34
+4 23 37 35
+4 23 37 64
+4 23 37 65
+4 23 37 36
+4 23 37 66
+4 23 37 67
+4 23 37 37
+4 24 27 27
+4 24 27 45
+4 24 27 46
+4 24 27 28
+4 24 27 47
+4 24 27 29
+4 24 27 48
+4 24 27 30
+4 24 27 49
+4 24 27 31
+4 24 27 50
+4 24 27 52
+4 24 27 53
+4 24 27 54
+4 24 27 33
+4 24 27 56
+4 24 27 57
+4 24 27 58
+4 24 27 60
+4 24 27 61
+4 24 27 62
+4 24 27 63
+4 24 27 34
+4 24 27 35
+4 24 27 64
+4 24 27 65
+4 24 27 66
+4 24 27 67
+4 24 27 37
+4 24 44 44
+4 24 44 45
+4 24 44 46
+4 24 44 28
+4 24 44 47
+4 24 44 29
+4 24 44 48
+4 24 44 30
+4 24 44 49
+4 24 44 31
+4 24 44 50
+4 24 44 51
+4 24 44 52
+4 24 44 53
+4 24 44 54
+4 24 44 32
+4 24 44 33
+4 24 44 55
+4 24 44 57
+4 24 44 59
+4 24 44 60
+4 24 44 61
+4 24 44 62
+4 24 44 63
+4 24 44 34
+4 24 44 35
+4 24 44 64
+4 24 44 65
+4 24 44 36
+4 24 44 66
+4 24 44 67
+4 24 44 37
+4 24 45 27
+4 24 45 44
+4 24 45 45
+4 24 45 46
+4 24 45 47
+4 24 45 29
+4 24 45 30
+4 24 45 49
+4 24 45 31
+4 24 45 50
+4 24 45 51
+4 24 45 53
+4 24 45 54
+4 24 45 32
+4 24 45 33
+4 24 45 56
+4 24 45 57
+4 24 45 58
+4 24 45 59
+4 24 45 60
+4 24 45 61
+4 24 45 62
+4 24 45 63
+4 24 45 34
+4 24 45 64
+4 24 45 36
+4 24 45 66
+4 24 45 37
+4 24 46 27
+4 24 46 44
+4 24 46 45
+4 24 46 46
+4 24 46 28
+4 24 46 47
+4 24 46 29
+4 24 46 48
+4 24 46 30
+4 24 46 49
+4 24 46 31
+4 24 46 50
+4 24 46 51
+4 24 46 52
+4 24 46 53
+4 24 46 54
+4 24 46 32
+4 24 46 33
+4 24 46 56
+4 24 46 57
+4 24 46 58
+4 24 46 59
+4 24 46 60
+4 24 46 61
+4 24 46 62
+4 24 46 63
+4 24 46 35
+4 24 46 64
+4 24 46 65
+4 24 46 36
+4 24 46 66
+4 24 46 67
+4 24 46 37
+4 24 28 27
+4 24 28 44
+4 24 28 46
+4 24 28 28
+4 24 28 47
+4 24 28 29
+4 24 28 48
+4 24 28 30
+4 24 28 49
+4 24 28 31
+4 24 28 50
+4 24 28 51
+4 24 28 52
+4 24 28 53
+4 24 28 54
+4 24 28 32
+4 24 28 33
+4 24 28 55
+4 24 28 56
+4 24 28 57
+4 24 28 58
+4 24 28 59
+4 24 28 60
+4 24 28 61
+4 24 28 62
+4 24 28 63
+4 24 28 34
+4 24 28 35
+4 24 28 64
+4 24 28 65
+4 24 28 36
+4 24 28 66
+4 24 28 67
+4 24 28 37
+4 24 47 27
+4 24 47 44
+4 24 47 45
+4 24 47 46
+4 24 47 28
+4 24 47 47
+4 24 47 29
+4 24 47 48
+4 24 47 30
+4 24 47 49
+4 24 47 31
+4 24 47 50
+4 24 47 51
+4 24 47 52
+4 24 47 53
+4 24 47 54
+4 24 47 32
+4 24 47 33
+4 24 47 55
+4 24 47 56
+4 24 47 57
+4 24 47 58
+4 24 47 59
+4 24 47 60
+4 24 47 61
+4 24 47 62
+4 24 47 63
+4 24 47 34
+4 24 47 35
+4 24 47 64
+4 24 47 65
+4 24 47 36
+4 24 47 67
+4 24 47 37
+4 24 29 27
+4 24 29 44
+4 24 29 45
+4 24 29 46
+4 24 29 28
+4 24 29 47
+4 24 29 29
+4 24 29 48
+4 24 29 30
+4 24 29 49
+4 24 29 31
+4 24 29 50
+4 24 29 51
+4 24 29 52
+4 24 29 53
+4 24 29 54
+4 24 29 32
+4 24 29 33
+4 24 29 55
+4 24 29 56
+4 24 29 57
+4 24 29 58
+4 24 29 59
+4 24 29 60
+4 24 29 61
+4 24 29 62
+4 24 29 63
+4 24 29 34
+4 24 29 35
+4 24 29 64
+4 24 29 65
+4 24 29 36
+4 24 29 66
+4 24 29 67
+4 24 29 37
+4 24 48 27
+4 24 48 44
+4 24 48 46
+4 24 48 28
+4 24 48 47
+4 24 48 29
+4 24 48 48
+4 24 48 30
+4 24 48 49
+4 24 48 31
+4 24 48 50
+4 24 48 51
+4 24 48 52
+4 24 48 53
+4 24 48 54
+4 24 48 32
+4 24 48 33
+4 24 48 55
+4 24 48 56
+4 24 48 57
+4 24 48 58
+4 24 48 59
+4 24 48 60
+4 24 48 61
+4 24 48 62
+4 24 48 63
+4 24 48 34
+4 24 48 35
+4 24 48 64
+4 24 48 65
+4 24 48 36
+4 24 48 66
+4 24 48 67
+4 24 48 37
+4 24 30 27
+4 24 30 44
+4 24 30 45
+4 24 30 46
+4 24 30 28
+4 24 30 47
+4 24 30 29
+4 24 30 48
+4 24 30 30
+4 24 30 49
+4 24 30 31
+4 24 30 50
+4 24 30 51
+4 24 30 52
+4 24 30 53
+4 24 30 54
+4 24 30 32
+4 24 30 33
+4 24 30 56
+4 24 30 57
+4 24 30 58
+4 24 30 59
+4 24 30 60
+4 24 30 61
+4 24 30 62
+4 24 30 63
+4 24 30 34
+4 24 30 35
+4 24 30 64
+4 24 30 65
+4 24 30 36
+4 24 30 66
+4 24 30 67
+4 24 30 37
+4 24 49 27
+4 24 49 44
+4 24 49 45
+4 24 49 46
+4 24 49 28
+4 24 49 47
+4 24 49 29
+4 24 49 48
+4 24 49 30
+4 24 49 49
+4 24 49 31
+4 24 49 50
+4 24 49 51
+4 24 49 52
+4 24 49 53
+4 24 49 54
+4 24 49 32
+4 24 49 33
+4 24 49 55
+4 24 49 56
+4 24 49 57
+4 24 49 58
+4 24 49 59
+4 24 49 61
+4 24 49 62
+4 24 49 63
+4 24 49 34
+4 24 49 35
+4 24 49 64
+4 24 49 65
+4 24 49 36
+4 24 49 66
+4 24 49 67
+4 24 49 37
+4 24 31 27
+4 24 31 44
+4 24 31 45
+4 24 31 46
+4 24 31 28
+4 24 31 47
+4 24 31 29
+4 24 31 48
+4 24 31 30
+4 24 31 49
+4 24 31 31
+4 24 31 50
+4 24 31 51
+4 24 31 52
+4 24 31 53
+4 24 31 54
+4 24 31 32
+4 24 31 33
+4 24 31 55
+4 24 31 56
+4 24 31 57
+4 24 31 58
+4 24 31 59
+4 24 31 60
+4 24 31 61
+4 24 31 62
+4 24 31 63
+4 24 31 34
+4 24 31 35
+4 24 31 64
+4 24 31 65
+4 24 31 36
+4 24 31 67
+4 24 31 37
+4 24 50 27
+4 24 50 44
+4 24 50 45
+4 24 50 46
+4 24 50 28
+4 24 50 47
+4 24 50 29
+4 24 50 48
+4 24 50 30
+4 24 50 49
+4 24 50 31
+4 24 50 50
+4 24 50 52
+4 24 50 53
+4 24 50 54
+4 24 50 32
+4 24 50 33
+4 24 50 55
+4 24 50 56
+4 24 50 57
+4 24 50 58
+4 24 50 59
+4 24 50 60
+4 24 50 61
+4 24 50 62
+4 24 50 63
+4 24 50 34
+4 24 50 35
+4 24 50 64
+4 24 50 65
+4 24 50 36
+4 24 50 66
+4 24 50 67
+4 24 50 37
+4 24 51 44
+4 24 51 45
+4 24 51 46
+4 24 51 28
+4 24 51 47
+4 24 51 29
+4 24 51 48
+4 24 51 30
+4 24 51 49
+4 24 51 31
+4 24 51 51
+4 24 51 52
+4 24 51 53
+4 24 51 54
+4 24 51 32
+4 24 51 33
+4 24 51 55
+4 24 51 56
+4 24 51 57
+4 24 51 58
+4 24 51 59
+4 24 51 60
+4 24 51 61
+4 24 51 62
+4 24 51 63
+4 24 51 34
+4 24 51 35
+4 24 51 64
+4 24 51 65
+4 24 51 36
+4 24 51 66
+4 24 51 67
+4 24 51 37
+4 24 52 27
+4 24 52 44
+4 24 52 46
+4 24 52 28
+4 24 52 47
+4 24 52 29
+4 24 52 48
+4 24 52 30
+4 24 52 49
+4 24 52 31
+4 24 52 50
+4 24 52 51
+4 24 52 52
+4 24 52 53
+4 24 52 54
+4 24 52 32
+4 24 52 33
+4 24 52 55
+4 24 52 56
+4 24 52 57
+4 24 52 58
+4 24 52 59
+4 24 52 60
+4 24 52 61
+4 24 52 62
+4 24 52 63
+4 24 52 34
+4 24 52 35
+4 24 52 64
+4 24 52 65
+4 24 52 36
+4 24 52 66
+4 24 52 67
+4 24 52 37
+4 24 53 27
+4 24 53 44
+4 24 53 45
+4 24 53 46
+4 24 53 28
+4 24 53 47
+4 24 53 29
+4 24 53 48
+4 24 53 30
+4 24 53 49
+4 24 53 31
+4 24 53 50
+4 24 53 51
+4 24 53 52
+4 24 53 53
+4 24 53 54
+4 24 53 32
+4 24 53 33
+4 24 53 55
+4 24 53 56
+4 24 53 57
+4 24 53 58
+4 24 53 59
+4 24 53 60
+4 24 53 61
+4 24 53 62
+4 24 53 63
+4 24 53 34
+4 24 53 35
+4 24 53 64
+4 24 53 65
+4 24 53 36
+4 24 53 66
+4 24 53 67
+4 24 53 37
+4 24 54 27
+4 24 54 44
+4 24 54 45
+4 24 54 46
+4 24 54 28
+4 24 54 47
+4 24 54 29
+4 24 54 48
+4 24 54 30
+4 24 54 49
+4 24 54 31
+4 24 54 50
+4 24 54 51
+4 24 54 52
+4 24 54 53
+4 24 54 54
+4 24 54 32
+4 24 54 55
+4 24 54 56
+4 24 54 57
+4 24 54 58
+4 24 54 59
+4 24 54 60
+4 24 54 61
+4 24 54 62
+4 24 54 63
+4 24 54 34
+4 24 54 35
+4 24 54 64
+4 24 54 65
+4 24 54 36
+4 24 54 66
+4 24 54 67
+4 24 54 37
+4 24 32 44
+4 24 32 45
+4 24 32 46
+4 24 32 28
+4 24 32 47
+4 24 32 29
+4 24 32 48
+4 24 32 30
+4 24 32 49
+4 24 32 31
+4 24 32 50
+4 24 32 51
+4 24 32 52
+4 24 32 53
+4 24 32 54
+4 24 32 32
+4 24 32 33
+4 24 32 55
+4 24 32 56
+4 24 32 57
+4 24 32 58
+4 24 32 59
+4 24 32 60
+4 24 32 61
+4 24 32 62
+4 24 32 34
+4 24 32 35
+4 24 32 64
+4 24 32 65
+4 24 32 36
+4 24 32 66
+4 24 32 67
+4 24 32 37
+4 24 33 27
+4 24 33 44
+4 24 33 45
+4 24 33 46
+4 24 33 28
+4 24 33 47
+4 24 33 29
+4 24 33 48
+4 24 33 30
+4 24 33 49
+4 24 33 31
+4 24 33 50
+4 24 33 51
+4 24 33 52
+4 24 33 53
+4 24 33 32
+4 24 33 33
+4 24 33 56
+4 24 33 57
+4 24 33 58
+4 24 33 59
+4 24 33 60
+4 24 33 61
+4 24 33 62
+4 24 33 63
+4 24 33 34
+4 24 33 35
+4 24 33 64
+4 24 33 65
+4 24 33 36
+4 24 33 66
+4 24 33 67
+4 24 33 37
+4 24 55 44
+4 24 55 28
+4 24 55 47
+4 24 55 29
+4 24 55 48
+4 24 55 49
+4 24 55 31
+4 24 55 50
+4 24 55 51
+4 24 55 52
+4 24 55 53
+4 24 55 54
+4 24 55 32
+4 24 55 55
+4 24 55 56
+4 24 55 57
+4 24 55 58
+4 24 55 59
+4 24 55 61
+4 24 55 62
+4 24 55 63
+4 24 55 34
+4 24 55 35
+4 24 55 64
+4 24 55 65
+4 24 55 36
+4 24 55 67
+4 24 55 37
+4 24 56 27
+4 24 56 45
+4 24 56 46
+4 24 56 28
+4 24 56 47
+4 24 56 29
+4 24 56 48
+4 24 56 30
+4 24 56 49
+4 24 56 31
+4 24 56 50
+4 24 56 51
+4 24 56 52
+4 24 56 53
+4 24 56 54
+4 24 56 32
+4 24 56 33
+4 24 56 55
+4 24 56 56
+4 24 56 57
+4 24 56 58
+4 24 56 59
+4 24 56 60
+4 24 56 61
+4 24 56 62
+4 24 56 63
+4 24 56 34
+4 24 56 35
+4 24 56 64
+4 24 56 65
+4 24 56 36
+4 24 56 66
+4 24 56 67
+4 24 56 37
+4 24 57 27
+4 24 57 44
+4 24 57 45
+4 24 57 46
+4 24 57 28
+4 24 57 47
+4 24 57 29
+4 24 57 48
+4 24 57 30
+4 24 57 49
+4 24 57 31
+4 24 57 50
+4 24 57 51
+4 24 57 52
+4 24 57 53
+4 24 57 54
+4 24 57 32
+4 24 57 33
+4 24 57 55
+4 24 57 56
+4 24 57 57
+4 24 57 58
+4 24 57 59
+4 24 57 61
+4 24 57 62
+4 24 57 63
+4 24 57 34
+4 24 57 35
+4 24 57 64
+4 24 57 65
+4 24 57 36
+4 24 57 66
+4 24 57 67
+4 24 57 37
+4 24 58 27
+4 24 58 45
+4 24 58 46
+4 24 58 28
+4 24 58 47
+4 24 58 29
+4 24 58 48
+4 24 58 30
+4 24 58 49
+4 24 58 31
+4 24 58 50
+4 24 58 51
+4 24 58 52
+4 24 58 53
+4 24 58 54
+4 24 58 32
+4 24 58 33
+4 24 58 55
+4 24 58 56
+4 24 58 57
+4 24 58 58
+4 24 58 59
+4 24 58 60
+4 24 58 61
+4 24 58 62
+4 24 58 63
+4 24 58 34
+4 24 58 35
+4 24 58 64
+4 24 58 65
+4 24 58 36
+4 24 58 66
+4 24 58 67
+4 24 58 37
+4 24 59 44
+4 24 59 45
+4 24 59 46
+4 24 59 28
+4 24 59 47
+4 24 59 29
+4 24 59 48
+4 24 59 30
+4 24 59 49
+4 24 59 31
+4 24 59 50
+4 24 59 51
+4 24 59 52
+4 24 59 53
+4 24 59 54
+4 24 59 32
+4 24 59 33
+4 24 59 55
+4 24 59 56
+4 24 59 57
+4 24 59 58
+4 24 59 59
+4 24 59 60
+4 24 59 61
+4 24 59 62
+4 24 59 63
+4 24 59 34
+4 24 59 35
+4 24 59 64
+4 24 59 65
+4 24 59 36
+4 24 59 66
+4 24 59 67
+4 24 59 37
+4 24 60 27
+4 24 60 44
+4 24 60 45
+4 24 60 46
+4 24 60 28
+4 24 60 47
+4 24 60 29
+4 24 60 48
+4 24 60 30
+4 24 60 31
+4 24 60 50
+4 24 60 51
+4 24 60 52
+4 24 60 53
+4 24 60 54
+4 24 60 32
+4 24 60 33
+4 24 60 56
+4 24 60 58
+4 24 60 59
+4 24 60 60
+4 24 60 62
+4 24 60 63
+4 24 60 34
+4 24 60 35
+4 24 60 64
+4 24 60 65
+4 24 60 36
+4 24 60 66
+4 24 60 67
+4 24 61 27
+4 24 61 44
+4 24 61 45
+4 24 61 46
+4 24 61 28
+4 24 61 47
+4 24 61 29
+4 24 61 48
+4 24 61 30
+4 24 61 49
+4 24 61 31
+4 24 61 50
+4 24 61 51
+4 24 61 52
+4 24 61 53
+4 24 61 54
+4 24 61 32
+4 24 61 33
+4 24 61 55
+4 24 61 56
+4 24 61 57
+4 24 61 58
+4 24 61 59
+4 24 61 61
+4 24 61 62
+4 24 61 63
+4 24 61 34
+4 24 61 35
+4 24 61 64
+4 24 61 65
+4 24 61 36
+4 24 61 66
+4 24 61 67
+4 24 61 37
+4 24 62 27
+4 24 62 44
+4 24 62 45
+4 24 62 46
+4 24 62 28
+4 24 62 47
+4 24 62 29
+4 24 62 48
+4 24 62 30
+4 24 62 49
+4 24 62 31
+4 24 62 50
+4 24 62 51
+4 24 62 52
+4 24 62 53
+4 24 62 54
+4 24 62 32
+4 24 62 33
+4 24 62 55
+4 24 62 56
+4 24 62 57
+4 24 62 58
+4 24 62 59
+4 24 62 60
+4 24 62 61
+4 24 62 62
+4 24 62 63
+4 24 62 34
+4 24 62 35
+4 24 62 64
+4 24 62 65
+4 24 62 36
+4 24 62 66
+4 24 62 67
+4 24 62 37
+4 24 63 27
+4 24 63 44
+4 24 63 45
+4 24 63 46
+4 24 63 28
+4 24 63 47
+4 24 63 29
+4 24 63 48
+4 24 63 30
+4 24 63 49
+4 24 63 31
+4 24 63 50
+4 24 63 51
+4 24 63 52
+4 24 63 53
+4 24 63 54
+4 24 63 33
+4 24 63 55
+4 24 63 56
+4 24 63 57
+4 24 63 58
+4 24 63 59
+4 24 63 60
+4 24 63 61
+4 24 63 62
+4 24 63 63
+4 24 63 34
+4 24 63 35
+4 24 63 64
+4 24 63 65
+4 24 63 36
+4 24 63 66
+4 24 63 67
+4 24 63 37
+4 24 34 27
+4 24 34 44
+4 24 34 45
+4 24 34 28
+4 24 34 47
+4 24 34 29
+4 24 34 48
+4 24 34 30
+4 24 34 49
+4 24 34 31
+4 24 34 50
+4 24 34 51
+4 24 34 52
+4 24 34 53
+4 24 34 54
+4 24 34 32
+4 24 34 33
+4 24 34 55
+4 24 34 56
+4 24 34 57
+4 24 34 58
+4 24 34 59
+4 24 34 60
+4 24 34 61
+4 24 34 62
+4 24 34 63
+4 24 34 34
+4 24 34 35
+4 24 34 64
+4 24 34 65
+4 24 34 36
+4 24 34 66
+4 24 34 67
+4 24 34 37
+4 24 35 27
+4 24 35 44
+4 24 35 46
+4 24 35 28
+4 24 35 47
+4 24 35 29
+4 24 35 48
+4 24 35 30
+4 24 35 49
+4 24 35 31
+4 24 35 50
+4 24 35 51
+4 24 35 52
+4 24 35 53
+4 24 35 54
+4 24 35 32
+4 24 35 33
+4 24 35 55
+4 24 35 56
+4 24 35 57
+4 24 35 58
+4 24 35 59
+4 24 35 60
+4 24 35 61
+4 24 35 62
+4 24 35 63
+4 24 35 34
+4 24 35 35
+4 24 35 64
+4 24 35 65
+4 24 35 36
+4 24 35 66
+4 24 35 67
+4 24 35 37
+4 24 64 27
+4 24 64 44
+4 24 64 45
+4 24 64 46
+4 24 64 28
+4 24 64 47
+4 24 64 29
+4 24 64 48
+4 24 64 30
+4 24 64 49
+4 24 64 31
+4 24 64 50
+4 24 64 51
+4 24 64 52
+4 24 64 53
+4 24 64 54
+4 24 64 32
+4 24 64 33
+4 24 64 55
+4 24 64 56
+4 24 64 57
+4 24 64 58
+4 24 64 59
+4 24 64 60
+4 24 64 61
+4 24 64 62
+4 24 64 63
+4 24 64 34
+4 24 64 35
+4 24 64 64
+4 24 64 65
+4 24 64 36
+4 24 64 66
+4 24 64 67
+4 24 64 37
+4 24 65 27
+4 24 65 44
+4 24 65 46
+4 24 65 28
+4 24 65 47
+4 24 65 29
+4 24 65 48
+4 24 65 30
+4 24 65 49
+4 24 65 31
+4 24 65 50
+4 24 65 51
+4 24 65 52
+4 24 65 53
+4 24 65 54
+4 24 65 32
+4 24 65 33
+4 24 65 55
+4 24 65 56
+4 24 65 57
+4 24 65 58
+4 24 65 59
+4 24 65 60
+4 24 65 61
+4 24 65 62
+4 24 65 63
+4 24 65 34
+4 24 65 35
+4 24 65 64
+4 24 65 65
+4 24 65 36
+4 24 65 66
+4 24 65 67
+4 24 65 37
+4 24 36 44
+4 24 36 45
+4 24 36 46
+4 24 36 28
+4 24 36 47
+4 24 36 29
+4 24 36 48
+4 24 36 30
+4 24 36 49
+4 24 36 31
+4 24 36 50
+4 24 36 51
+4 24 36 52
+4 24 36 53
+4 24 36 54
+4 24 36 32
+4 24 36 33
+4 24 36 55
+4 24 36 56
+4 24 36 57
+4 24 36 58
+4 24 36 59
+4 24 36 60
+4 24 36 61
+4 24 36 62
+4 24 36 63
+4 24 36 34
+4 24 36 35
+4 24 36 64
+4 24 36 65
+4 24 36 36
+4 24 36 66
+4 24 36 67
+4 24 36 37
+4 24 66 27
+4 24 66 44
+4 24 66 45
+4 24 66 46
+4 24 66 28
+4 24 66 29
+4 24 66 48
+4 24 66 30
+4 24 66 49
+4 24 66 50
+4 24 66 51
+4 24 66 52
+4 24 66 53
+4 24 66 54
+4 24 66 32
+4 24 66 33
+4 24 66 56
+4 24 66 57
+4 24 66 58
+4 24 66 59
+4 24 66 60
+4 24 66 61
+4 24 66 62
+4 24 66 63
+4 24 66 34
+4 24 66 35
+4 24 66 64
+4 24 66 65
+4 24 66 36
+4 24 66 66
+4 24 66 67
+4 24 66 37
+4 24 67 27
+4 24 67 44
+4 24 67 46
+4 24 67 28
+4 24 67 47
+4 24 67 29
+4 24 67 48
+4 24 67 30
+4 24 67 49
+4 24 67 31
+4 24 67 50
+4 24 67 51
+4 24 67 52
+4 24 67 53
+4 24 67 54
+4 24 67 32
+4 24 67 33
+4 24 67 55
+4 24 67 56
+4 24 67 57
+4 24 67 58
+4 24 67 59
+4 24 67 60
+4 24 67 61
+4 24 67 62
+4 24 67 63
+4 24 67 34
+4 24 67 35
+4 24 67 64
+4 24 67 65
+4 24 67 36
+4 24 67 66
+4 24 67 67
+4 24 67 37
+4 24 37 27
+4 24 37 44
+4 24 37 45
+4 24 37 46
+4 24 37 28
+4 24 37 47
+4 24 37 29
+4 24 37 48
+4 24 37 30
+4 24 37 49
+4 24 37 31
+4 24 37 50
+4 24 37 51
+4 24 37 52
+4 24 37 53
+4 24 37 54
+4 24 37 32
+4 24 37 33
+4 24 37 55
+4 24 37 56
+4 24 37 57
+4 24 37 58
+4 24 37 59
+4 24 37 61
+4 24 37 62
+4 24 37 63
+4 24 37 34
+4 24 37 35
+4 24 37 64
+4 24 37 65
+4 24 37 36
+4 24 37 66
+4 24 37 67
+4 24 37 37
+4 25 27 27
+4 25 27 44
+4 25 27 46
+4 25 27 28
+4 25 27 47
+4 25 27 29
+4 25 27 48
+4 25 27 30
+4 25 27 49
+4 25 27 31
+4 25 27 50
+4 25 27 51
+4 25 27 52
+4 25 27 53
+4 25 27 54
+4 25 27 32
+4 25 27 33
+4 25 27 55
+4 25 27 56
+4 25 27 57
+4 25 27 58
+4 25 27 59
+4 25 27 60
+4 25 27 61
+4 25 27 62
+4 25 27 63
+4 25 27 34
+4 25 27 35
+4 25 27 64
+4 25 27 65
+4 25 27 36
+4 25 27 66
+4 25 27 67
+4 25 27 37
+4 25 44 27
+4 25 44 44
+4 25 44 45
+4 25 44 46
+4 25 44 28
+4 25 44 47
+4 25 44 29
+4 25 44 48
+4 25 44 30
+4 25 44 49
+4 25 44 31
+4 25 44 51
+4 25 44 52
+4 25 44 53
+4 25 44 32
+4 25 44 33
+4 25 44 55
+4 25 44 57
+4 25 44 59
+4 25 44 60
+4 25 44 61
+4 25 44 62
+4 25 44 63
+4 25 44 34
+4 25 44 35
+4 25 44 64
+4 25 44 65
+4 25 44 66
+4 25 44 67
+4 25 44 37
+4 25 45 44
+4 25 45 45
+4 25 45 46
+4 25 45 28
+4 25 45 47
+4 25 45 29
+4 25 45 48
+4 25 45 30
+4 25 45 49
+4 25 45 31
+4 25 45 50
+4 25 45 51
+4 25 45 53
+4 25 45 54
+4 25 45 33
+4 25 45 55
+4 25 45 56
+4 25 45 57
+4 25 45 58
+4 25 45 59
+4 25 45 60
+4 25 45 61
+4 25 45 62
+4 25 45 63
+4 25 45 34
+4 25 45 64
+4 25 45 65
+4 25 45 36
+4 25 45 66
+4 25 45 37
+4 25 46 27
+4 25 46 44
+4 25 46 45
+4 25 46 46
+4 25 46 28
+4 25 46 47
+4 25 46 29
+4 25 46 48
+4 25 46 30
+4 25 46 31
+4 25 46 50
+4 25 46 51
+4 25 46 52
+4 25 46 53
+4 25 46 54
+4 25 46 32
+4 25 46 33
+4 25 46 55
+4 25 46 56
+4 25 46 57
+4 25 46 58
+4 25 46 59
+4 25 46 60
+4 25 46 61
+4 25 46 62
+4 25 46 63
+4 25 46 34
+4 25 46 35
+4 25 46 64
+4 25 46 65
+4 25 46 36
+4 25 46 66
+4 25 46 67
+4 25 46 37
+4 25 28 27
+4 25 28 44
+4 25 28 45
+4 25 28 46
+4 25 28 28
+4 25 28 47
+4 25 28 29
+4 25 28 48
+4 25 28 30
+4 25 28 49
+4 25 28 31
+4 25 28 50
+4 25 28 51
+4 25 28 52
+4 25 28 54
+4 25 28 32
+4 25 28 33
+4 25 28 55
+4 25 28 56
+4 25 28 57
+4 25 28 58
+4 25 28 59
+4 25 28 60
+4 25 28 61
+4 25 28 62
+4 25 28 63
+4 25 28 35
+4 25 28 64
+4 25 28 65
+4 25 28 36
+4 25 28 66
+4 25 28 37
+4 25 47 27
+4 25 47 44
+4 25 47 45
+4 25 47 46
+4 25 47 28
+4 25 47 47
+4 25 47 29
+4 25 47 48
+4 25 47 30
+4 25 47 49
+4 25 47 31
+4 25 47 50
+4 25 47 51
+4 25 47 52
+4 25 47 53
+4 25 47 54
+4 25 47 32
+4 25 47 33
+4 25 47 55
+4 25 47 56
+4 25 47 57
+4 25 47 58
+4 25 47 59
+4 25 47 60
+4 25 47 61
+4 25 47 63
+4 25 47 34
+4 25 47 35
+4 25 47 64
+4 25 47 65
+4 25 47 36
+4 25 47 66
+4 25 47 67
+4 25 47 37
+4 25 29 27
+4 25 29 44
+4 25 29 45
+4 25 29 46
+4 25 29 28
+4 25 29 47
+4 25 29 29
+4 25 29 48
+4 25 29 30
+4 25 29 49
+4 25 29 31
+4 25 29 50
+4 25 29 51
+4 25 29 52
+4 25 29 53
+4 25 29 54
+4 25 29 32
+4 25 29 33
+4 25 29 55
+4 25 29 56
+4 25 29 57
+4 25 29 58
+4 25 29 59
+4 25 29 60
+4 25 29 61
+4 25 29 62
+4 25 29 34
+4 25 29 35
+4 25 29 64
+4 25 29 65
+4 25 29 36
+4 25 29 66
+4 25 29 67
+4 25 29 37
+4 25 48 27
+4 25 48 44
+4 25 48 45
+4 25 48 46
+4 25 48 28
+4 25 48 47
+4 25 48 29
+4 25 48 48
+4 25 48 30
+4 25 48 49
+4 25 48 31
+4 25 48 50
+4 25 48 51
+4 25 48 52
+4 25 48 53
+4 25 48 54
+4 25 48 32
+4 25 48 33
+4 25 48 55
+4 25 48 56
+4 25 48 57
+4 25 48 58
+4 25 48 59
+4 25 48 60
+4 25 48 61
+4 25 48 62
+4 25 48 63
+4 25 48 34
+4 25 48 35
+4 25 48 64
+4 25 48 65
+4 25 48 66
+4 25 48 67
+4 25 48 37
+4 25 30 27
+4 25 30 44
+4 25 30 45
+4 25 30 46
+4 25 30 28
+4 25 30 47
+4 25 30 29
+4 25 30 48
+4 25 30 30
+4 25 30 49
+4 25 30 31
+4 25 30 50
+4 25 30 51
+4 25 30 52
+4 25 30 53
+4 25 30 54
+4 25 30 32
+4 25 30 33
+4 25 30 55
+4 25 30 56
+4 25 30 57
+4 25 30 58
+4 25 30 59
+4 25 30 60
+4 25 30 61
+4 25 30 62
+4 25 30 63
+4 25 30 34
+4 25 30 35
+4 25 30 64
+4 25 30 65
+4 25 30 36
+4 25 30 67
+4 25 30 37
+4 25 49 27
+4 25 49 44
+4 25 49 45
+4 25 49 28
+4 25 49 47
+4 25 49 29
+4 25 49 48
+4 25 49 30
+4 25 49 49
+4 25 49 31
+4 25 49 50
+4 25 49 51
+4 25 49 52
+4 25 49 53
+4 25 49 54
+4 25 49 32
+4 25 49 33
+4 25 49 55
+4 25 49 56
+4 25 49 57
+4 25 49 58
+4 25 49 59
+4 25 49 60
+4 25 49 61
+4 25 49 62
+4 25 49 63
+4 25 49 34
+4 25 49 35
+4 25 49 64
+4 25 49 65
+4 25 49 66
+4 25 49 67
+4 25 49 37
+4 25 31 27
+4 25 31 44
+4 25 31 45
+4 25 31 46
+4 25 31 28
+4 25 31 47
+4 25 31 29
+4 25 31 48
+4 25 31 30
+4 25 31 49
+4 25 31 31
+4 25 31 50
+4 25 31 51
+4 25 31 52
+4 25 31 53
+4 25 31 54
+4 25 31 32
+4 25 31 55
+4 25 31 56
+4 25 31 57
+4 25 31 58
+4 25 31 59
+4 25 31 60
+4 25 31 61
+4 25 31 62
+4 25 31 63
+4 25 31 34
+4 25 31 35
+4 25 31 64
+4 25 31 65
+4 25 31 36
+4 25 31 66
+4 25 31 67
+4 25 31 37
+4 25 50 27
+4 25 50 45
+4 25 50 46
+4 25 50 28
+4 25 50 47
+4 25 50 29
+4 25 50 48
+4 25 50 30
+4 25 50 49
+4 25 50 31
+4 25 50 50
+4 25 50 51
+4 25 50 52
+4 25 50 53
+4 25 50 54
+4 25 50 32
+4 25 50 33
+4 25 50 55
+4 25 50 56
+4 25 50 57
+4 25 50 58
+4 25 50 59
+4 25 50 60
+4 25 50 61
+4 25 50 62
+4 25 50 63
+4 25 50 34
+4 25 50 35
+4 25 50 64
+4 25 50 65
+4 25 50 36
+4 25 50 66
+4 25 50 67
+4 25 50 37
+4 25 51 27
+4 25 51 44
+4 25 51 45
+4 25 51 46
+4 25 51 28
+4 25 51 47
+4 25 51 29
+4 25 51 48
+4 25 51 30
+4 25 51 49
+4 25 51 31
+4 25 51 50
+4 25 51 51
+4 25 51 52
+4 25 51 53
+4 25 51 54
+4 25 51 32
+4 25 51 33
+4 25 51 55
+4 25 51 56
+4 25 51 57
+4 25 51 58
+4 25 51 59
+4 25 51 60
+4 25 51 62
+4 25 51 63
+4 25 51 34
+4 25 51 35
+4 25 51 64
+4 25 51 65
+4 25 51 36
+4 25 51 66
+4 25 51 67
+4 25 51 37
+4 25 52 27
+4 25 52 44
+4 25 52 46
+4 25 52 28
+4 25 52 47
+4 25 52 29
+4 25 52 48
+4 25 52 30
+4 25 52 49
+4 25 52 31
+4 25 52 50
+4 25 52 51
+4 25 52 52
+4 25 52 53
+4 25 52 54
+4 25 52 32
+4 25 52 33
+4 25 52 55
+4 25 52 56
+4 25 52 57
+4 25 52 58
+4 25 52 59
+4 25 52 60
+4 25 52 61
+4 25 52 62
+4 25 52 63
+4 25 52 34
+4 25 52 35
+4 25 52 64
+4 25 52 65
+4 25 52 36
+4 25 52 66
+4 25 52 67
+4 25 52 37
+4 25 53 27
+4 25 53 44
+4 25 53 45
+4 25 53 46
+4 25 53 47
+4 25 53 29
+4 25 53 48
+4 25 53 30
+4 25 53 49
+4 25 53 31
+4 25 53 50
+4 25 53 51
+4 25 53 52
+4 25 53 53
+4 25 53 54
+4 25 53 32
+4 25 53 33
+4 25 53 55
+4 25 53 56
+4 25 53 57
+4 25 53 58
+4 25 53 59
+4 25 53 60
+4 25 53 61
+4 25 53 62
+4 25 53 63
+4 25 53 34
+4 25 53 35
+4 25 53 64
+4 25 53 65
+4 25 53 36
+4 25 53 66
+4 25 53 67
+4 25 53 37
+4 25 54 27
+4 25 54 45
+4 25 54 46
+4 25 54 28
+4 25 54 47
+4 25 54 29
+4 25 54 48
+4 25 54 30
+4 25 54 49
+4 25 54 31
+4 25 54 50
+4 25 54 51
+4 25 54 52
+4 25 54 53
+4 25 54 54
+4 25 54 32
+4 25 54 33
+4 25 54 55
+4 25 54 56
+4 25 54 57
+4 25 54 58
+4 25 54 59
+4 25 54 60
+4 25 54 61
+4 25 54 62
+4 25 54 63
+4 25 54 34
+4 25 54 35
+4 25 54 64
+4 25 54 65
+4 25 54 36
+4 25 54 66
+4 25 54 67
+4 25 54 37
+4 25 32 27
+4 25 32 44
+4 25 32 46
+4 25 32 28
+4 25 32 47
+4 25 32 29
+4 25 32 48
+4 25 32 30
+4 25 32 49
+4 25 32 31
+4 25 32 50
+4 25 32 51
+4 25 32 52
+4 25 32 53
+4 25 32 54
+4 25 32 32
+4 25 32 33
+4 25 32 55
+4 25 32 56
+4 25 32 57
+4 25 32 58
+4 25 32 59
+4 25 32 60
+4 25 32 61
+4 25 32 62
+4 25 32 63
+4 25 32 34
+4 25 32 35
+4 25 32 64
+4 25 32 65
+4 25 32 36
+4 25 32 66
+4 25 32 67
+4 25 32 37
+4 25 33 27
+4 25 33 44
+4 25 33 45
+4 25 33 46
+4 25 33 28
+4 25 33 47
+4 25 33 29
+4 25 33 48
+4 25 33 30
+4 25 33 49
+4 25 33 50
+4 25 33 51
+4 25 33 52
+4 25 33 53
+4 25 33 54
+4 25 33 32
+4 25 33 33
+4 25 33 55
+4 25 33 56
+4 25 33 57
+4 25 33 58
+4 25 33 60
+4 25 33 61
+4 25 33 62
+4 25 33 63
+4 25 33 34
+4 25 33 35
+4 25 33 64
+4 25 33 65
+4 25 33 36
+4 25 33 67
+4 25 33 37
+4 25 55 27
+4 25 55 44
+4 25 55 45
+4 25 55 46
+4 25 55 28
+4 25 55 47
+4 25 55 29
+4 25 55 48
+4 25 55 30
+4 25 55 49
+4 25 55 31
+4 25 55 50
+4 25 55 51
+4 25 55 52
+4 25 55 53
+4 25 55 54
+4 25 55 32
+4 25 55 33
+4 25 55 55
+4 25 55 56
+4 25 55 57
+4 25 55 58
+4 25 55 59
+4 25 55 61
+4 25 55 62
+4 25 55 63
+4 25 55 34
+4 25 55 35
+4 25 55 64
+4 25 55 65
+4 25 55 66
+4 25 55 67
+4 25 55 37
+4 25 56 27
+4 25 56 45
+4 25 56 46
+4 25 56 28
+4 25 56 47
+4 25 56 29
+4 25 56 48
+4 25 56 30
+4 25 56 49
+4 25 56 31
+4 25 56 50
+4 25 56 51
+4 25 56 52
+4 25 56 53
+4 25 56 54
+4 25 56 32
+4 25 56 33
+4 25 56 55
+4 25 56 56
+4 25 56 57
+4 25 56 58
+4 25 56 59
+4 25 56 60
+4 25 56 61
+4 25 56 62
+4 25 56 63
+4 25 56 34
+4 25 56 35
+4 25 56 64
+4 25 56 65
+4 25 56 36
+4 25 56 66
+4 25 56 67
+4 25 56 37
+4 25 57 27
+4 25 57 44
+4 25 57 45
+4 25 57 46
+4 25 57 28
+4 25 57 47
+4 25 57 29
+4 25 57 48
+4 25 57 30
+4 25 57 49
+4 25 57 31
+4 25 57 50
+4 25 57 51
+4 25 57 52
+4 25 57 53
+4 25 57 54
+4 25 57 32
+4 25 57 33
+4 25 57 55
+4 25 57 56
+4 25 57 57
+4 25 57 58
+4 25 57 59
+4 25 57 60
+4 25 57 61
+4 25 57 62
+4 25 57 63
+4 25 57 34
+4 25 57 35
+4 25 57 64
+4 25 57 65
+4 25 57 66
+4 25 57 67
+4 25 57 37
+4 25 58 27
+4 25 58 45
+4 25 58 46
+4 25 58 28
+4 25 58 47
+4 25 58 29
+4 25 58 48
+4 25 58 30
+4 25 58 49
+4 25 58 31
+4 25 58 50
+4 25 58 51
+4 25 58 52
+4 25 58 53
+4 25 58 54
+4 25 58 32
+4 25 58 33
+4 25 58 55
+4 25 58 56
+4 25 58 57
+4 25 58 58
+4 25 58 59
+4 25 58 60
+4 25 58 61
+4 25 58 62
+4 25 58 63
+4 25 58 34
+4 25 58 35
+4 25 58 64
+4 25 58 65
+4 25 58 36
+4 25 58 66
+4 25 58 67
+4 25 58 37
+4 25 59 27
+4 25 59 44
+4 25 59 45
+4 25 59 46
+4 25 59 28
+4 25 59 47
+4 25 59 29
+4 25 59 48
+4 25 59 30
+4 25 59 49
+4 25 59 31
+4 25 59 50
+4 25 59 51
+4 25 59 52
+4 25 59 53
+4 25 59 54
+4 25 59 32
+4 25 59 55
+4 25 59 56
+4 25 59 57
+4 25 59 58
+4 25 59 59
+4 25 59 60
+4 25 59 61
+4 25 59 62
+4 25 59 63
+4 25 59 34
+4 25 59 35
+4 25 59 64
+4 25 59 65
+4 25 59 36
+4 25 59 66
+4 25 59 67
+4 25 59 37
+4 25 60 27
+4 25 60 44
+4 25 60 45
+4 25 60 46
+4 25 60 28
+4 25 60 47
+4 25 60 29
+4 25 60 48
+4 25 60 30
+4 25 60 49
+4 25 60 31
+4 25 60 50
+4 25 60 51
+4 25 60 52
+4 25 60 53
+4 25 60 54
+4 25 60 32
+4 25 60 33
+4 25 60 56
+4 25 60 57
+4 25 60 58
+4 25 60 59
+4 25 60 60
+4 25 60 61
+4 25 60 62
+4 25 60 63
+4 25 60 34
+4 25 60 35
+4 25 60 64
+4 25 60 65
+4 25 60 36
+4 25 60 66
+4 25 60 67
+4 25 60 37
+4 25 61 27
+4 25 61 44
+4 25 61 45
+4 25 61 46
+4 25 61 28
+4 25 61 47
+4 25 61 29
+4 25 61 48
+4 25 61 30
+4 25 61 49
+4 25 61 31
+4 25 61 50
+4 25 61 52
+4 25 61 53
+4 25 61 54
+4 25 61 32
+4 25 61 33
+4 25 61 55
+4 25 61 56
+4 25 61 57
+4 25 61 58
+4 25 61 59
+4 25 61 60
+4 25 61 61
+4 25 61 62
+4 25 61 63
+4 25 61 34
+4 25 61 35
+4 25 61 65
+4 25 61 36
+4 25 61 66
+4 25 61 37
+4 25 62 27
+4 25 62 44
+4 25 62 45
+4 25 62 46
+4 25 62 28
+4 25 62 29
+4 25 62 48
+4 25 62 30
+4 25 62 49
+4 25 62 31
+4 25 62 50
+4 25 62 51
+4 25 62 52
+4 25 62 53
+4 25 62 54
+4 25 62 32
+4 25 62 33
+4 25 62 55
+4 25 62 56
+4 25 62 57
+4 25 62 58
+4 25 62 59
+4 25 62 60
+4 25 62 61
+4 25 62 62
+4 25 62 63
+4 25 62 34
+4 25 62 35
+4 25 62 64
+4 25 62 65
+4 25 62 36
+4 25 62 66
+4 25 63 27
+4 25 63 44
+4 25 63 45
+4 25 63 46
+4 25 63 28
+4 25 63 47
+4 25 63 48
+4 25 63 30
+4 25 63 49
+4 25 63 31
+4 25 63 50
+4 25 63 51
+4 25 63 52
+4 25 63 53
+4 25 63 54
+4 25 63 32
+4 25 63 33
+4 25 63 55
+4 25 63 56
+4 25 63 57
+4 25 63 58
+4 25 63 59
+4 25 63 60
+4 25 63 61
+4 25 63 62
+4 25 63 63
+4 25 63 34
+4 25 63 35
+4 25 63 64
+4 25 63 65
+4 25 63 36
+4 25 63 66
+4 25 63 37
+4 25 34 27
+4 25 34 44
+4 25 34 45
+4 25 34 46
+4 25 34 47
+4 25 34 29
+4 25 34 48
+4 25 34 30
+4 25 34 49
+4 25 34 31
+4 25 34 50
+4 25 34 51
+4 25 34 52
+4 25 34 53
+4 25 34 54
+4 25 34 32
+4 25 34 33
+4 25 34 55
+4 25 34 56
+4 25 34 57
+4 25 34 58
+4 25 34 59
+4 25 34 60
+4 25 34 61
+4 25 34 62
+4 25 34 63
+4 25 34 34
+4 25 34 35
+4 25 34 64
+4 25 34 65
+4 25 34 36
+4 25 34 66
+4 25 34 67
+4 25 34 37
+4 25 35 27
+4 25 35 44
+4 25 35 46
+4 25 35 28
+4 25 35 47
+4 25 35 29
+4 25 35 48
+4 25 35 30
+4 25 35 49
+4 25 35 31
+4 25 35 50
+4 25 35 51
+4 25 35 52
+4 25 35 53
+4 25 35 54
+4 25 35 32
+4 25 35 33
+4 25 35 55
+4 25 35 56
+4 25 35 57
+4 25 35 58
+4 25 35 59
+4 25 35 60
+4 25 35 61
+4 25 35 62
+4 25 35 63
+4 25 35 34
+4 25 35 35
+4 25 35 64
+4 25 35 65
+4 25 35 36
+4 25 35 66
+4 25 35 67
+4 25 35 37
+4 25 64 27
+4 25 64 44
+4 25 64 45
+4 25 64 46
+4 25 64 28
+4 25 64 47
+4 25 64 29
+4 25 64 48
+4 25 64 30
+4 25 64 49
+4 25 64 31
+4 25 64 50
+4 25 64 51
+4 25 64 52
+4 25 64 53
+4 25 64 54
+4 25 64 32
+4 25 64 33
+4 25 64 55
+4 25 64 56
+4 25 64 57
+4 25 64 58
+4 25 64 59
+4 25 64 60
+4 25 64 62
+4 25 64 63
+4 25 64 34
+4 25 64 35
+4 25 64 64
+4 25 64 65
+4 25 64 36
+4 25 64 66
+4 25 64 67
+4 25 64 37
+4 25 65 27
+4 25 65 44
+4 25 65 45
+4 25 65 46
+4 25 65 28
+4 25 65 47
+4 25 65 29
+4 25 65 48
+4 25 65 30
+4 25 65 49
+4 25 65 31
+4 25 65 50
+4 25 65 51
+4 25 65 52
+4 25 65 53
+4 25 65 54
+4 25 65 32
+4 25 65 33
+4 25 65 55
+4 25 65 56
+4 25 65 57
+4 25 65 58
+4 25 65 59
+4 25 65 60
+4 25 65 61
+4 25 65 62
+4 25 65 63
+4 25 65 34
+4 25 65 35
+4 25 65 64
+4 25 65 65
+4 25 65 66
+4 25 65 67
+4 25 65 37
+4 25 36 27
+4 25 36 45
+4 25 36 46
+4 25 36 28
+4 25 36 47
+4 25 36 29
+4 25 36 30
+4 25 36 31
+4 25 36 50
+4 25 36 51
+4 25 36 52
+4 25 36 53
+4 25 36 54
+4 25 36 32
+4 25 36 33
+4 25 36 56
+4 25 36 58
+4 25 36 59
+4 25 36 60
+4 25 36 61
+4 25 36 62
+4 25 36 63
+4 25 36 34
+4 25 36 35
+4 25 36 64
+4 25 36 36
+4 25 36 66
+4 25 36 37
+4 25 66 27
+4 25 66 44
+4 25 66 45
+4 25 66 46
+4 25 66 28
+4 25 66 47
+4 25 66 29
+4 25 66 48
+4 25 66 49
+4 25 66 31
+4 25 66 50
+4 25 66 51
+4 25 66 52
+4 25 66 53
+4 25 66 54
+4 25 66 32
+4 25 66 55
+4 25 66 56
+4 25 66 57
+4 25 66 58
+4 25 66 59
+4 25 66 60
+4 25 66 61
+4 25 66 62
+4 25 66 63
+4 25 66 34
+4 25 66 35
+4 25 66 64
+4 25 66 65
+4 25 66 36
+4 25 66 66
+4 25 66 37
+4 25 67 27
+4 25 67 44
+4 25 67 46
+4 25 67 47
+4 25 67 29
+4 25 67 48
+4 25 67 30
+4 25 67 49
+4 25 67 31
+4 25 67 50
+4 25 67 51
+4 25 67 52
+4 25 67 53
+4 25 67 54
+4 25 67 32
+4 25 67 33
+4 25 67 55
+4 25 67 56
+4 25 67 57
+4 25 67 58
+4 25 67 59
+4 25 67 60
+4 25 67 34
+4 25 67 35
+4 25 67 64
+4 25 67 65
+4 25 67 67
+4 25 67 37
+4 25 37 27
+4 25 37 44
+4 25 37 45
+4 25 37 46
+4 25 37 28
+4 25 37 47
+4 25 37 29
+4 25 37 48
+4 25 37 30
+4 25 37 49
+4 25 37 31
+4 25 37 50
+4 25 37 51
+4 25 37 52
+4 25 37 53
+4 25 37 54
+4 25 37 32
+4 25 37 33
+4 25 37 55
+4 25 37 56
+4 25 37 57
+4 25 37 58
+4 25 37 59
+4 25 37 60
+4 25 37 61
+4 25 37 63
+4 25 37 34
+4 25 37 35
+4 25 37 64
+4 25 37 65
+4 25 37 36
+4 25 37 66
+4 25 37 67
+4 25 37 37
+4 26 27 27
+4 26 27 46
+4 26 27 28
+4 26 27 47
+4 26 27 29
+4 26 27 48
+4 26 27 49
+4 26 27 31
+4 26 27 50
+4 26 27 52
+4 26 27 53
+4 26 27 54
+4 26 27 32
+4 26 27 33
+4 26 27 55
+4 26 27 56
+4 26 27 57
+4 26 27 58
+4 26 27 60
+4 26 27 61
+4 26 27 62
+4 26 27 63
+4 26 27 34
+4 26 27 35
+4 26 27 64
+4 26 27 65
+4 26 27 36
+4 26 27 66
+4 26 27 67
+4 26 27 37
+4 26 44 44
+4 26 44 45
+4 26 44 46
+4 26 44 28
+4 26 44 47
+4 26 44 29
+4 26 44 48
+4 26 44 30
+4 26 44 49
+4 26 44 31
+4 26 44 50
+4 26 44 51
+4 26 44 52
+4 26 44 53
+4 26 44 54
+4 26 44 32
+4 26 44 33
+4 26 44 55
+4 26 44 56
+4 26 44 57
+4 26 44 59
+4 26 44 60
+4 26 44 61
+4 26 44 62
+4 26 44 63
+4 26 44 34
+4 26 44 35
+4 26 44 64
+4 26 44 65
+4 26 44 36
+4 26 44 66
+4 26 44 67
+4 26 44 37
+4 26 45 44
+4 26 45 45
+4 26 45 46
+4 26 45 47
+4 26 45 29
+4 26 45 30
+4 26 45 49
+4 26 45 31
+4 26 45 50
+4 26 45 51
+4 26 45 53
+4 26 45 54
+4 26 45 33
+4 26 45 56
+4 26 45 57
+4 26 45 58
+4 26 45 59
+4 26 45 60
+4 26 45 61
+4 26 45 62
+4 26 45 34
+4 26 45 64
+4 26 45 36
+4 26 45 66
+4 26 45 37
+4 26 46 27
+4 26 46 44
+4 26 46 45
+4 26 46 46
+4 26 46 28
+4 26 46 47
+4 26 46 29
+4 26 46 48
+4 26 46 30
+4 26 46 31
+4 26 46 50
+4 26 46 51
+4 26 46 52
+4 26 46 53
+4 26 46 54
+4 26 46 32
+4 26 46 33
+4 26 46 55
+4 26 46 56
+4 26 46 57
+4 26 46 58
+4 26 46 59
+4 26 46 60
+4 26 46 61
+4 26 46 62
+4 26 46 63
+4 26 46 34
+4 26 46 35
+4 26 46 64
+4 26 46 65
+4 26 46 36
+4 26 46 66
+4 26 46 67
+4 26 46 37
+4 26 28 27
+4 26 28 44
+4 26 28 46
+4 26 28 28
+4 26 28 47
+4 26 28 29
+4 26 28 48
+4 26 28 30
+4 26 28 49
+4 26 28 31
+4 26 28 50
+4 26 28 51
+4 26 28 52
+4 26 28 54
+4 26 28 32
+4 26 28 33
+4 26 28 55
+4 26 28 56
+4 26 28 57
+4 26 28 58
+4 26 28 59
+4 26 28 60
+4 26 28 61
+4 26 28 62
+4 26 28 63
+4 26 28 34
+4 26 28 35
+4 26 28 64
+4 26 28 65
+4 26 28 36
+4 26 28 66
+4 26 28 67
+4 26 47 27
+4 26 47 44
+4 26 47 45
+4 26 47 46
+4 26 47 28
+4 26 47 47
+4 26 47 29
+4 26 47 30
+4 26 47 49
+4 26 47 31
+4 26 47 50
+4 26 47 51
+4 26 47 52
+4 26 47 53
+4 26 47 54
+4 26 47 32
+4 26 47 33
+4 26 47 55
+4 26 47 56
+4 26 47 57
+4 26 47 58
+4 26 47 59
+4 26 47 60
+4 26 47 61
+4 26 47 62
+4 26 47 63
+4 26 47 34
+4 26 47 35
+4 26 47 64
+4 26 47 65
+4 26 47 36
+4 26 47 66
+4 26 47 67
+4 26 47 37
+4 26 29 27
+4 26 29 44
+4 26 29 45
+4 26 29 46
+4 26 29 28
+4 26 29 47
+4 26 29 29
+4 26 29 48
+4 26 29 30
+4 26 29 49
+4 26 29 31
+4 26 29 50
+4 26 29 51
+4 26 29 52
+4 26 29 53
+4 26 29 54
+4 26 29 33
+4 26 29 55
+4 26 29 56
+4 26 29 57
+4 26 29 58
+4 26 29 59
+4 26 29 60
+4 26 29 61
+4 26 29 62
+4 26 29 63
+4 26 29 34
+4 26 29 35
+4 26 29 64
+4 26 29 65
+4 26 29 36
+4 26 29 66
+4 26 29 67
+4 26 29 37
+4 26 48 27
+4 26 48 44
+4 26 48 46
+4 26 48 28
+4 26 48 29
+4 26 48 48
+4 26 48 30
+4 26 48 49
+4 26 48 31
+4 26 48 51
+4 26 48 52
+4 26 48 53
+4 26 48 54
+4 26 48 32
+4 26 48 33
+4 26 48 55
+4 26 48 56
+4 26 48 57
+4 26 48 58
+4 26 48 59
+4 26 48 60
+4 26 48 61
+4 26 48 62
+4 26 48 63
+4 26 48 34
+4 26 48 35
+4 26 48 64
+4 26 48 65
+4 26 48 66
+4 26 48 67
+4 26 48 37
+4 26 30 44
+4 26 30 45
+4 26 30 46
+4 26 30 28
+4 26 30 47
+4 26 30 29
+4 26 30 48
+4 26 30 30
+4 26 30 49
+4 26 30 31
+4 26 30 50
+4 26 30 51
+4 26 30 52
+4 26 30 53
+4 26 30 54
+4 26 30 32
+4 26 30 33
+4 26 30 55
+4 26 30 56
+4 26 30 57
+4 26 30 58
+4 26 30 59
+4 26 30 60
+4 26 30 61
+4 26 30 62
+4 26 30 63
+4 26 30 34
+4 26 30 35
+4 26 30 64
+4 26 30 65
+4 26 30 36
+4 26 30 66
+4 26 30 67
+4 26 30 37
+4 26 49 27
+4 26 49 44
+4 26 49 45
+4 26 49 28
+4 26 49 47
+4 26 49 29
+4 26 49 48
+4 26 49 30
+4 26 49 49
+4 26 49 31
+4 26 49 50
+4 26 49 51
+4 26 49 52
+4 26 49 53
+4 26 49 54
+4 26 49 32
+4 26 49 33
+4 26 49 55
+4 26 49 56
+4 26 49 57
+4 26 49 58
+4 26 49 59
+4 26 49 60
+4 26 49 61
+4 26 49 62
+4 26 49 63
+4 26 49 34
+4 26 49 35
+4 26 49 64
+4 26 49 36
+4 26 49 66
+4 26 49 67
+4 26 49 37
+4 26 31 27
+4 26 31 44
+4 26 31 45
+4 26 31 46
+4 26 31 28
+4 26 31 47
+4 26 31 29
+4 26 31 48
+4 26 31 30
+4 26 31 49
+4 26 31 31
+4 26 31 50
+4 26 31 51
+4 26 31 53
+4 26 31 54
+4 26 31 32
+4 26 31 33
+4 26 31 55
+4 26 31 56
+4 26 31 57
+4 26 31 58
+4 26 31 59
+4 26 31 60
+4 26 31 61
+4 26 31 62
+4 26 31 63
+4 26 31 34
+4 26 31 35
+4 26 31 64
+4 26 31 65
+4 26 31 36
+4 26 31 66
+4 26 31 67
+4 26 31 37
+4 26 50 27
+4 26 50 44
+4 26 50 45
+4 26 50 46
+4 26 50 28
+4 26 50 47
+4 26 50 29
+4 26 50 30
+4 26 50 49
+4 26 50 31
+4 26 50 50
+4 26 50 51
+4 26 50 52
+4 26 50 53
+4 26 50 54
+4 26 50 32
+4 26 50 33
+4 26 50 55
+4 26 50 56
+4 26 50 57
+4 26 50 58
+4 26 50 59
+4 26 50 60
+4 26 50 61
+4 26 50 62
+4 26 50 63
+4 26 50 34
+4 26 50 35
+4 26 50 64
+4 26 50 65
+4 26 50 36
+4 26 50 66
+4 26 50 67
+4 26 50 37
+4 26 51 44
+4 26 51 45
+4 26 51 46
+4 26 51 28
+4 26 51 47
+4 26 51 29
+4 26 51 48
+4 26 51 30
+4 26 51 49
+4 26 51 31
+4 26 51 50
+4 26 51 51
+4 26 51 52
+4 26 51 53
+4 26 51 54
+4 26 51 32
+4 26 51 33
+4 26 51 55
+4 26 51 56
+4 26 51 57
+4 26 51 58
+4 26 51 59
+4 26 51 60
+4 26 51 61
+4 26 51 62
+4 26 51 63
+4 26 51 34
+4 26 51 35
+4 26 51 64
+4 26 51 65
+4 26 51 36
+4 26 51 66
+4 26 51 67
+4 26 51 37
+4 26 52 27
+4 26 52 44
+4 26 52 46
+4 26 52 28
+4 26 52 47
+4 26 52 29
+4 26 52 48
+4 26 52 30
+4 26 52 49
+4 26 52 50
+4 26 52 51
+4 26 52 52
+4 26 52 53
+4 26 52 54
+4 26 52 32
+4 26 52 33
+4 26 52 55
+4 26 52 57
+4 26 52 58
+4 26 52 59
+4 26 52 60
+4 26 52 61
+4 26 52 62
+4 26 52 63
+4 26 52 34
+4 26 52 35
+4 26 52 64
+4 26 52 65
+4 26 52 36
+4 26 52 66
+4 26 52 67
+4 26 52 37
+4 26 53 27
+4 26 53 44
+4 26 53 45
+4 26 53 46
+4 26 53 47
+4 26 53 29
+4 26 53 48
+4 26 53 30
+4 26 53 49
+4 26 53 31
+4 26 53 50
+4 26 53 51
+4 26 53 52
+4 26 53 53
+4 26 53 54
+4 26 53 32
+4 26 53 33
+4 26 53 55
+4 26 53 56
+4 26 53 57
+4 26 53 58
+4 26 53 59
+4 26 53 60
+4 26 53 61
+4 26 53 62
+4 26 53 63
+4 26 53 34
+4 26 53 35
+4 26 53 64
+4 26 53 65
+4 26 53 36
+4 26 53 66
+4 26 53 67
+4 26 53 37
+4 26 54 27
+4 26 54 44
+4 26 54 45
+4 26 54 46
+4 26 54 28
+4 26 54 47
+4 26 54 29
+4 26 54 48
+4 26 54 30
+4 26 54 49
+4 26 54 31
+4 26 54 50
+4 26 54 51
+4 26 54 52
+4 26 54 53
+4 26 54 54
+4 26 54 32
+4 26 54 33
+4 26 54 56
+4 26 54 57
+4 26 54 58
+4 26 54 59
+4 26 54 60
+4 26 54 61
+4 26 54 62
+4 26 54 63
+4 26 54 34
+4 26 54 35
+4 26 54 64
+4 26 54 65
+4 26 54 36
+4 26 54 66
+4 26 54 67
+4 26 54 37
+4 26 32 27
+4 26 32 44
+4 26 32 46
+4 26 32 28
+4 26 32 47
+4 26 32 48
+4 26 32 30
+4 26 32 49
+4 26 32 31
+4 26 32 50
+4 26 32 51
+4 26 32 52
+4 26 32 53
+4 26 32 54
+4 26 32 32
+4 26 32 33
+4 26 32 55
+4 26 32 56
+4 26 32 57
+4 26 32 58
+4 26 32 59
+4 26 32 60
+4 26 32 61
+4 26 32 62
+4 26 32 63
+4 26 32 34
+4 26 32 35
+4 26 32 64
+4 26 32 65
+4 26 32 36
+4 26 32 66
+4 26 32 67
+4 26 32 37
+4 26 33 27
+4 26 33 44
+4 26 33 45
+4 26 33 46
+4 26 33 28
+4 26 33 47
+4 26 33 29
+4 26 33 48
+4 26 33 30
+4 26 33 49
+4 26 33 31
+4 26 33 50
+4 26 33 51
+4 26 33 52
+4 26 33 53
+4 26 33 54
+4 26 33 32
+4 26 33 33
+4 26 33 55
+4 26 33 56
+4 26 33 57
+4 26 33 58
+4 26 33 59
+4 26 33 60
+4 26 33 61
+4 26 33 62
+4 26 33 63
+4 26 33 34
+4 26 33 35
+4 26 33 64
+4 26 33 36
+4 26 33 66
+4 26 33 67
+4 26 33 37
+4 26 55 27
+4 26 55 44
+4 26 55 46
+4 26 55 28
+4 26 55 47
+4 26 55 29
+4 26 55 48
+4 26 55 30
+4 26 55 49
+4 26 55 31
+4 26 55 50
+4 26 55 51
+4 26 55 52
+4 26 55 53
+4 26 55 32
+4 26 55 33
+4 26 55 55
+4 26 55 56
+4 26 55 57
+4 26 55 58
+4 26 55 59
+4 26 55 60
+4 26 55 61
+4 26 55 62
+4 26 55 63
+4 26 55 35
+4 26 55 64
+4 26 55 65
+4 26 55 36
+4 26 55 66
+4 26 55 67
+4 26 55 37
+4 26 56 27
+4 26 56 44
+4 26 56 45
+4 26 56 46
+4 26 56 28
+4 26 56 47
+4 26 56 29
+4 26 56 48
+4 26 56 30
+4 26 56 49
+4 26 56 31
+4 26 56 50
+4 26 56 51
+4 26 56 53
+4 26 56 54
+4 26 56 32
+4 26 56 33
+4 26 56 55
+4 26 56 56
+4 26 56 57
+4 26 56 58
+4 26 56 59
+4 26 56 60
+4 26 56 61
+4 26 56 62
+4 26 56 63
+4 26 56 34
+4 26 56 35
+4 26 56 64
+4 26 56 65
+4 26 56 36
+4 26 56 66
+4 26 56 67
+4 26 56 37
+4 26 57 27
+4 26 57 44
+4 26 57 45
+4 26 57 46
+4 26 57 28
+4 26 57 47
+4 26 57 29
+4 26 57 48
+4 26 57 30
+4 26 57 49
+4 26 57 31
+4 26 57 50
+4 26 57 51
+4 26 57 52
+4 26 57 53
+4 26 57 54
+4 26 57 32
+4 26 57 33
+4 26 57 55
+4 26 57 56
+4 26 57 57
+4 26 57 58
+4 26 57 59
+4 26 57 60
+4 26 57 61
+4 26 57 62
+4 26 57 63
+4 26 57 34
+4 26 57 35
+4 26 57 64
+4 26 57 65
+4 26 57 36
+4 26 57 66
+4 26 57 37
+4 26 58 27
+4 26 58 45
+4 26 58 46
+4 26 58 28
+4 26 58 47
+4 26 58 29
+4 26 58 48
+4 26 58 30
+4 26 58 49
+4 26 58 31
+4 26 58 50
+4 26 58 51
+4 26 58 52
+4 26 58 53
+4 26 58 54
+4 26 58 32
+4 26 58 33
+4 26 58 55
+4 26 58 56
+4 26 58 57
+4 26 58 58
+4 26 58 59
+4 26 58 60
+4 26 58 61
+4 26 58 62
+4 26 58 63
+4 26 58 34
+4 26 58 35
+4 26 58 64
+4 26 58 65
+4 26 58 36
+4 26 58 66
+4 26 58 67
+4 26 58 37
+4 26 59 44
+4 26 59 45
+4 26 59 46
+4 26 59 28
+4 26 59 47
+4 26 59 29
+4 26 59 48
+4 26 59 30
+4 26 59 49
+4 26 59 31
+4 26 59 50
+4 26 59 51
+4 26 59 52
+4 26 59 53
+4 26 59 54
+4 26 59 32
+4 26 59 33
+4 26 59 55
+4 26 59 56
+4 26 59 57
+4 26 59 58
+4 26 59 59
+4 26 59 60
+4 26 59 61
+4 26 59 62
+4 26 59 63
+4 26 59 34
+4 26 59 35
+4 26 59 64
+4 26 59 65
+4 26 59 36
+4 26 59 66
+4 26 59 67
+4 26 59 37
+4 26 60 27
+4 26 60 44
+4 26 60 45
+4 26 60 46
+4 26 60 28
+4 26 60 47
+4 26 60 29
+4 26 60 48
+4 26 60 30
+4 26 60 49
+4 26 60 31
+4 26 60 50
+4 26 60 51
+4 26 60 52
+4 26 60 53
+4 26 60 54
+4 26 60 32
+4 26 60 33
+4 26 60 55
+4 26 60 56
+4 26 60 57
+4 26 60 58
+4 26 60 59
+4 26 60 60
+4 26 60 61
+4 26 60 62
+4 26 60 34
+4 26 60 35
+4 26 60 64
+4 26 60 65
+4 26 60 36
+4 26 60 66
+4 26 60 67
+4 26 60 37
+4 26 61 27
+4 26 61 44
+4 26 61 45
+4 26 61 46
+4 26 61 28
+4 26 61 47
+4 26 61 29
+4 26 61 48
+4 26 61 30
+4 26 61 49
+4 26 61 31
+4 26 61 50
+4 26 61 51
+4 26 61 52
+4 26 61 53
+4 26 61 54
+4 26 61 32
+4 26 61 33
+4 26 61 55
+4 26 61 56
+4 26 61 57
+4 26 61 58
+4 26 61 59
+4 26 61 60
+4 26 61 61
+4 26 61 62
+4 26 61 63
+4 26 61 34
+4 26 61 35
+4 26 61 64
+4 26 61 65
+4 26 61 36
+4 26 61 66
+4 26 61 37
+4 26 62 27
+4 26 62 44
+4 26 62 45
+4 26 62 46
+4 26 62 28
+4 26 62 47
+4 26 62 29
+4 26 62 48
+4 26 62 30
+4 26 62 49
+4 26 62 31
+4 26 62 50
+4 26 62 51
+4 26 62 52
+4 26 62 53
+4 26 62 54
+4 26 62 32
+4 26 62 33
+4 26 62 55
+4 26 62 56
+4 26 62 57
+4 26 62 58
+4 26 62 59
+4 26 62 60
+4 26 62 61
+4 26 62 62
+4 26 62 63
+4 26 62 34
+4 26 62 35
+4 26 62 64
+4 26 62 65
+4 26 62 36
+4 26 62 66
+4 26 62 37
+4 26 63 27
+4 26 63 44
+4 26 63 46
+4 26 63 28
+4 26 63 47
+4 26 63 29
+4 26 63 48
+4 26 63 30
+4 26 63 49
+4 26 63 31
+4 26 63 50
+4 26 63 51
+4 26 63 52
+4 26 63 53
+4 26 63 54
+4 26 63 32
+4 26 63 33
+4 26 63 55
+4 26 63 56
+4 26 63 57
+4 26 63 58
+4 26 63 59
+4 26 63 61
+4 26 63 62
+4 26 63 63
+4 26 63 34
+4 26 63 35
+4 26 63 64
+4 26 63 65
+4 26 63 36
+4 26 63 66
+4 26 63 67
+4 26 63 37
+4 26 34 27
+4 26 34 44
+4 26 34 45
+4 26 34 46
+4 26 34 28
+4 26 34 47
+4 26 34 29
+4 26 34 48
+4 26 34 30
+4 26 34 49
+4 26 34 31
+4 26 34 50
+4 26 34 51
+4 26 34 52
+4 26 34 53
+4 26 34 54
+4 26 34 32
+4 26 34 33
+4 26 34 56
+4 26 34 57
+4 26 34 58
+4 26 34 59
+4 26 34 60
+4 26 34 61
+4 26 34 62
+4 26 34 63
+4 26 34 34
+4 26 34 35
+4 26 34 64
+4 26 34 65
+4 26 34 36
+4 26 34 66
+4 26 34 67
+4 26 34 37
+4 26 35 27
+4 26 35 44
+4 26 35 46
+4 26 35 28
+4 26 35 47
+4 26 35 29
+4 26 35 48
+4 26 35 30
+4 26 35 49
+4 26 35 31
+4 26 35 50
+4 26 35 51
+4 26 35 52
+4 26 35 53
+4 26 35 54
+4 26 35 32
+4 26 35 33
+4 26 35 55
+4 26 35 56
+4 26 35 57
+4 26 35 58
+4 26 35 59
+4 26 35 60
+4 26 35 61
+4 26 35 62
+4 26 35 63
+4 26 35 34
+4 26 35 35
+4 26 35 64
+4 26 35 65
+4 26 35 36
+4 26 35 66
+4 26 35 67
+4 26 35 37
+4 26 64 27
+4 26 64 44
+4 26 64 45
+4 26 64 46
+4 26 64 28
+4 26 64 47
+4 26 64 29
+4 26 64 48
+4 26 64 30
+4 26 64 49
+4 26 64 31
+4 26 64 50
+4 26 64 51
+4 26 64 52
+4 26 64 53
+4 26 64 54
+4 26 64 32
+4 26 64 33
+4 26 64 55
+4 26 64 56
+4 26 64 57
+4 26 64 58
+4 26 64 59
+4 26 64 60
+4 26 64 61
+4 26 64 62
+4 26 64 63
+4 26 64 34
+4 26 64 35
+4 26 64 64
+4 26 64 36
+4 26 64 66
+4 26 64 67
+4 26 64 37
+4 26 65 27
+4 26 65 44
+4 26 65 46
+4 26 65 28
+4 26 65 47
+4 26 65 29
+4 26 65 48
+4 26 65 30
+4 26 65 31
+4 26 65 50
+4 26 65 51
+4 26 65 52
+4 26 65 53
+4 26 65 54
+4 26 65 32
+4 26 65 55
+4 26 65 56
+4 26 65 57
+4 26 65 58
+4 26 65 59
+4 26 65 60
+4 26 65 61
+4 26 65 62
+4 26 65 63
+4 26 65 34
+4 26 65 35
+4 26 65 65
+4 26 65 36
+4 26 65 67
+4 26 65 37
+4 26 36 27
+4 26 36 44
+4 26 36 45
+4 26 36 46
+4 26 36 28
+4 26 36 47
+4 26 36 29
+4 26 36 30
+4 26 36 49
+4 26 36 31
+4 26 36 50
+4 26 36 51
+4 26 36 52
+4 26 36 53
+4 26 36 54
+4 26 36 32
+4 26 36 33
+4 26 36 55
+4 26 36 56
+4 26 36 57
+4 26 36 58
+4 26 36 59
+4 26 36 60
+4 26 36 61
+4 26 36 62
+4 26 36 63
+4 26 36 34
+4 26 36 35
+4 26 36 64
+4 26 36 65
+4 26 36 36
+4 26 36 66
+4 26 36 67
+4 26 36 37
+4 26 66 27
+4 26 66 44
+4 26 66 45
+4 26 66 46
+4 26 66 28
+4 26 66 47
+4 26 66 29
+4 26 66 48
+4 26 66 30
+4 26 66 49
+4 26 66 31
+4 26 66 50
+4 26 66 51
+4 26 66 52
+4 26 66 53
+4 26 66 54
+4 26 66 32
+4 26 66 33
+4 26 66 55
+4 26 66 56
+4 26 66 57
+4 26 66 58
+4 26 66 59
+4 26 66 60
+4 26 66 61
+4 26 66 62
+4 26 66 63
+4 26 66 34
+4 26 66 35
+4 26 66 64
+4 26 66 36
+4 26 66 66
+4 26 66 67
+4 26 66 37
+4 26 67 27
+4 26 67 44
+4 26 67 46
+4 26 67 28
+4 26 67 47
+4 26 67 29
+4 26 67 48
+4 26 67 30
+4 26 67 49
+4 26 67 31
+4 26 67 50
+4 26 67 51
+4 26 67 52
+4 26 67 53
+4 26 67 54
+4 26 67 32
+4 26 67 33
+4 26 67 55
+4 26 67 56
+4 26 67 58
+4 26 67 59
+4 26 67 60
+4 26 67 63
+4 26 67 34
+4 26 67 35
+4 26 67 64
+4 26 67 65
+4 26 67 36
+4 26 67 66
+4 26 67 67
+4 26 67 37
+4 26 37 27
+4 26 37 44
+4 26 37 45
+4 26 37 46
+4 26 37 47
+4 26 37 29
+4 26 37 48
+4 26 37 30
+4 26 37 49
+4 26 37 31
+4 26 37 50
+4 26 37 51
+4 26 37 52
+4 26 37 53
+4 26 37 54
+4 26 37 32
+4 26 37 33
+4 26 37 55
+4 26 37 56
+4 26 37 57
+4 26 37 58
+4 26 37 59
+4 26 37 60
+4 26 37 61
+4 26 37 62
+4 26 37 63
+4 26 37 34
+4 26 37 35
+4 26 37 64
+4 26 37 65
+4 26 37 36
+4 26 37 66
+4 26 37 67
+4 26 37 37
+28 27
+28 44
+28 45
+28 46
+28 28
+28 47
+28 29
+28 48
+28 30
+28 49
+28 31
+28 50
+28 51
+28 52
+28 53
+28 54
+28 32
+28 33
+28 55
+28 56
+28 57
+28 58
+28 59
+28 60
+28 61
+28 62
+28 63
+28 34
+28 35
+28 64
+28 65
+28 36
+28 66
+28 67
+28 37
+#end_init
+24 32
+24 27
+24 29
+24 35
+24 31
+24 30
+24 28
+24 36
+25 33
+25 34
+25 37
+26 17 11
+26 16 11
+26 20 10
+#end_goal
+#init_function_facts
+0
+#initial_task
+56

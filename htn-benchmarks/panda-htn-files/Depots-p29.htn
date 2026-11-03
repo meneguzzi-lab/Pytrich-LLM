@@ -1,0 +1,3413 @@
+#number_constants_number_sorts
+357 292
+#constants
+crate0
+crate1
+crate10
+crate100
+crate101
+crate102
+crate103
+crate104
+crate105
+crate106
+crate107
+crate108
+crate109
+crate11
+crate110
+crate111
+crate112
+crate113
+crate114
+crate115
+crate116
+crate117
+crate118
+crate119
+crate12
+crate120
+crate121
+crate122
+crate123
+crate124
+crate125
+crate126
+crate127
+crate128
+crate129
+crate13
+crate130
+crate131
+crate132
+crate133
+crate134
+crate135
+crate136
+crate137
+crate138
+crate139
+crate14
+crate140
+crate141
+crate142
+crate143
+crate144
+crate145
+crate146
+crate147
+crate148
+crate149
+crate15
+crate150
+crate151
+crate152
+crate153
+crate154
+crate155
+crate156
+crate157
+crate158
+crate159
+crate16
+crate160
+crate161
+crate162
+crate163
+crate164
+crate165
+crate166
+crate167
+crate168
+crate169
+crate17
+crate170
+crate171
+crate172
+crate173
+crate174
+crate175
+crate176
+crate177
+crate178
+crate179
+crate18
+crate180
+crate181
+crate182
+crate183
+crate184
+crate185
+crate186
+crate187
+crate188
+crate189
+crate19
+crate190
+crate191
+crate192
+crate193
+crate194
+crate195
+crate196
+crate197
+crate198
+crate199
+crate2
+crate20
+crate200
+crate201
+crate202
+crate203
+crate204
+crate205
+crate206
+crate207
+crate208
+crate209
+crate21
+crate210
+crate211
+crate212
+crate213
+crate214
+crate215
+crate216
+crate217
+crate218
+crate219
+crate22
+crate220
+crate221
+crate222
+crate223
+crate224
+crate225
+crate226
+crate227
+crate228
+crate229
+crate23
+crate230
+crate231
+crate232
+crate233
+crate234
+crate235
+crate236
+crate237
+crate238
+crate239
+crate24
+crate240
+crate241
+crate242
+crate243
+crate244
+crate245
+crate246
+crate247
+crate248
+crate249
+crate25
+crate250
+crate251
+crate252
+crate253
+crate254
+crate255
+crate256
+crate257
+crate258
+crate259
+crate26
+crate260
+crate261
+crate262
+crate263
+crate264
+crate265
+crate266
+crate267
+crate268
+crate269
+crate27
+crate270
+crate271
+crate272
+crate273
+crate274
+crate275
+crate276
+crate277
+crate278
+crate279
+crate28
+crate280
+crate281
+crate282
+crate283
+crate284
+crate285
+crate286
+crate287
+crate288
+crate289
+crate29
+crate290
+crate291
+crate292
+crate293
+crate294
+crate295
+crate296
+crate297
+crate298
+crate299
+crate3
+crate30
+crate31
+crate32
+crate33
+crate34
+crate35
+crate36
+crate37
+crate38
+crate39
+crate4
+crate40
+crate41
+crate42
+crate43
+crate44
+crate45
+crate46
+crate47
+crate48
+crate49
+crate5
+crate50
+crate51
+crate52
+crate53
+crate54
+crate55
+crate56
+crate57
+crate58
+crate59
+crate6
+crate60
+crate61
+crate62
+crate63
+crate64
+crate65
+crate66
+crate67
+crate68
+crate69
+crate7
+crate70
+crate71
+crate72
+crate73
+crate74
+crate75
+crate76
+crate77
+crate78
+crate79
+crate8
+crate80
+crate81
+crate82
+crate83
+crate84
+crate85
+crate86
+crate87
+crate88
+crate89
+crate9
+crate90
+crate91
+crate92
+crate93
+crate94
+crate95
+crate96
+crate97
+crate98
+crate99
+hoist0
+hoist1
+hoist10
+hoist11
+hoist12
+hoist13
+hoist14
+hoist15
+hoist2
+hoist3
+hoist4
+hoist5
+hoist6
+hoist7
+hoist8
+hoist9
+pallet0
+pallet1
+pallet10
+pallet11
+pallet12
+pallet13
+pallet14
+pallet15
+pallet16
+pallet17
+pallet18
+pallet19
+pallet2
+pallet20
+pallet21
+pallet22
+pallet23
+pallet24
+pallet25
+pallet3
+pallet4
+pallet5
+pallet6
+pallet7
+pallet8
+pallet9
+truck0
+truck1
+truck2
+truck3
+truck4
+depot0
+depot1
+depot2
+depot3
+depot4
+distributor0
+distributor1
+distributor2
+distributor3
+distributor4
+#end_constants
+#sorts_each_with_number_of_members_and_members
+crate 300 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299
+hoist 16 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315
+locatable 347 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346
+place 10 347 348 349 350 351 352 353 354 355 356
+sort_for_crate0 1 0
+sort_for_crate1 1 1
+sort_for_crate100 1 3
+sort_for_crate101 1 4
+sort_for_crate102 1 5
+sort_for_crate103 1 6
+sort_for_crate104 1 7
+sort_for_crate105 1 8
+sort_for_crate106 1 9
+sort_for_crate107 1 10
+sort_for_crate108 1 11
+sort_for_crate109 1 12
+sort_for_crate11 1 13
+sort_for_crate111 1 15
+sort_for_crate112 1 16
+sort_for_crate113 1 17
+sort_for_crate114 1 18
+sort_for_crate115 1 19
+sort_for_crate117 1 21
+sort_for_crate118 1 22
+sort_for_crate119 1 23
+sort_for_crate12 1 24
+sort_for_crate120 1 25
+sort_for_crate121 1 26
+sort_for_crate122 1 27
+sort_for_crate123 1 28
+sort_for_crate124 1 29
+sort_for_crate125 1 30
+sort_for_crate127 1 32
+sort_for_crate128 1 33
+sort_for_crate129 1 34
+sort_for_crate13 1 35
+sort_for_crate130 1 36
+sort_for_crate131 1 37
+sort_for_crate132 1 38
+sort_for_crate133 1 39
+sort_for_crate134 1 40
+sort_for_crate135 1 41
+sort_for_crate136 1 42
+sort_for_crate137 1 43
+sort_for_crate138 1 44
+sort_for_crate139 1 45
+sort_for_crate14 1 46
+sort_for_crate140 1 47
+sort_for_crate141 1 48
+sort_for_crate142 1 49
+sort_for_crate143 1 50
+sort_for_crate144 1 51
+sort_for_crate146 1 53
+sort_for_crate147 1 54
+sort_for_crate149 1 56
+sort_for_crate15 1 57
+sort_for_crate151 1 59
+sort_for_crate152 1 60
+sort_for_crate153 1 61
+sort_for_crate154 1 62
+sort_for_crate155 1 63
+sort_for_crate156 1 64
+sort_for_crate157 1 65
+sort_for_crate158 1 66
+sort_for_crate159 1 67
+sort_for_crate16 1 68
+sort_for_crate160 1 69
+sort_for_crate161 1 70
+sort_for_crate162 1 71
+sort_for_crate163 1 72
+sort_for_crate165 1 74
+sort_for_crate166 1 75
+sort_for_crate167 1 76
+sort_for_crate168 1 77
+sort_for_crate169 1 78
+sort_for_crate17 1 79
+sort_for_crate170 1 80
+sort_for_crate172 1 82
+sort_for_crate174 1 84
+sort_for_crate176 1 86
+sort_for_crate178 1 88
+sort_for_crate18 1 90
+sort_for_crate180 1 91
+sort_for_crate181 1 92
+sort_for_crate182 1 93
+sort_for_crate183 1 94
+sort_for_crate184 1 95
+sort_for_crate185 1 96
+sort_for_crate186 1 97
+sort_for_crate187 1 98
+sort_for_crate188 1 99
+sort_for_crate189 1 100
+sort_for_crate19 1 101
+sort_for_crate190 1 102
+sort_for_crate191 1 103
+sort_for_crate193 1 105
+sort_for_crate194 1 106
+sort_for_crate195 1 107
+sort_for_crate196 1 108
+sort_for_crate198 1 110
+sort_for_crate199 1 111
+sort_for_crate2 1 112
+sort_for_crate200 1 114
+sort_for_crate201 1 115
+sort_for_crate202 1 116
+sort_for_crate204 1 118
+sort_for_crate205 1 119
+sort_for_crate206 1 120
+sort_for_crate208 1 122
+sort_for_crate209 1 123
+sort_for_crate21 1 124
+sort_for_crate210 1 125
+sort_for_crate211 1 126
+sort_for_crate212 1 127
+sort_for_crate213 1 128
+sort_for_crate215 1 130
+sort_for_crate217 1 132
+sort_for_crate218 1 133
+sort_for_crate219 1 134
+sort_for_crate22 1 135
+sort_for_crate220 1 136
+sort_for_crate221 1 137
+sort_for_crate222 1 138
+sort_for_crate223 1 139
+sort_for_crate224 1 140
+sort_for_crate225 1 141
+sort_for_crate226 1 142
+sort_for_crate228 1 144
+sort_for_crate229 1 145
+sort_for_crate23 1 146
+sort_for_crate230 1 147
+sort_for_crate231 1 148
+sort_for_crate232 1 149
+sort_for_crate233 1 150
+sort_for_crate234 1 151
+sort_for_crate235 1 152
+sort_for_crate236 1 153
+sort_for_crate237 1 154
+sort_for_crate238 1 155
+sort_for_crate239 1 156
+sort_for_crate24 1 157
+sort_for_crate241 1 159
+sort_for_crate243 1 161
+sort_for_crate244 1 162
+sort_for_crate245 1 163
+sort_for_crate246 1 164
+sort_for_crate247 1 165
+sort_for_crate248 1 166
+sort_for_crate249 1 167
+sort_for_crate25 1 168
+sort_for_crate250 1 169
+sort_for_crate251 1 170
+sort_for_crate252 1 171
+sort_for_crate253 1 172
+sort_for_crate254 1 173
+sort_for_crate255 1 174
+sort_for_crate256 1 175
+sort_for_crate257 1 176
+sort_for_crate259 1 178
+sort_for_crate260 1 180
+sort_for_crate261 1 181
+sort_for_crate262 1 182
+sort_for_crate263 1 183
+sort_for_crate264 1 184
+sort_for_crate265 1 185
+sort_for_crate266 1 186
+sort_for_crate267 1 187
+sort_for_crate268 1 188
+sort_for_crate269 1 189
+sort_for_crate27 1 190
+sort_for_crate270 1 191
+sort_for_crate271 1 192
+sort_for_crate273 1 194
+sort_for_crate274 1 195
+sort_for_crate275 1 196
+sort_for_crate276 1 197
+sort_for_crate278 1 199
+sort_for_crate279 1 200
+sort_for_crate280 1 202
+sort_for_crate281 1 203
+sort_for_crate282 1 204
+sort_for_crate283 1 205
+sort_for_crate284 1 206
+sort_for_crate285 1 207
+sort_for_crate286 1 208
+sort_for_crate287 1 209
+sort_for_crate29 1 212
+sort_for_crate290 1 213
+sort_for_crate291 1 214
+sort_for_crate292 1 215
+sort_for_crate293 1 216
+sort_for_crate294 1 217
+sort_for_crate295 1 218
+sort_for_crate297 1 220
+sort_for_crate298 1 221
+sort_for_crate299 1 222
+sort_for_crate3 1 223
+sort_for_crate30 1 224
+sort_for_crate31 1 225
+sort_for_crate32 1 226
+sort_for_crate33 1 227
+sort_for_crate34 1 228
+sort_for_crate35 1 229
+sort_for_crate37 1 231
+sort_for_crate38 1 232
+sort_for_crate39 1 233
+sort_for_crate4 1 234
+sort_for_crate40 1 235
+sort_for_crate41 1 236
+sort_for_crate42 1 237
+sort_for_crate43 1 238
+sort_for_crate45 1 240
+sort_for_crate46 1 241
+sort_for_crate47 1 242
+sort_for_crate48 1 243
+sort_for_crate49 1 244
+sort_for_crate5 1 245
+sort_for_crate50 1 246
+sort_for_crate51 1 247
+sort_for_crate52 1 248
+sort_for_crate53 1 249
+sort_for_crate54 1 250
+sort_for_crate55 1 251
+sort_for_crate56 1 252
+sort_for_crate58 1 254
+sort_for_crate6 1 256
+sort_for_crate60 1 257
+sort_for_crate62 1 259
+sort_for_crate63 1 260
+sort_for_crate64 1 261
+sort_for_crate65 1 262
+sort_for_crate66 1 263
+sort_for_crate67 1 264
+sort_for_crate68 1 265
+sort_for_crate70 1 268
+sort_for_crate71 1 269
+sort_for_crate72 1 270
+sort_for_crate73 1 271
+sort_for_crate74 1 272
+sort_for_crate75 1 273
+sort_for_crate76 1 274
+sort_for_crate77 1 275
+sort_for_crate78 1 276
+sort_for_crate79 1 277
+sort_for_crate8 1 278
+sort_for_crate80 1 279
+sort_for_crate81 1 280
+sort_for_crate82 1 281
+sort_for_crate84 1 283
+sort_for_crate85 1 284
+sort_for_crate86 1 285
+sort_for_crate87 1 286
+sort_for_crate88 1 287
+sort_for_crate89 1 288
+sort_for_crate9 1 289
+sort_for_crate90 1 290
+sort_for_crate91 1 291
+sort_for_crate92 1 292
+sort_for_crate93 1 293
+sort_for_crate94 1 294
+sort_for_crate95 1 295
+sort_for_crate96 1 296
+sort_for_crate97 1 297
+sort_for_crate98 1 298
+sort_for_pallet0 1 316
+sort_for_pallet1 1 317
+sort_for_pallet10 1 318
+sort_for_pallet11 1 319
+sort_for_pallet12 1 320
+sort_for_pallet13 1 321
+sort_for_pallet14 1 322
+sort_for_pallet15 1 323
+sort_for_pallet16 1 324
+sort_for_pallet17 1 325
+sort_for_pallet18 1 326
+sort_for_pallet19 1 327
+sort_for_pallet2 1 328
+sort_for_pallet20 1 329
+sort_for_pallet21 1 330
+sort_for_pallet22 1 331
+sort_for_pallet23 1 332
+sort_for_pallet24 1 333
+sort_for_pallet25 1 334
+sort_for_pallet3 1 335
+sort_for_pallet4 1 336
+sort_for_pallet5 1 337
+sort_for_pallet6 1 338
+sort_for_pallet7 1 339
+sort_for_pallet8 1 340
+sort_for_pallet9 1 341
+surface 326 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341
+truck 5 342 343 344 345 346
+#end_sorts
+#number_of_predicates
+8
+#predicates_each_with_number_of_arguments_and_argument_sorts
++at 2 2 3
+-at 2 2 3
++on 2 0 290
++in 2 0 291
++lifting 2 1 0
++available 1 1
++clear 1 290
+-clear 1 290
+#end_predicates
+#begin_predicate_mutexes
+2
+0 1
+6 7
+#end_predicate_mutexes
+#number_of_functions
+0
+#function_declarations_with_number_of_arguments_and_argument_sorts
+#number_primitive_tasks_and_number_abstract_tasks
+17 14
+#begin_task_name_number_of_original_variables_and_number_of_variables
+Drive 3 3
+#sorts_of_variables
+291 3 3 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+0 0 1
+#add_each_predicate_and_argument_variables
+2
+1 0 1
+0 0 2
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+2
+0 0 1
+1 0 2
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+Lift 4 4
+#sorts_of_variables
+1 0 290 3 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+5
+0 0 3
+5 0
+0 1 3
+2 1 2
+6 1
+#add_each_predicate_and_argument_variables
+4
+1 1 3
+4 0 1
+7 1
+6 2
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+5
+0 1 3
+6 1
+5 0
+7 2
+2 1 2
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+Drop 4 4
+#sorts_of_variables
+1 0 290 3 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+0 0 3
+0 2 3
+6 2
+4 0 1
+#add_each_predicate_and_argument_variables
+5
+5 0
+0 1 3
+7 2
+6 1
+2 1 2
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+4
+4 0 1
+1 1 3
+6 2
+7 1
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+Load 4 4
+#sorts_of_variables
+1 0 291 3 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+3
+0 0 3
+0 2 3
+4 0 1
+#add_each_predicate_and_argument_variables
+2
+3 1 2
+5 0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+1
+4 0 1
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+Unload 4 4
+#sorts_of_variables
+1 0 291 3 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+0 0 3
+0 2 3
+5 0
+3 1 2
+#add_each_predicate_and_argument_variables
+1
+4 0 1
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+2
+3 1 2
+5 0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+nop 0 0
+#sorts_of_variables
+
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 1
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+0
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m4_do_clear 2 2
+#sorts_of_variables
+290 3 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+6 0
+0 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m5_do_clear 4 4
+#sorts_of_variables
+290 3 0 1 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+7 0
+2 2 0
+0 0 1
+0 3 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m6_do_get_truck 2 2
+#sorts_of_variables
+291 3 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+0 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m7_do_get_truck 2 2
+#sorts_of_variables
+291 3 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+1 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m8_do_lift_crate 4 4
+#sorts_of_variables
+0 3 1 291 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+2
+3 0 3
+0 2 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m9_do_lift_crate 4 4
+#sorts_of_variables
+0 3 1 290 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+2 0 3
+0 0 1
+0 3 1
+0 2 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m10_do_load_truck 4 4
+#sorts_of_variables
+0 290 3 1 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+0 0 2
+0 1 2
+2 0 1
+0 3 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m0_do_put_on 2 2
+#sorts_of_variables
+0 290 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+2 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m1_do_put_on 2 2
+#sorts_of_variables
+0 3 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+0 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m2_do_put_on 2 2
+#sorts_of_variables
+0 291 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+1
+3 0 1
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__method_precondition_m11_do_unload_truck 5 5
+#sorts_of_variables
+0 290 3 291 1 
+#end_variables
+#number_of_cost_statements
+1
+#begin_cost_statements
+const 0
+#end_cost_statements
+#preconditions_each_predicate_and_argument_variables
+4
+3 0 3
+0 3 2
+0 4 2
+0 1 2
+#add_each_predicate_and_argument_variables
+0
+#conditional_add_each_with_conditions_and_effect
+0
+#del_each_predicate_and_argument_variables
+0
+#conditional_del_each_with_conditions_and_effect
+0
+#variable_constraints_first_number_then_individual_constraints
+0
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+do_put_on 2 2
+#sorts_of_variables
+0 290 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+do_clear 2 2
+#sorts_of_variables
+290 3 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+do_get_truck 2 2
+#sorts_of_variables
+291 3 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+do_lift_crate 3 3
+#sorts_of_variables
+0 3 1 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+do_load_truck 4 4
+#sorts_of_variables
+0 290 3 291 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+do_unload_truck 4 4
+#sorts_of_variables
+0 290 3 291 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+__top 0 0
+#sorts_of_variables
+
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m5_do_clear_splitted_1 3 3
+#sorts_of_variables
+3 1 0 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m7_do_get_truck_splitted_2 2 2
+#sorts_of_variables
+291 3 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m1_do_put_on_splitted_3 3 3
+#sorts_of_variables
+0 3 290 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m2_do_put_on_splitted_4 4 4
+#sorts_of_variables
+0 291 3 290 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m3_do_put_on_splitted_5 3 3
+#sorts_of_variables
+0 3 291 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m2_do_put_on_splitted_6 3 3
+#sorts_of_variables
+291 290 0 
+#end_variables
+#end_of_task
+#begin_task_name_number_of_original_variables_and_number_of_variables
+m3_do_put_on_splitted_7 3 3
+#sorts_of_variables
+291 3 0 
+#end_variables
+#end_of_task
+#number_of_methods
+20
+#begin_method_name_abstract_task_number_of_variables
+__top_method 23 520
+#variable_sorts
+204 267 209 284 226 272 250 265 263 283 6 264 21 280 23 271 37 277 45 266 49 275 57 273 60 289 66 288 87 276 107 268 117 269 126 287 130 279 136 278 142 274 143 270 153 281 168 286 183 285 184 282 57 206 81 130 6 119 49 198 107 201 23 221 117 230 232 250 206 253 7 221 13 204 26 198 30 60 64 232 45 74 78 201 86 183 93 153 64 94 96 143 97 230 102 209 106 168 26 111 87 112 114 263 81 120 114 127 37 135 142 148 120 151 96 159 136 160 66 161 166 184 86 174 126 176 13 177 119 179 148 180 192 226 21 195 74 101 16 177 35 135 30 46 75 94 129 179 35 186 75 200 203 253 7 211 211 222 180 234 112 240 97 242 161 243 46 255 160 257 106 262 8 195 20 111 27 200 28 257 32 78 40 234 62 222 63 186 67 159 71 127 76 93 79 192 28 80 8 84 85 166 90 101 95 174 99 102 105 243 113 240 118 203 32 123 113 128 131 151 133 176 131 134 27 139 99 145 79 154 76 157 129 163 167 255 62 175 84 178 118 188 16 194 5 242 67 196 95 216 63 254 55 90 140 196 169 188 40 208 128 213 80 214 217 262 20 224 134 228 105 229 71 251 154 259 85 260 163 261 10 133 12 229 15 260 29 178 43 145 51 169 68 175 69 261 12 89 91 216 98 259 100 217 15 103 104 254 109 214 115 123 116 194 122 208 125 157 137 213 116 138 141 167 109 150 55 158 91 162 29 173 125 182 140 187 4 150 51 92 4 199 103 210 100 212 187 218 162 236 137 238 138 247 43 252 14 69 18 218 24 238 34 68 36 182 36 48 52 89 54 122 24 56 59 141 61 98 73 115 77 92 52 82 56 83 88 104 77 146 83 147 54 152 164 252 147 170 61 225 244 247 149 212 197 210 18 202 59 220 88 227 48 235 244 249 9 146 11 73 19 34 22 249 38 202 47 227 50 82 53 225 58 152 70 170 156 164 171 220 181 235 53 185 185 189 47 191 149 193 11 25 25 65 9 207 171 219 219 241 65 246 156 248 189 256 193 258 17 191 31 70 33 256 42 58 44 50 72 181 44 108 124 258 42 132 72 144 155 246 172 241 124 190 172 215 144 231 17 233 31 237 239 248 39 231 110 239 39 223 41 110 41 121 165 223 165 245 205 245 
+#parameter_of_abstract_task
+
+#number_of_subtasks
+260
+#subtasks_each_with_task_id_and_parameter_variables
+17 0 1
+17 2 3
+17 4 5
+17 6 7
+17 8 9
+17 10 11
+17 12 13
+17 14 15
+17 16 17
+17 18 19
+17 20 21
+17 22 23
+17 24 25
+17 26 27
+17 28 29
+17 30 31
+17 32 33
+17 34 35
+17 36 37
+17 38 39
+17 40 41
+17 42 43
+17 44 45
+17 46 47
+17 48 49
+17 50 51
+17 53 52
+17 54 55
+17 57 56
+17 59 58
+17 61 60
+17 63 62
+17 65 64
+17 66 67
+17 69 68
+17 70 71
+17 72 73
+17 74 75
+17 76 77
+17 78 79
+17 81 80
+17 82 83
+17 84 85
+17 86 87
+17 89 88
+17 90 91
+17 92 93
+17 94 95
+17 96 97
+17 99 98
+17 101 100
+17 102 103
+17 105 104
+17 107 106
+17 109 108
+17 111 110
+17 113 112
+17 115 114
+17 117 116
+17 119 118
+17 120 121
+17 123 122
+17 125 124
+17 127 126
+17 129 128
+17 131 130
+17 132 133
+17 135 134
+17 137 136
+17 138 139
+17 140 141
+17 143 142
+17 144 145
+17 146 147
+17 149 148
+17 151 150
+17 152 153
+17 155 154
+17 157 156
+17 159 158
+17 161 160
+17 163 162
+17 165 164
+17 167 166
+17 169 168
+17 171 170
+17 172 173
+17 174 175
+17 176 177
+17 178 179
+17 180 181
+17 182 183
+17 184 185
+17 186 187
+17 188 189
+17 190 191
+17 192 193
+17 194 195
+17 197 196
+17 199 198
+17 200 201
+17 202 203
+17 204 205
+17 206 207
+17 208 209
+17 210 211
+17 212 213
+17 215 214
+17 217 216
+17 218 219
+17 220 221
+17 223 222
+17 225 224
+17 227 226
+17 229 228
+17 231 230
+17 233 232
+17 234 235
+17 237 236
+17 239 238
+17 241 240
+17 243 242
+17 244 245
+17 247 246
+17 249 248
+17 251 250
+17 252 253
+17 254 255
+17 256 257
+17 259 258
+17 261 260
+17 263 262
+17 264 265
+17 267 266
+17 269 268
+17 271 270
+17 273 272
+17 275 274
+17 277 276
+17 279 278
+17 280 281
+17 282 283
+17 284 285
+17 286 287
+17 288 289
+17 290 291
+17 292 293
+17 294 295
+17 297 296
+17 298 299
+17 300 301
+17 302 303
+17 305 304
+17 306 307
+17 308 309
+17 310 311
+17 312 313
+17 314 315
+17 316 317
+17 318 319
+17 321 320
+17 322 323
+17 325 324
+17 327 326
+17 329 328
+17 331 330
+17 333 332
+17 335 334
+17 336 337
+17 339 338
+17 341 340
+17 343 342
+17 345 344
+17 347 346
+17 349 348
+17 351 350
+17 353 352
+17 355 354
+17 356 357
+17 358 359
+17 360 361
+17 362 363
+17 364 365
+17 367 366
+17 368 369
+17 370 371
+17 373 372
+17 374 375
+17 376 377
+17 378 379
+17 380 381
+17 383 382
+17 385 384
+17 386 387
+17 389 388
+17 391 390
+17 393 392
+17 394 395
+17 397 396
+17 399 398
+17 400 401
+17 402 403
+17 404 405
+17 407 406
+17 409 408
+17 411 410
+17 413 412
+17 415 414
+17 416 417
+17 418 419
+17 420 421
+17 422 423
+17 424 425
+17 426 427
+17 428 429
+17 430 431
+17 432 433
+17 434 435
+17 436 437
+17 438 439
+17 440 441
+17 443 442
+17 445 444
+17 447 446
+17 449 448
+17 451 450
+17 453 452
+17 455 454
+17 457 456
+17 459 458
+17 461 460
+17 463 462
+17 465 464
+17 467 466
+17 468 469
+17 470 471
+17 472 473
+17 474 475
+17 476 477
+17 478 479
+17 481 480
+17 482 483
+17 485 484
+17 487 486
+17 488 489
+17 490 491
+17 493 492
+17 495 494
+17 497 496
+17 499 498
+17 501 500
+17 502 503
+17 504 505
+17 506 507
+17 509 508
+17 510 511
+17 513 512
+17 514 515
+17 517 516
+17 518 519
+#number_of_ordering_constraints_and_ordering
+259
+0 1
+1 2
+2 3
+3 4
+4 5
+5 6
+6 7
+7 8
+8 9
+9 10
+10 11
+11 12
+12 13
+13 14
+14 15
+15 16
+16 17
+17 18
+18 19
+19 20
+20 21
+21 22
+22 23
+23 24
+24 25
+25 26
+26 27
+27 28
+28 29
+29 30
+30 31
+31 32
+32 33
+33 34
+34 35
+35 36
+36 37
+37 38
+38 39
+39 40
+40 41
+41 42
+42 43
+43 44
+44 45
+45 46
+46 47
+47 48
+48 49
+49 50
+50 51
+51 52
+52 53
+53 54
+54 55
+55 56
+56 57
+57 58
+58 59
+59 60
+60 61
+61 62
+62 63
+63 64
+64 65
+65 66
+66 67
+67 68
+68 69
+69 70
+70 71
+71 72
+72 73
+73 74
+74 75
+75 76
+76 77
+77 78
+78 79
+79 80
+80 81
+81 82
+82 83
+83 84
+84 85
+85 86
+86 87
+87 88
+88 89
+89 90
+90 91
+91 92
+92 93
+93 94
+94 95
+95 96
+96 97
+97 98
+98 99
+99 100
+100 101
+101 102
+102 103
+103 104
+104 105
+105 106
+106 107
+107 108
+108 109
+109 110
+110 111
+111 112
+112 113
+113 114
+114 115
+115 116
+116 117
+117 118
+118 119
+119 120
+120 121
+121 122
+122 123
+123 124
+124 125
+125 126
+126 127
+127 128
+128 129
+129 130
+130 131
+131 132
+132 133
+133 134
+134 135
+135 136
+136 137
+137 138
+138 139
+139 140
+140 141
+141 142
+142 143
+143 144
+144 145
+145 146
+146 147
+147 148
+148 149
+149 150
+150 151
+151 152
+152 153
+153 154
+154 155
+155 156
+156 157
+157 158
+158 159
+159 160
+160 161
+161 162
+162 163
+163 164
+164 165
+165 166
+166 167
+167 168
+168 169
+169 170
+170 171
+171 172
+172 173
+173 174
+174 175
+175 176
+176 177
+177 178
+178 179
+179 180
+180 181
+181 182
+182 183
+183 184
+184 185
+185 186
+186 187
+187 188
+188 189
+189 190
+190 191
+191 192
+192 193
+193 194
+194 195
+195 196
+196 197
+197 198
+198 199
+199 200
+200 201
+201 202
+202 203
+203 204
+204 205
+205 206
+206 207
+207 208
+208 209
+209 210
+210 211
+211 212
+212 213
+213 214
+214 215
+215 216
+216 217
+217 218
+218 219
+219 220
+220 221
+221 222
+222 223
+223 224
+224 225
+225 226
+226 227
+227 228
+228 229
+229 230
+230 231
+231 232
+232 233
+233 234
+234 235
+235 236
+236 237
+237 238
+238 239
+239 240
+240 241
+241 242
+242 243
+243 244
+244 245
+245 246
+246 247
+247 248
+248 249
+249 250
+250 251
+251 252
+252 253
+253 254
+254 255
+255 256
+256 257
+257 258
+258 259
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m4_do_clear 18 2
+#variable_sorts
+290 3 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+5
+6 0 1
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m5_do_clear_splitted_1 24 4
+#variable_sorts
+291 3 1 0 
+#parameter_of_abstract_task
+1 2 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+19 0 1
+3 2 3 0 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m5_do_clear 18 4
+#variable_sorts
+290 3 0 1 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+4
+#subtasks_each_with_task_id_and_parameter_variables
+18 2 1
+1 3 2 0 1
+7 0 1 2 3
+24 1 3 2
+#number_of_ordering_constraints_and_ordering
+6
+2 0
+2 1
+0 1
+2 3
+0 3
+1 3
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m6_do_get_truck 19 2
+#variable_sorts
+291 3 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+5
+8 0 1
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m7_do_get_truck_splitted_2 25 3
+#variable_sorts
+291 3 3 
+#parameter_of_abstract_task
+0 2 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+0 0 1 2
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m7_do_get_truck 19 2
+#variable_sorts
+291 3 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+9 0 1
+25 0 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m8_do_lift_crate 20 4
+#variable_sorts
+0 3 1 291 
+#parameter_of_abstract_task
+0 1 2 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+19 3 1
+4 2 0 3 1
+10 0 1 2 3
+#number_of_ordering_constraints_and_ordering
+3
+2 0
+2 1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m9_do_lift_crate 20 4
+#variable_sorts
+0 3 1 290 
+#parameter_of_abstract_task
+0 1 2 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+1 2 0 3 1
+11 0 1 2 3
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m10_do_load_truck 21 5
+#variable_sorts
+0 290 3 291 1 
+#parameter_of_abstract_task
+0 1 2 3 
+#number_of_subtasks
+5
+#subtasks_each_with_task_id_and_parameter_variables
+19 3 2
+18 0 2
+1 4 0 1 2
+3 4 0 3 2
+12 0 1 2 4
+#number_of_ordering_constraints_and_ordering
+7
+4 0
+4 1
+4 2
+4 3
+0 1
+1 2
+2 3
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m0_do_put_on 17 2
+#variable_sorts
+0 290 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+5
+13 0 1
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m1_do_put_on_splitted_3 26 4
+#variable_sorts
+0 3 1 290 
+#parameter_of_abstract_task
+0 1 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+20 0 1 2
+2 2 0 3 1
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m1_do_put_on 17 3
+#variable_sorts
+0 290 3 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+4
+#subtasks_each_with_task_id_and_parameter_variables
+18 0 2
+18 1 2
+14 0 2
+26 0 2 1
+#number_of_ordering_constraints_and_ordering
+6
+2 0
+2 1
+0 1
+2 3
+0 3
+1 3
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m2_do_put_on_splitted_4 27 5
+#variable_sorts
+1 0 291 3 290 
+#parameter_of_abstract_task
+1 2 3 4 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+4 0 1 2 3
+2 0 1 4 3
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m2_do_put_on_splitted_6 29 4
+#variable_sorts
+291 3 290 0 
+#parameter_of_abstract_task
+0 2 3 
+#number_of_subtasks
+3
+#subtasks_each_with_task_id_and_parameter_variables
+19 0 1
+18 2 1
+27 3 0 1 2
+#number_of_ordering_constraints_and_ordering
+3
+0 1
+0 2
+1 2
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m2_do_put_on 17 3
+#variable_sorts
+0 290 291 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+15 0 2
+29 2 1 0
+#number_of_ordering_constraints_and_ordering
+1
+0 1
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m3_do_put_on_splitted_5 28 4
+#variable_sorts
+0 290 3 291 
+#parameter_of_abstract_task
+0 2 3 
+#number_of_subtasks
+1
+#subtasks_each_with_task_id_and_parameter_variables
+21 0 1 2 3
+#number_of_ordering_constraints_and_ordering
+0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+_splitting_method_m3_do_put_on_splitted_7 30 4
+#variable_sorts
+291 3 3 0 
+#parameter_of_abstract_task
+0 2 3 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+0 0 1 2
+28 3 1 0
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m3_do_put_on 17 4
+#variable_sorts
+0 290 291 3 
+#parameter_of_abstract_task
+0 1 
+#number_of_subtasks
+2
+#subtasks_each_with_task_id_and_parameter_variables
+22 0 1 3 2
+30 2 3 0
+#number_of_ordering_constraints_and_ordering
+1
+1 0
+#variable_constraints
+0
+#end_of_method
+#begin_method_name_abstract_task_number_of_variables
+m11_do_unload_truck 22 5
+#variable_sorts
+0 290 3 291 1 
+#parameter_of_abstract_task
+0 1 2 3 
+#number_of_subtasks
+4
+#subtasks_each_with_task_id_and_parameter_variables
+18 1 2
+4 4 0 3 2
+2 4 0 1 2
+16 0 1 2 3 4
+#number_of_ordering_constraints_and_ordering
+5
+3 0
+3 1
+3 2
+0 1
+1 2
+#variable_constraints
+0
+#end_of_method
+#init_and_goal_facts
+1034 260
+0 316 347
+6 217
+0 317 348
+6 220
+0 328 349
+6 134
+0 335 350
+6 203
+0 336 351
+6 173
+0 337 352
+6 216
+0 338 353
+6 219
+0 339 354
+6 211
+0 340 355
+6 208
+0 341 356
+6 194
+0 318 353
+6 222
+0 319 352
+6 214
+0 320 355
+6 172
+0 321 348
+6 154
+0 322 351
+6 209
+0 323 353
+6 178
+0 324 355
+6 200
+0 325 356
+6 199
+0 326 348
+6 185
+0 327 354
+6 215
+0 329 353
+6 167
+0 330 355
+6 182
+0 331 348
+6 189
+0 332 351
+6 193
+0 333 349
+6 213
+0 334 350
+6 195
+0 342 347
+0 343 353
+0 344 349
+0 345 353
+0 346 354
+0 300 347
+5 300
+0 301 348
+5 301
+0 308 349
+5 308
+0 309 350
+5 309
+0 310 351
+5 310
+0 311 352
+5 311
+0 312 353
+5 312
+0 313 354
+5 313
+0 314 355
+5 314
+0 315 356
+5 315
+0 302 355
+5 302
+0 303 354
+5 303
+0 304 354
+5 304
+0 305 348
+5 305
+0 306 347
+5 306
+0 307 354
+5 307
+0 0 353
+2 0 338
+0 1 355
+2 1 320
+0 112 353
+2 112 318
+0 223 356
+2 223 325
+0 234 353
+2 234 112
+0 245 355
+2 245 340
+0 256 353
+2 256 329
+0 267 348
+2 267 331
+0 278 350
+2 278 335
+0 289 353
+2 289 256
+0 2 351
+2 2 332
+0 13 351
+2 13 2
+0 24 353
+2 24 234
+0 35 355
+2 35 330
+0 46 350
+2 46 334
+0 57 348
+2 57 321
+0 68 350
+2 68 46
+0 79 355
+2 79 324
+0 90 348
+2 90 317
+0 101 355
+2 101 1
+0 113 356
+2 113 341
+0 124 356
+2 124 223
+0 135 349
+2 135 328
+0 146 355
+2 146 101
+0 157 353
+2 157 323
+0 168 347
+2 168 316
+0 179 347
+2 179 168
+0 190 351
+2 190 336
+0 201 356
+2 201 124
+0 212 351
+2 212 190
+0 224 352
+2 224 337
+0 225 348
+2 225 267
+0 226 356
+2 226 201
+0 227 351
+2 227 322
+0 228 355
+2 228 35
+0 229 352
+2 229 224
+0 230 355
+2 230 228
+0 231 355
+2 231 245
+0 232 353
+2 232 24
+0 233 351
+2 233 212
+0 235 349
+2 235 135
+0 236 355
+2 236 146
+0 237 349
+2 237 235
+0 238 348
+2 238 57
+0 239 355
+2 239 79
+0 240 353
+2 240 232
+0 241 353
+2 241 240
+0 242 347
+2 242 179
+0 243 353
+2 243 289
+0 244 355
+2 244 230
+0 246 355
+2 246 239
+0 247 355
+2 247 244
+0 248 351
+2 248 13
+0 249 353
+2 249 241
+0 250 347
+2 250 242
+0 251 355
+2 251 231
+0 252 348
+2 252 326
+0 253 353
+2 253 0
+0 254 352
+2 254 319
+0 255 353
+2 255 157
+0 257 355
+2 257 236
+0 258 350
+2 258 68
+0 259 354
+2 259 339
+0 260 350
+2 260 258
+0 261 353
+2 261 255
+0 262 348
+2 262 252
+0 263 348
+2 263 225
+0 264 348
+2 264 262
+0 265 348
+2 265 264
+0 266 349
+2 266 237
+0 268 355
+2 268 246
+0 269 355
+2 269 247
+0 270 352
+2 270 229
+0 271 351
+2 271 233
+0 272 355
+2 272 269
+0 273 353
+2 273 243
+0 274 353
+2 274 273
+0 275 351
+2 275 271
+0 276 354
+2 276 327
+0 277 350
+2 277 278
+0 279 350
+2 279 260
+0 280 353
+2 280 261
+0 281 356
+2 281 113
+0 282 353
+2 282 280
+0 283 353
+2 283 249
+0 284 355
+2 284 272
+0 285 350
+2 285 277
+0 286 353
+2 286 283
+0 287 348
+2 287 265
+0 288 347
+2 288 250
+0 290 356
+2 290 281
+0 291 348
+2 291 263
+0 292 351
+2 292 227
+0 293 351
+2 293 275
+0 294 352
+2 294 270
+0 295 356
+2 295 226
+0 296 351
+2 296 293
+0 297 347
+2 297 288
+0 298 351
+2 298 292
+0 299 355
+2 299 268
+0 3 356
+2 3 290
+0 4 347
+2 4 297
+0 5 349
+2 5 266
+0 6 355
+2 6 284
+0 7 347
+2 7 4
+0 8 353
+2 8 286
+0 9 355
+2 9 299
+0 10 355
+2 10 257
+0 11 355
+2 11 251
+0 12 355
+2 12 10
+0 14 350
+2 14 279
+0 15 354
+2 15 276
+0 16 353
+2 16 8
+0 17 356
+2 17 295
+0 18 352
+2 18 254
+0 19 349
+2 19 333
+0 20 353
+2 20 274
+0 21 353
+2 21 253
+0 22 353
+2 22 16
+0 23 348
+2 23 287
+0 25 351
+2 25 248
+0 26 353
+2 26 20
+0 27 355
+2 27 11
+0 28 348
+2 28 23
+0 29 349
+2 29 19
+0 30 352
+2 30 294
+0 31 356
+2 31 3
+0 32 348
+2 32 90
+0 33 354
+2 33 15
+0 34 353
+2 34 26
+0 36 348
+2 36 32
+0 37 349
+2 37 29
+0 38 348
+2 38 28
+0 39 348
+2 39 38
+0 40 353
+2 40 21
+0 41 348
+2 41 238
+0 42 348
+2 42 41
+0 43 356
+2 43 17
+0 44 351
+2 44 298
+0 45 348
+2 45 42
+0 47 355
+2 47 9
+0 48 353
+2 48 22
+0 49 356
+2 49 43
+0 50 355
+2 50 6
+0 51 353
+2 51 40
+0 52 351
+2 52 44
+0 53 355
+2 53 27
+0 54 350
+2 54 285
+0 55 348
+2 55 39
+0 56 351
+2 56 296
+0 58 353
+2 58 51
+0 59 349
+2 59 5
+0 60 350
+2 60 14
+0 61 353
+2 61 282
+0 62 352
+2 62 30
+0 63 348
+2 63 36
+0 64 355
+2 64 50
+0 65 348
+2 65 291
+0 66 349
+2 66 37
+0 67 351
+2 67 25
+0 69 354
+2 69 259
+0 70 355
+2 70 12
+0 71 350
+2 71 60
+0 72 348
+2 72 55
+0 73 355
+2 73 70
+0 74 355
+2 74 47
+0 75 351
+2 75 52
+0 76 348
+2 76 45
+0 77 351
+2 77 75
+0 78 349
+2 78 59
+0 80 353
+2 80 58
+0 81 353
+2 81 61
+0 82 355
+2 82 74
+0 83 351
+2 83 77
+0 84 351
+2 84 56
+0 85 354
+2 85 33
+0 86 351
+2 86 67
+0 87 349
+2 87 78
+0 88 351
+2 88 86
+0 89 351
+2 89 83
+0 91 355
+2 91 82
+0 92 350
+2 92 54
+0 93 351
+2 93 88
+0 94 353
+2 94 34
+0 95 354
+2 95 85
+0 96 352
+2 96 62
+0 97 348
+2 97 63
+0 98 348
+2 98 97
+0 99 354
+2 99 69
+0 100 353
+2 100 80
+0 102 349
+2 102 87
+0 103 348
+2 103 65
+0 104 354
+2 104 99
+0 105 351
+2 105 93
+0 106 354
+2 106 95
+0 107 348
+2 107 76
+0 108 355
+2 108 91
+0 109 353
+2 109 81
+0 110 354
+2 110 104
+0 111 347
+2 111 7
+0 114 353
+2 114 100
+0 115 348
+2 115 98
+0 116 347
+2 116 111
+0 117 350
+2 117 71
+0 118 354
+2 118 106
+0 119 354
+2 119 118
+0 120 353
+2 120 114
+0 121 351
+2 121 105
+0 122 353
+2 122 109
+0 123 356
+2 123 49
+0 125 354
+2 125 110
+0 126 348
+2 126 72
+0 127 348
+2 127 103
+0 128 348
+2 128 107
+0 129 356
+2 129 123
+0 130 352
+2 130 96
+0 131 354
+2 131 119
+0 132 353
+2 132 120
+0 133 356
+2 133 31
+0 134 349
+2 134 102
+0 136 352
+2 136 18
+0 137 350
+2 137 117
+0 138 352
+2 138 136
+0 139 352
+2 139 130
+0 140 354
+2 140 131
+0 141 355
+2 141 53
+0 142 350
+2 142 92
+0 143 350
+2 143 137
+0 144 355
+2 144 141
+0 145 350
+2 145 142
+0 147 347
+2 147 116
+0 148 349
+2 148 66
+0 149 353
+2 149 122
+0 150 348
+2 150 128
+0 151 356
+2 151 133
+0 152 348
+2 152 115
+0 153 352
+2 153 138
+0 154 348
+2 154 150
+0 155 350
+2 155 143
+0 156 351
+2 156 121
+0 158 355
+2 158 108
+0 159 354
+2 159 140
+0 160 354
+2 160 125
+0 161 354
+2 161 159
+0 162 353
+2 162 132
+0 163 355
+2 163 158
+0 164 353
+2 164 162
+0 165 347
+2 165 147
+0 166 354
+2 166 161
+0 167 353
+2 167 94
+0 169 350
+2 169 145
+0 170 349
+2 170 148
+0 171 349
+2 171 170
+0 172 355
+2 172 73
+0 173 351
+2 173 84
+0 174 355
+2 174 163
+0 175 356
+2 175 129
+0 176 351
+2 176 89
+0 177 350
+2 177 169
+0 178 353
+2 178 149
+0 180 352
+2 180 139
+0 181 355
+2 181 174
+0 182 355
+2 182 64
+0 183 354
+2 183 160
+0 184 350
+2 184 177
+0 185 348
+2 185 126
+0 186 350
+2 186 155
+0 187 351
+2 187 156
+0 188 350
+2 188 184
+0 189 348
+2 189 127
+0 191 354
+2 191 166
+0 192 350
+2 192 188
+0 193 351
+2 193 187
+0 194 356
+2 194 151
+0 195 350
+2 195 186
+0 196 352
+2 196 153
+0 197 352
+2 197 180
+0 198 355
+2 198 181
+0 199 356
+2 199 175
+0 200 355
+2 200 198
+0 202 347
+2 202 165
+0 203 350
+2 203 192
+0 204 347
+2 204 202
+0 205 349
+2 205 171
+0 206 353
+2 206 48
+0 207 352
+2 207 196
+0 208 355
+2 208 144
+0 209 351
+2 209 176
+0 210 353
+2 210 164
+0 211 354
+2 211 183
+0 213 349
+2 213 205
+0 214 352
+2 214 207
+0 215 354
+2 215 191
+0 216 352
+2 216 197
+0 217 347
+2 217 204
+0 218 353
+2 218 210
+0 219 353
+2 219 218
+0 220 348
+2 220 152
+0 221 353
+2 221 206
+0 222 353
+2 222 221
+1 342 348
+1 342 349
+1 342 350
+1 342 351
+1 342 352
+1 342 353
+1 342 354
+1 342 355
+1 342 356
+1 343 347
+1 343 348
+1 343 349
+1 343 350
+1 343 351
+1 343 352
+1 343 354
+1 343 355
+1 343 356
+1 344 347
+1 344 348
+1 344 350
+1 344 351
+1 344 352
+1 344 353
+1 344 354
+1 344 355
+1 344 356
+1 345 347
+1 345 348
+1 345 349
+1 345 350
+1 345 351
+1 345 352
+1 345 354
+1 345 355
+1 345 356
+1 346 347
+1 346 348
+1 346 349
+1 346 350
+1 346 351
+1 346 352
+1 346 353
+1 346 355
+1 346 356
+7 0
+7 1
+7 2
+7 3
+7 4
+7 5
+7 6
+7 7
+7 8
+7 9
+7 10
+7 11
+7 12
+7 13
+7 14
+7 15
+7 16
+7 17
+7 18
+7 19
+7 20
+7 21
+7 22
+7 23
+7 24
+7 25
+7 26
+7 27
+7 28
+7 29
+7 30
+7 31
+7 32
+7 33
+7 34
+7 35
+7 36
+7 37
+7 38
+7 39
+7 40
+7 41
+7 42
+7 43
+7 44
+7 45
+7 46
+7 47
+7 48
+7 49
+7 50
+7 51
+7 52
+7 53
+7 54
+7 55
+7 56
+7 57
+7 58
+7 59
+7 60
+7 61
+7 62
+7 63
+7 64
+7 65
+7 66
+7 67
+7 68
+7 69
+7 70
+7 71
+7 72
+7 73
+7 74
+7 75
+7 76
+7 77
+7 78
+7 79
+7 80
+7 81
+7 82
+7 83
+7 84
+7 85
+7 86
+7 87
+7 88
+7 89
+7 90
+7 91
+7 92
+7 93
+7 94
+7 95
+7 96
+7 97
+7 98
+7 99
+7 100
+7 101
+7 102
+7 103
+7 104
+7 105
+7 106
+7 107
+7 108
+7 109
+7 110
+7 111
+7 112
+7 113
+7 114
+7 115
+7 116
+7 117
+7 118
+7 119
+7 120
+7 121
+7 122
+7 123
+7 124
+7 125
+7 126
+7 127
+7 128
+7 129
+7 130
+7 131
+7 132
+7 133
+7 135
+7 136
+7 137
+7 138
+7 139
+7 140
+7 141
+7 142
+7 143
+7 144
+7 145
+7 146
+7 147
+7 148
+7 149
+7 150
+7 151
+7 152
+7 153
+7 155
+7 156
+7 157
+7 158
+7 159
+7 160
+7 161
+7 162
+7 163
+7 164
+7 165
+7 166
+7 168
+7 169
+7 170
+7 171
+7 174
+7 175
+7 176
+7 177
+7 179
+7 180
+7 181
+7 183
+7 184
+7 186
+7 187
+7 188
+7 190
+7 191
+7 192
+7 196
+7 197
+7 198
+7 201
+7 202
+7 204
+7 205
+7 206
+7 207
+7 210
+7 212
+7 218
+7 221
+7 223
+7 224
+7 225
+7 226
+7 227
+7 228
+7 229
+7 230
+7 231
+7 232
+7 233
+7 234
+7 235
+7 236
+7 237
+7 238
+7 239
+7 240
+7 241
+7 242
+7 243
+7 244
+7 245
+7 246
+7 247
+7 248
+7 249
+7 250
+7 251
+7 252
+7 253
+7 254
+7 255
+7 256
+7 257
+7 258
+7 259
+7 260
+7 261
+7 262
+7 263
+7 264
+7 265
+7 266
+7 267
+7 268
+7 269
+7 270
+7 271
+7 272
+7 273
+7 274
+7 275
+7 276
+7 277
+7 278
+7 279
+7 280
+7 281
+7 282
+7 283
+7 284
+7 285
+7 286
+7 287
+7 288
+7 289
+7 290
+7 291
+7 292
+7 293
+7 294
+7 295
+7 296
+7 297
+7 298
+7 299
+7 316
+7 317
+7 318
+7 319
+7 320
+7 321
+7 322
+7 323
+7 324
+7 325
+7 326
+7 327
+7 328
+7 329
+7 330
+7 331
+7 332
+7 333
+7 334
+7 335
+7 336
+7 337
+7 338
+7 339
+7 340
+7 341
+#end_init
+2 0 169
+2 1 276
+2 112 78
+2 223 70
+2 234 60
+2 245 105
+2 256 64
+2 278 281
+2 289 66
+2 13 200
+2 24 8
+2 35 152
+2 46 29
+2 57 99
+2 68 24
+2 79 103
+2 90 147
+2 101 51
+2 124 273
+2 135 3
+2 146 203
+2 157 223
+2 168 241
+2 190 214
+2 212 35
+2 224 238
+2 225 49
+2 226 0
+2 227 79
+2 228 120
+2 229 16
+2 231 288
+2 232 319
+2 233 279
+2 235 6
+2 236 40
+2 237 336
+2 238 115
+2 240 4
+2 241 111
+2 242 145
+2 243 88
+2 244 194
+2 246 297
+2 247 213
+2 248 192
+2 249 62
+2 250 22
+2 251 240
+2 252 39
+2 254 18
+2 257 324
+2 259 97
+2 260 151
+2 261 118
+2 262 133
+2 263 163
+2 264 285
+2 265 15
+2 268 204
+2 269 48
+2 270 183
+2 271 30
+2 272 154
+2 273 283
+2 274 126
+2 275 248
+2 276 107
+2 277 182
+2 279 186
+2 280 68
+2 281 155
+2 283 175
+2 284 278
+2 285 317
+2 286 75
+2 287 43
+2 288 234
+2 290 46
+2 291 215
+2 292 181
+2 293 220
+2 294 173
+2 295 94
+2 296 184
+2 297 119
+2 298 335
+2 3 316
+2 4 250
+2 5 222
+2 6 165
+2 7 150
+2 8 77
+2 9 261
+2 10 232
+2 11 72
+2 12 295
+2 15 217
+2 16 247
+2 17 34
+2 18 125
+2 19 332
+2 21 284
+2 22 323
+2 23 272
+2 25 225
+2 26 227
+2 27 292
+2 28 202
+2 29 63
+2 30 74
+2 32 84
+2 33 291
+2 34 71
+2 36 206
+2 37 329
+2 38 229
+2 39 263
+2 40 268
+2 41 124
+2 42 61
+2 43 164
+2 44 50
+2 45 318
+2 47 259
+2 48 36
+2 49 327
+2 50 91
+2 51 190
+2 53 98
+2 54 256
+2 56 138
+2 59 23
+2 60 325
+2 61 171
+2 62 159
+2 63 341
+2 64 108
+2 65 251
+2 66 212
+2 67 264
+2 69 340
+2 70 180
+2 71 197
+2 72 296
+2 74 191
+2 75 144
+2 76 205
+2 77 130
+2 78 45
+2 80 102
+2 82 101
+2 84 228
+2 86 218
+2 88 27
+2 91 53
+2 92 59
+2 93 5
+2 94 187
+2 95 207
+2 96 328
+2 97 116
+2 98 9
+2 99 112
+2 100 245
+2 102 172
+2 103 67
+2 105 196
+2 106 162
+2 107 262
+2 108 294
+2 110 114
+2 111 246
+2 114 237
+2 115 12
+2 116 289
+2 118 277
+2 119 189
+2 120 320
+2 122 44
+2 123 243
+2 125 25
+2 126 96
+2 127 274
+2 128 298
+2 130 139
+2 132 221
+2 133 321
+2 134 231
+2 136 90
+2 137 41
+2 138 236
+2 139 32
+2 140 293
+2 141 176
+2 142 339
+2 144 128
+2 145 127
+2 147 331
+2 148 170
+2 149 42
+2 150 199
+2 151 148
+2 152 37
+2 153 330
+2 154 242
+2 155 132
+2 156 26
+2 159 188
+2 161 326
+2 162 322
+2 163 76
+2 164 110
+2 165 82
+2 166 92
+2 167 161
+2 169 123
+2 170 136
+2 171 56
+2 172 333
+2 173 86
+2 174 280
+2 175 185
+2 176 80
+2 178 57
+2 180 106
+2 181 153
+2 182 69
+2 183 100
+2 184 146
+2 185 287
+2 186 252
+2 187 208
+2 188 290
+2 189 338
+2 191 166
+2 192 249
+2 194 275
+2 195 28
+2 196 95
+2 197 65
+2 199 142
+2 200 10
+2 202 93
+2 203 135
+2 204 167
+2 205 269
+2 206 141
+2 207 337
+2 208 334
+2 209 54
+2 213 157
+2 214 134
+2 215 209
+2 216 140
+2 217 47
+2 218 257
+2 220 168
+2 221 13
+2 222 19
+#end_goal
+#init_function_facts
+0
+#initial_task
+23
