@@ -573,7 +573,7 @@ def _as_float_annotation(section: str, expected: int = 1) -> str:
     Annotate __call__ -> float, matching the sub-unit tie-breakers §10 asks for.
 
     expected=None for a worked example, which may hold any number of __call__
-    signatures (the crossdomain arm concatenates two files). Helper methods such as
+    signatures. Helper methods such as
     _calculate_heuristic keep their own annotations: only __call__ is the interface.
     """
     if expected is not None and section.count(_INT_CALL) != expected:

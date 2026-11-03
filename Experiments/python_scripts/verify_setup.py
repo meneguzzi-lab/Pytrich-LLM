@@ -3,10 +3,7 @@
 Does this checkout actually work? Run this after following README -> Setup.
 
 Every check here corresponds to one documented setup step, and each failure
-prints the command that fixes it. It exists because the documented dependency
-list was wrong for a year -- `generate_heuristic.py` imports `python-dotenv`
-unconditionally, and no install line mentioned it, so the generator failed at
-import for anyone who set up from the docs rather than copying a working venv.
+prints the command that fixes it.
 
     python3 Experiments/python_scripts/verify_setup.py           # everything
     python3 Experiments/python_scripts/verify_setup.py --quick   # skip the two subprocess runs

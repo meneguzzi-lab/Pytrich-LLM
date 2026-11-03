@@ -14,11 +14,8 @@ broken code:
                         Failure = code that imports fine and breaks at run time -- the
                         common case, since validate_heuristic never calls initialize().
 
-The pipeline-artifact column matters most for heuristics generated before the repair
-landed in generate_heuristic.py: 27 of the 31 unparseable files in the corpus were
-complete, valid code plus two stray characters. Those files are deliberately never
-modified on disk (they are the record of what the model produced), so the repair has to
-happen at measurement time instead.
+Generated files are never modified on disk (they are the record of what the model
+produced), so the envelope repair happens at measurement time instead.
 
     # the three ablation arms (default)
     python3 Experiments/python_scripts/measure_heuristic_validity.py

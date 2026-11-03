@@ -4,8 +4,8 @@ Ablation result tables: domains x (the paper's columns + the three prompt arms).
 
     # every metric, one PDF each plus a combined multi-page PDF
     python3 generate_ablation_table.py --all-metrics OUTDIR \
-        -i Experiments/outputs/csv-files/ablation_20261031.csv \
-        --baseline Experiments/outputs/csv-files/results_20261031.csv
+        -i Experiments/results/ablation.csv \
+        --baseline Experiments/results/results.csv
 
     # a single metric
     python3 generate_ablation_table.py --metric expanded_nodes out.pdf -i ... --baseline ...

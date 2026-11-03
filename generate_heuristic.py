@@ -1040,7 +1040,7 @@ def postprocess_code(code: str, usage: dict) -> tuple:
         # than loads because the observed case also carried the response object's
         # own closing `"}` inside the value; raw_decode stops at the string's real
         # end and reports where, so the tail can be dropped instead of poisoning
-        # the file. A hand-rolled replace() got 147 lines but left every \" broken.
+        # the file.
         wrapped = f'"{code}"'
         try:
             code, end = json.JSONDecoder().raw_decode(wrapped)
