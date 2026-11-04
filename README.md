@@ -235,7 +235,7 @@ Note that `gemini-2.0-flash` and `gemini-3-pro-preview` have since been retired 
 }
 ```
 
-The repository itself is archived on Zenodo under the concept DOI [10.5281/zenodo.23931424](https://doi.org/10.5281/zenodo.23931424), which always resolves to the latest release:
+The repository itself is archived on Zenodo under the concept DOI [10.5281/zenodo.23931424](https://doi.org/10.5281/zenodo.23931424), which always resolves to the latest release; the entry below cites the version the paper reports:
 
 ```bibtex
 @misc{MeneguzziBuchweitzCorreaEtAl2026Software,
@@ -243,7 +243,8 @@ The repository itself is archived on Zenodo under the concept DOI [10.5281/zenod
   author    = {Meneguzzi, Felipe and Buchweitz, Alexandre and Corr{\^e}a, Augusto B. and Putrich, Victor Scherer and Pereira, Andr{\'e} Grahl},
   publisher = {Zenodo},
   year      = {2026},
-  doi       = {10.5281/zenodo.23931424}
+  version   = {1.0.3},
+  doi       = {10.5281/zenodo.23957133}
 }
 ```
 
