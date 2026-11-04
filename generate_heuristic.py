@@ -91,7 +91,8 @@ def resolve_example(domain_config: dict, defaults: dict, variant: str,
     which the prompt names in section 7.
 
     Variants:
-        perdomain    the domain's own worked example (config example_heuristic)
+        perdomain    the example configured for the domain (config example_heuristic),
+                     a heuristic for a different domain
         stub         template's blind h=0 stub; no guidance to imitate
         fixed:<path> one named exemplar, identical for every domain (ablation arm 3)
     """
@@ -1675,8 +1676,8 @@ Examples:
         '--example',
         default='perdomain',
         metavar='VARIANT',
-        help="Section 7 worked-example arm. perdomain: the domain's own example "
-             "(default). stub: blind h=0 template, no guidance (ablation arms 1 and 2). "
+        help="Section 7 worked-example arm. perdomain: the example configured for the "
+             "domain in config/domains.yaml, a heuristic for a different domain (default). stub: blind h=0 template, no guidance (ablation arms 1 and 2). "
              "fixed:<path>: one named exemplar, identical for every domain (ablation arm 3)."
     )
     parser.add_argument(

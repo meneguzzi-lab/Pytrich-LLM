@@ -1,5 +1,11 @@
 # Domain configurations for the generic heuristic generator
 # Each domain specifies its folder name, instance file patterns, and optional example heuristic
+#
+# The worked example (prompt section 7) is always a heuristic for a different domain:
+# the Towers heuristic for every other domain, and a Snake heuristic (a domain outside
+# the benchmark) for Towers. Releases up to v1.0.3 pointed each domain at a heuristic
+# for that same domain. That was an artifact of how the release code was derived with
+# Claude from the experiment repository, not the configuration the paper describes.
 
 domains:
   towers:
@@ -9,7 +15,7 @@ domains:
     domain_file: "domain.hddl"
     smallest_instance: "pfile_01.hddl"
     largest_instance: "pfile_20.hddl"
-    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/towers_heuristic_example.py"
+    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/snake_heuristic.py"
     hints: |
       - Exact optimal cost for 3-peg Hanoi from any state is computable: 2^k - 1 for largest displaced ring k
       - Process rings largest-to-smallest to avoid O(n^2) tower-tracing; build a peg-assignment array in O(n) during initialize()
@@ -23,7 +29,7 @@ domains:
     domain_file: "domain.hddl"
     smallest_instance: "pfile01.hddl"
     largest_instance: "pfile20.hddl"
-    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/barman_heuristic_example.py"
+    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/towers_heuristic_example.py"
     hints: |
       - BOTTLENECK: Parameter-binding symmetry. AchieveContainsShakerIngredient chooses which shot to use — all N shots are interchangeable, creating N-way branching per ingredient transfer (~N^(2K) for K cocktails)
       - GROUNDING WARNING: In grounded operator names, the SHOT argument is at args[0], NOT args[1] as HDDL parameter order suggests. Always verify by examining grounded fact/operator names
@@ -39,7 +45,7 @@ domains:
     domain_file: "domain.hddl"
     smallest_instance: "p01.hddl"
     largest_instance: "p30.hddl"
-    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/blocksworld_heuristic_example.py"
+    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/towers_heuristic_example.py"
     hints: |
       - BOTTLENECK: Stack clearing — to move a buried block, all blocks above must be unstacked first
       - Key cost formulas: do_put_on(x,y) non-trivial = clear_cost(x) + clear_cost(y) + 3; clear_cost with stack height h = 1 + 2*h
@@ -54,7 +60,7 @@ domains:
     domain_file: "domain.hddl"
     smallest_instance: "p01.hddl"
     largest_instance: "p30.hddl"
-    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/depots_heuristic_example.py"
+    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/towers_heuristic_example.py"
     hints: |
       - GROUNDING WARNING: PANDA's grounder strips static facts like (place pallet0 depot0). To recover location info, parse grounded operator names: Drop[hoist0,crate1,pallet0,depot0] reveals pallet0 is at depot0
       - GROUNDING WARNING: Method preconditions are compiled into __method_precondition_* operators, NOT stored in decomposition.pos_precons. Check for operators whose name starts with "__method_precondition" when analyzing decompositions
@@ -69,7 +75,7 @@ domains:
     domain_file: "domain.hddl"
     smallest_instance: "pfile_01_001.hddl"
     largest_instance: "pfile_50_100.hddl"
-    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/robot_heuristic_example.py"
+    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/towers_heuristic_example.py"
     hints: |
       - BOTTLENECK: Single-carry constraint — robot holds exactly one package at a time. Each delivery is a round-trip (go to package, pickup, go to goal, putdown)
       - Inter-delivery travel bound: with P undelivered packages, the robot must make at least P pickup+putdown pairs (2P actions) PLUS navigate between them. Sum of min outgoing edges in the delivery graph minus max edge gives a Hamiltonian path lower bound
@@ -84,7 +90,7 @@ domains:
     domain_file: "domain.hddl"
     smallest_instance: "p01.hddl"
     largest_instance: "p30.hddl"
-    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/rover_heuristic_example.py"
+    example_heuristic: "Pytrich/Heuristics/GeneratedExamples/towers_heuristic_example.py"
     hints: |
       - GROUNDING WARNING: PANDA's grounder STRIPS static facts (can_traverse, visible, at_lander, store_of, equipped_for_*). You CANNOT read rover capabilities from the state. Instead, extract static info from grounded operator names: navigate[rover0,wp1,wp2] tells you rover0 can traverse wp1→wp2
       - TDG's weakness: it assumes minimum decomposition cost (rover already at target = nop). Your heuristic should compute ACTUAL navigation distance when rover is NOT at target: cost = 3*d + 1 per hop (visit + navigate + unvisit + action)

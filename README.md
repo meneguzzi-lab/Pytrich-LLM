@@ -36,7 +36,7 @@ Every table and figure of the paper is built from `Experiments/results/results.c
 | ---- | ------- |
 | `__main__.py`, `Pytrich/` | The Pytrich planner: grounding through PANDA, A\*-family search, the TDG, LMCount and Novelty heuristics |
 | `Pytrich/Heuristics/GeneratedHeuristics/<Domain>/<Model>/` | Every generated heuristic evaluated in the paper, exactly as the model returned it (including candidates that fail to import or crash): nine models on the six IPC 2020 domains, three on Lamps, and the three prompt-ablation arms (`Gemini3Flash-arm*`) |
-| `Pytrich/Heuristics/GeneratedExamples/` | The worked examples the prompt shows (one per domain, plus Snake for ablation arm 3 on Towers) |
+| `Pytrich/Heuristics/GeneratedExamples/` | The worked examples the prompt shows: the Towers heuristic for every other domain, and a Snake heuristic for Towers (see the correction note in Section 6) |
 | `Pytrich/constants.py` | Registry of the generated heuristics that import, keyed `<domain>_<model>_heuristic_<n>` |
 | `generate_heuristic.py`, `templates/`, `config/` | The heuristic generator: prompt template, domain hints and worked examples (`config/domains.yaml`), model and API settings (`config/models.yaml`), systems and domains of the sweep (`config/planners.yaml`) |
 | `htn-benchmarks/` | The seven domains in HDDL and the parser output of every instance, plus the script that grounds them |
@@ -205,6 +205,12 @@ python3 generate_heuristic.py --domain towers --model gemini3flash --batch 20
 
 This writes `Pytrich/Heuristics/GeneratedHeuristics/Towers/Gemini3Flash/towers_heuristic_<n>.py`, appends the prompt that produced each file as a comment block at its end, registers every candidate that imports in `Pytrich/constants.py`, and logs tokens and cost to `Experiments/results/api_costs.csv`.
 The prompt (`templates/prompt_template.py`) contains the domain HDDL, the smallest and largest instance, the domain's hint block (`config/domains.yaml`), the Pytrich heuristic interface, a worked example heuristic, and design guidance.
+The worked example is a heuristic for a different domain, which teaches the interface and not the domain: the Towers heuristic for every other domain, and a Snake heuristic, a domain outside the benchmark, for Towers.
+
+> **Correction (v1.0.4).** Releases up to v1.0.3 configured each domain with a worked example written for that same domain, and shipped five such files (`barman_`, `blocksworld_`, `depots_`, `robot_` and `rover_heuristic_example.py`).
+> That configuration was an artifact of how the release code was derived with Claude from the experiment repository; it is not the prompt the paper describes.
+> From v1.0.4, `config/domains.yaml` sets the cross-domain examples above and the five same-domain files are removed.
+
 `--dry-run` previews the prompt and `--output-prompt FILE` writes it out, both without an API call; `--list-models` and `--list-domains` show what is configured.
 `--thinking {off,low,medium,high}` and `--temperature` map onto each provider's controls (`config/models.yaml`); the paper's batches used the provider defaults, and the ablation arms `--thinking medium --temperature 1.0`.
 `--count N` runs an iterative loop instead of independent samples: generate, test on the smallest instance against TDG, feed the result back, repeat.
