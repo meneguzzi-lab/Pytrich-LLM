@@ -249,8 +249,8 @@ The repository itself is archived on Zenodo under the concept DOI [10.5281/zenod
   author    = {Meneguzzi, Felipe and Buchweitz, Alexandre and Corr{\^e}a, Augusto B. and Putrich, Victor Scherer and Pereira, Andr{\'e} Grahl},
   publisher = {Zenodo},
   year      = {2026},
-  version   = {1.0.3},
-  doi       = {10.5281/zenodo.23957133}
+  version   = {1.0.4},
+  doi       = {10.5281/zenodo.23960400}
 }
 ```
 
