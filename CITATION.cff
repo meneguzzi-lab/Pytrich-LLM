@@ -21,6 +21,7 @@ authors:
     affiliation: "University of Aberdeen, UK and PUCRS, Brazil"
   - family-names: Buchweitz
     given-names: Alexandre
+    orcid: "https://orcid.org/0009-0002-2156-1088"
     affiliation: "Independent Researcher, Toronto, Canada"
   - family-names: Corrêa
     given-names: Augusto B.
@@ -57,6 +58,7 @@ preferred-citation:
       affiliation: "University of Aberdeen, UK and PUCRS, Brazil"
     - family-names: Buchweitz
       given-names: Alexandre
+      orcid: "https://orcid.org/0009-0002-2156-1088"
       affiliation: "Independent Researcher, Toronto, Canada"
     - family-names: Corrêa
       given-names: Augusto B.
