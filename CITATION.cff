@@ -27,6 +27,7 @@ authors:
     affiliation: "University of Oxford, UK"
   - family-names: Putrich
     given-names: Victor Scherer
+    orcid: "https://orcid.org/0009-0002-6557-8690"
     affiliation: "Saarland University, Germany"
   - family-names: Pereira
     given-names: André Grahl
@@ -62,6 +63,7 @@ preferred-citation:
       affiliation: "University of Oxford, UK"
     - family-names: Putrich
       given-names: Victor Scherer
+      orcid: "https://orcid.org/0009-0002-6557-8690"
       affiliation: "Saarland University, Germany"
     - family-names: Pereira
       given-names: André Grahl
